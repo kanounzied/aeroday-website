@@ -40,7 +40,7 @@ export default function Footer(){
                     <p class="info">+216 23 815 004 &nbsp;&nbsp;&nbsp;&nbsp;+216 26 916 372</p>
                     <p class="info">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+216 28 455 462</p>
                 </div>
-                {/* <a href="https://www.facebook.com/"><div id="fb">fb</div></a>
+                {/*ee <a href="https://www.facebook.com/"><div id="fb">fb</div></a>
                 <a href="https://www.instagram.com/"><div id="ig">ig</div></a> --> */}
             </div>
         </div>
