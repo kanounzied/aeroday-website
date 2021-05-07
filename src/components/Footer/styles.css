@@ -158,23 +158,25 @@ color: #519DA6;
     width: 28px;
     height: 28px;
     right: 10%;
-    top: 20%;
+    top: 25%;
     
-    background: #1a29ff;
     
 
 }
 #ig {
     position: absolute;
-
     width: 28px;
     height: 28px;
     right: 10%;
-    top: 40%;
-    
-    background: #a1c718;
-    
+    top: 45%;
+}
 
+#li {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    right: 10%;
+    top: 65%;
 }
 #copyright{
     position: absolute;
