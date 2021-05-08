@@ -6,7 +6,6 @@ import $ from 'jquery'
 class Home extends Component {
 
     componentDidMount() {
-        console.log('homeee');
         $('#home').addClass('selected');
     }
 

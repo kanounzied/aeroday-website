@@ -5,7 +5,6 @@ import $ from 'jquery'
 class About extends Component {
 
     componentDidMount() {
-        console.log('aboutttt');
         $('#about').addClass('selected');
     }
 

@@ -5,7 +5,6 @@ import $ from 'jquery'
 class Contact extends Component {
 
     componentDidMount() {
-        console.log('contactttt');
         $('#contact').addClass('selected');
     }
 
