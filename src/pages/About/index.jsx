@@ -1,5 +1,19 @@
 import React from "react";
+import {Component} from "react/cjs/react.production.min";
+import $ from 'jquery'
 
-export default function About(){
-    return(<div>Aeroday About page</div>);
+class About extends Component {
+
+    componentDidMount() {
+        console.log('aboutttt');
+        $('#about').addClass('selected');
+    }
+
+    render() {
+        return (
+            <div>Aeroday About page</div>
+        );
+    }
 }
+
+export default About

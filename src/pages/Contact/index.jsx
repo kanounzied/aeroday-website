@@ -1,5 +1,19 @@
 import React from "react";
+import {Component} from "react/cjs/react.production.min";
+import $ from 'jquery'
 
-export default function Contact(){
-    return(<div>Aeroday contact page</div>);
+class Contact extends Component {
+
+    componentDidMount() {
+        console.log('contactttt');
+        $('#contact').addClass('selected');
+    }
+
+    render() {
+        return (
+            <div>Aeroday contact page</div>
+        );
+    }
 }
+
+export default Contact
