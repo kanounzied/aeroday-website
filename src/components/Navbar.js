@@ -1,28 +1,28 @@
 import React from "react";
 import {Component} from "react/cjs/react.production.min";
 import "../App.css";
-import $ from 'jquery'
+import $ from 'jquery';
 
 class Navbar extends Component {
 
     componentDidMount() {
         var navItem = $(".nav-items")
         var logo = $('.logo img')
+        const minwidth = window.$MIN_WIDTH;
         console.log(navItem.width())
         $(window).scroll(function (){
-            if ($(window).scrollTop() >= 500){
-                $('.navbar').css({
-                    'height': '65px',
-                    'background-color': 'var(--white-aeroday)'
-                })
-                $('.logo').css({
-                    'transform': 'translateX(-100%)'
-                })
-                logo.attr('src', logo.attr('src').replace('White', 'Black')).css('height', '35px')
-                //navItem.css('transform', 'translateX('+navItem.width()+'px)')
-                $('.navbar .nav-items ul li a').css('color', 'var(--dark-color)')
-
-            }
+            //if($(window).width() >= minwidth) {
+                if ($(window).scrollTop() >= 200) {
+                    $('.navbar').addClass('smaller')
+                    logo.attr('src', logo.attr('src').replace('White', 'Black'))
+                } else {
+                    logo.attr('src', logo.attr('src').replace('Black', 'White'))
+                    $('.navbar').removeClass('smaller')
+                }
+            // }
+            // else {
+            //     console.log('minwidth ', minwidth)
+            // }
         })
     }
 
@@ -30,6 +30,7 @@ class Navbar extends Component {
         const brandStyle = {
             height: "50px",
         }
+
         return (
             <>
                 <div className="navbar">
@@ -42,6 +43,18 @@ class Navbar extends Component {
                             <li className={"nav-item"} id={"about"}><a href="/about">A Propos De Nous</a></li>
                             <li className={"nav-item"} id={"contact"}><a href="/contact">Contact Us</a></li>
                         </ul>
+                        <div className="dropdown">
+                            <button className="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ☰
+                            </button>
+                            <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a className="dropdown-item" href="/">Acceuil</a>
+                                <a className="dropdown-item" href="/#axes&challenges">Axes & Challenges</a>
+                                <a className="dropdown-item" href="/about">A Propos De Nous</a>
+                                <a className="dropdown-item" href="/contact">Contact</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </>
