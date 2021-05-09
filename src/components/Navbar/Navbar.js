@@ -1,28 +1,26 @@
 import React from "react";
 import {Component} from "react/cjs/react.production.min";
-import "../App.css";
+import "../../App.css";
 import $ from 'jquery';
+import { ReactComponent as Logo } from './Logo.svg';
 
 class Navbar extends Component {
 
     componentDidMount() {
         var navItem = $(".nav-items")
-        var logo = $('.logo img')
-        const minwidth = window.$MIN_WIDTH;
         console.log(navItem.width())
+        $('.logo-svg g').attr('fill','#ffffff')
+
         $(window).scroll(function (){
-            //if($(window).width() >= minwidth) {
                 if ($(window).scrollTop() >= 200) {
                     $('.navbar').addClass('smaller')
-                    logo.attr('src', logo.attr('src').replace('White', 'Black'))
+                    $('.logo-svg g').attr('fill','#000000')
+                    //logo.attr('src', logo.attr('src').replace('White', 'Black'))
                 } else {
-                    logo.attr('src', logo.attr('src').replace('Black', 'White'))
+                    //logo.attr('src', logo.attr('src').replace('Black', 'White'))
                     $('.navbar').removeClass('smaller')
+                    $('.logo-svg g').attr('fill','#ffffff')
                 }
-            // }
-            // else {
-            //     console.log('minwidth ', minwidth)
-            // }
         })
     }
 
@@ -34,8 +32,10 @@ class Navbar extends Component {
         return (
             <>
                 <div className="navbar">
-                    <a href="/" className={"logo"}><img src={process.env.PUBLIC_URL + "/assests/images/LogoWhite.png"}
-                                                        alt="aeroday logo" style={brandStyle}/></a>
+                    <a href="/" className={"logo"}><Logo className="logo-svg" height="auto" width="190px" color={"#ffffff"}/>
+                        {/*<img src={process.env.PUBLIC_URL + "/assests/images/LogoWhite.png"}*/}
+                        {/*                                alt="aeroday logo" style={brandStyle}/>*/}
+                    </a>
                     <div className="nav-items">
                         <ul>
                             <li className={"nav-item"} id={"home"}><a href="/">Acceuil</a></li>

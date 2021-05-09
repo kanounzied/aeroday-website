@@ -26,12 +26,7 @@
     }
   }
 
-  .logo img{
-    margin-left: 10px;
-    margin-bottom: 20px;
-  }
-
-  .logo , .logo img{
+  .logo , .logo .logo-svg{
     transition: all 0.8s;
   }
   .nav-items{
@@ -70,12 +65,10 @@
     color: var(--dark-color);
     height: clamp(50px, 10vh, 100px);
 
-    .logo img{
-      height: 30px!important;
+    .logo .logo-svg{
+      width: 150px!important;
+      margin-left: 15px;
       margin-bottom: 5px;
-    }
-    .logo , .logo img{
-      //transform: translateX(-100%);
     }
     .nav-items{
       //transform: translateX(50%);
@@ -85,6 +78,7 @@
     }
     .dropdown button{
       color: var(--dark-color);
+      margin-top: 9px;
     }
   }
 }
