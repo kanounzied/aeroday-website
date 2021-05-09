@@ -1,0 +1,53 @@
+.main {
+  margin-top: clamp(80px, 20vh, 120px);
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  //justify-content: center;
+}
+.container {
+  margin-right: 0;
+  margin-left: 2rem;
+  padding: 0;
+  height: 20rem;
+  width: auto;
+  display: flex;
+  //align-items: start;
+  justify-content: flex-start;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.name {
+  height: 2.5rem;
+  width: 15rem;
+}
+
+.email {
+  width: 15rem;
+  height: 2.5rem;
+  margin-top: 3rem;
+}
+
+.send-btn {
+  width: 7.5rem;
+  height: 2.5rem;
+  margin-top: 7rem;
+  align-self: center;
+}
+
+.msg {
+  margin-left: 2rem;
+  height: 20rem;
+  width: 20rem;
+}
+
