@@ -1,5 +1,4 @@
 import React, {useEffect} from "react";
-import {Component} from "react/cjs/react.production.min";
 import "../../App.css";
 import $ from 'jquery';
 import { ReactComponent as Logo } from './Logo.svg';
