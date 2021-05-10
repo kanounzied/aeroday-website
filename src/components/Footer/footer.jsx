@@ -8,7 +8,7 @@ class Footer extends Component {
             <div id="footer-container">
             <div id="footer">
                 <div id="footer-description-container">
-                    <div id="logo-footer"> <img src={process.env.PUBLIC_URL + "/assests/images/LogoWhite.png"} alt="aeroday logo" style={brandStyle}/> </div>
+                    <div id="logo-footer"><Logo className="logo-svg" height="auto" width="190px" color={"#ffffff"}/></div>
                     <div id="footer-description">Tunisian Aeroday est l'unique journée nationale consacrée entièrement à l'Aéronautique en Tunisie, elle est fondée par le club Aerobotix insat en collaboration avec l'association des techniques de robotique (ATR). Cette journée est basée sur plusieurs axes et sur des différents challenges et elle opte pour la vulgarisation du domaine aéronautique chez le grand public ainsi que sur la découverte de nouveaux potentiels dont disposent les jeunes.</div>
                 </div>
                 <div id="keep-in-touch">
