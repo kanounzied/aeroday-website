@@ -1,0 +1,110 @@
+
+.btn:focus{
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(244 67 54 / 20%);
+}
+
+.navbar{
+  background-color: transparent;
+  color: var(--white-aeroday);
+  height: clamp(80px, 20vh, 120px);
+  border-radius: 0 0 30px 30px;
+  //justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: all 1s;
+  .nav-item.selected{
+    text-decoration: underline;
+    text-decoration-color: #d95252;
+    text-decoration-thickness: 3px;
+    font-weight: bold;
+    a{
+      color: var(--red-aeroday)!important;
+    }
+  }
+
+  .logo , .logo .logo-svg{
+    transition: all 0.8s;
+  }
+  .nav-items{
+    transition: all 0.8s;
+    ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      li a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        font-size: calc(min(15px,1.5vw));
+      }
+    }
+    .dropdown{
+      display: none;
+      button{
+        color: var(--white-aeroday);
+      }
+      .dropdown-toggle:after{
+        content: none;
+      }
+      .dropdown-menu{
+        left: unset;
+        right: 0;
+      }
+    }
+  }
+
+  &.smaller{
+    background-color: var(--white-aeroday);
+    color: var(--dark-color);
+    height: clamp(50px, 10vh, 100px);
+    border-bottom: 1px solid var(--dark-color);
+
+    .logo .logo-svg{
+      width: 150px!important;
+      margin-left: 15px;
+      margin-bottom: 5px;
+    }
+    .nav-items{
+      //transform: translateX(50%);
+      ul li a{
+        color: var(--dark-color);
+      }
+    }
+    .dropdown button{
+      color: var(--dark-color);
+      margin-top: 9px;
+    }
+  }
+}
+
+
+a{
+  color: var(--white-aeroday);
+  &:hover{
+    color: var(--red-aeroday) !important;
+  }
+
+}
+
+@media screen and (max-width: 900px){
+  .navbar {
+    justify-content: center;
+
+    .nav-items {
+      .dropdown {
+        display: block !important;
+      }
+
+      & > ul {
+        display: none;
+      }
+    }
+  }
+}
