@@ -1,6 +1,7 @@
 import React from "react";
 import "../../App.css";
 import './footerStyles.css';
+import { ReactComponent as Logo } from '../Navbar/Logo.svg';
 
 class Footer extends Component {
     render(){
