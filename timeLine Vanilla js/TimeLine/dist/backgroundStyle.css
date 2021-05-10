@@ -1,0 +1,20 @@
+.waveright{
+
+position: absolute;
+width: 1500px;
+height: 100%;
+left: 42%;
+background:url(/assets/WaveRight.png);
+transform: rotate(180deg);
+background-repeat: repeat;
+}
+
+/* wave backround 21 4 */
+.waveleft{
+    position: absolute;
+    width: 1579px;
+    height: 1100px;
+    left: 893px;
+    top: 3497px;
+    background:url(/assets/WaveLeft.png);
+}
