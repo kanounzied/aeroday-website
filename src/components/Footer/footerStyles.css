@@ -1,0 +1,156 @@
+@font-face {
+    font-family: footer-font;
+    src: url();
+}
+
+#footer {
+    font-family: footer-font;
+    position: fixed;
+    width: 100%;
+    height: 440px;
+    background: #131618;
+    margin-left: 0px;
+    bottom :0px;
+    left: 0;
+}
+
+#logo-footer{
+    position: relative;
+    margin-left: 10%;
+    top: 44px;
+    width: 50%;
+}
+
+#footer-description {
+    float: left;
+    position: relative;
+    width: 70%;
+    height: 176px;
+    left: 10%;
+    margin-top: 5%;
+    margin-left: 10%;
+    font-family: footer-font;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+#keep-in-touch {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    right: 0;
+    float: right;
+    margin-top: 0;
+}
+
+#footer-contact-block {
+    position: absolute;
+    width: 105% ;
+    height: 252px;
+    top: 99px;
+    background: #272B2E;
+    border-radius: 29px;
+}
+
+#kit-title {
+    position: relative;
+    width: 100%;
+    margin-top: 8%;
+    font-family: footer-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 47px;
+    color: #519DA6;
+}
+
+.footer-contact-logo {
+    position: relative;
+    float: left;
+    width: 28px;
+    height: 28px;
+    left: 0;
+    
+}
+
+.footer-info {
+    position: relative;
+    margin-left: 15% ;
+}
+
+.footer-contact {
+    position: relative;
+    height: 49px;
+    margin-left: 5%;
+    top: 20%;
+    margin-bottom: 2%;
+    font-family: footer-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    color: #519DA6;
+}
+
+#footer-fb {
+    position: relative;
+    float: right;
+    width: 28px;
+    height: 28px;
+    margin-right: 15px;
+}
+
+#footer-ig {
+    position: relative;
+    float: right;
+    width: 28px;
+    height: 28px;
+    margin-right: 15px;
+    margin-top: 50%;
+}
+
+#footer-li{
+    position: relative;
+    float: right;
+    width: 28px;
+    height: 28px;
+    margin-right: 15px;
+    margin-top: 55%;
+}
+
+#footer-description-container {
+    position: relative;
+    float: left;
+    width: 70%;
+}
+
+#footer-social-onside {
+    position: relative;
+    float: right;  
+    top: 20%;
+    right: 5%;
+}
+
+#footer-contact-description {
+    position: relative;
+    float: left;
+    width: 80%;
+    top: 14%;
+    left: 2%;
+}
+
+#footer-copyright {
+    position:fixed;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    bottom: 0;left: 0;
+}
+
+
+#footer-copyright p{
+    color: white;
+    text-align: center;
+}
