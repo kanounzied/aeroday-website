@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+window.$MIN_WIDTH= 900;
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
