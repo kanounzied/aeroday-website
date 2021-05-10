@@ -1,33 +1,27 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {Component} from "react/cjs/react.production.min";
 import "../../App.css";
 import $ from 'jquery';
 import { ReactComponent as Logo } from './Logo.svg';
 
-class Navbar extends Component {
-
-    componentDidMount() {
+export default function Navbar() {
+    useEffect(() => {
         var navItem = $(".nav-items")
         console.log(navItem.width())
         $('.logo-svg g').attr('fill','#ffffff')
 
         $(window).scroll(function (){
-                if ($(window).scrollTop() >= 200) {
-                    $('.navbar').addClass('smaller')
-                    $('.logo-svg g').attr('fill','#000000')
-                    //logo.attr('src', logo.attr('src').replace('White', 'Black'))
-                } else {
-                    //logo.attr('src', logo.attr('src').replace('Black', 'White'))
-                    $('.navbar').removeClass('smaller')
-                    $('.logo-svg g').attr('fill','#ffffff')
-                }
+            if ($(window).scrollTop() >= 100) {
+                $('.navbar').addClass('smaller')
+                $('.logo-svg g').attr('fill','#000000')
+                //logo.attr('src', logo.attr('src').replace('White', 'Black'))
+            } else {
+                //logo.attr('src', logo.attr('src').replace('Black', 'White'))
+                $('.navbar').removeClass('smaller')
+                $('.logo-svg g').attr('fill','#ffffff')
+            }
         })
-    }
-
-    render() {
-        const brandStyle = {
-            height: "50px",
-        }
+    }, [])
 
         return (
             <>
@@ -59,7 +53,5 @@ class Navbar extends Component {
                 </div>
             </>
         );
-    }
 }
 
-export default Navbar
