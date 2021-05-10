@@ -7,13 +7,19 @@ export default function Intro() {
     const desc2 = useRef();
 
     useEffect(() => {
+
+        window.addEventListener('resize', function(event) {
+            desc1.current.style.height = "unset";
+            desc2.current.style.height = "unset";
+            if (desc1.current.clientHeight >= desc2.current.clientHeight){
+                desc2.current.style.height = desc1.current.clientHeight+"px"
+            }
+            else {
+                desc1.current.style.height = desc2.current.clientHeight+"px"
+            }
+        }, true);
         // console.log('height', desc1.current.clientHeight)
-        if (desc1.current.clientHeight >= desc2.current.clientHeight){
-            desc2.current.style.height = desc1.current.clientHeight+"px"
-        }
-        else {
-            desc1.current.style.height = desc2.current.clientHeight+"px"
-        }
+
     }, [])
 
     return (
