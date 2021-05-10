@@ -1,0 +1,62 @@
+.acceuil{
+
+
+  .title {
+    width: 100%;
+    background-color: var(--white-aeroday);
+    padding: 10px 0;
+    display: inline-block;
+    margin: 7vh 0;
+    h1 {
+      padding-bottom: 1%;
+      padding-top: 2%;
+      margin-bottom: 0;
+      text-align: center;
+      font-size: calc(min(92px, 7vw));
+      color: var(--dark-color);
+      font-weight: bold;
+    }
+  }
+
+  .description {
+    margin: 10vh 0;
+    display: inline-block;
+
+    #desc2, #desc1{
+      width: 40%;
+      padding: 20px 30px;
+      margin: 17px 0;
+      font-size: 14px;
+      display: inline-block;
+      background-color: var(--white-aeroday);
+      color: var(--dark-color);
+      font-weight: bold;
+      text-align: justify;
+
+      p{
+        margin-bottom: 0;
+      }
+    }
+
+    #desc1{
+      float: left;
+      border-radius: 0 30px 30px 0;
+    }
+
+    #desc2{
+      float: right;
+      border-radius: 30px 0 0 30px;
+    }
+    span {
+      color: var(--red-aeroday);
+    }
+  }
+}
+
+@media screen and (max-width: 900px){
+  .acceuil .description{
+    #desc2, #desc1{
+      width: 80%;
+    }
+  }
+}
