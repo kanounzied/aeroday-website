@@ -1,10 +1,4 @@
-@font-face {
-    font-family: footer-font;
-    src: url();
-}
-
 #footer {
-    font-family: footer-font;
     position: fixed;
     width: 100%;
     height: 440px;
@@ -29,7 +23,6 @@
     left: 10%;
     margin-top: 5%;
     margin-left: 10%;
-    font-family: footer-font;
     font-style: normal;
     font-size: 22px;
     line-height: 150%;
@@ -58,7 +51,6 @@
     position: relative;
     width: 100%;
     margin-top: 8%;
-    font-family: footer-font;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -86,7 +78,6 @@
     margin-left: 5%;
     top: 20%;
     margin-bottom: 2%;
-    font-family: footer-font;
     font-style: normal;
     font-weight: bold;
     font-size: 19px;
