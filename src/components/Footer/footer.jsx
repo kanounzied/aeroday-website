@@ -1,12 +1,11 @@
-import React from "react";
+import React, {Component} from "react";
 import "../../App.css";
 import './footerStyles.css';
 import { ReactComponent as Logo } from '../Navbar/Logo.svg';
 
-class Footer extends Component {
-    render(){
-        return(
-            <div id="footer-container">
+export default function Footer() {
+    return(
+        <div id="footer-container">
             <div id="footer">
                 <div id="footer-description-container">
                     <div id="logo-footer"><Logo classNameName="logo-svg" height="auto" width="190px" color={"#ffffff"}/></div>
@@ -41,5 +40,6 @@ class Footer extends Component {
             <div id="footer-copyright"><p> Copyright Aeroday ©2021 All rights reserved </p></div> 
         </div>
     );
-    }
 }
+
+export default Footer
