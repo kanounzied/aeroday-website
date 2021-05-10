@@ -1,147 +1,150 @@
-#footer {
-    position: fixed;
-    width: 100%;
-    height: 440px;
-    background: #131618;
-    margin-left: 0px;
-    bottom :0px;
-    left: 0;
+#footer- {
+  position: relative;
+  background-color: #131618;
+  width: 100%;
+  height: auto;
 }
 
-#logo-footer{
-    position: relative;
-    margin-left: 10%;
-    top: 44px;
-    width: 50%;
+#footer- #footer-container {
+  width: 100%;
+  bottom: 0px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-#footer-description {
-    float: left;
-    position: relative;
-    width: 70%;
-    height: 176px;
-    left: 10%;
-    margin-top: 5%;
-    margin-left: 10%;
-    font-style: normal;
-    font-size: 22px;
-    line-height: 150%;
-    color: #FFFFFF;
+#footer- #footer-container #footer-left {
+  width: 50%;
+  padding-top: 40px;
 }
 
-#keep-in-touch {
-    position: relative;
-    width: 30%;
-    height: 100%;
-    right: 0;
-    float: right;
-    margin-top: 0;
+#footer- #footer-container #footer-left p {
+  color: white;
+  padding-top: 40px;
+  font-size: 18px;
+  margin-left: 40px;
 }
 
-#footer-contact-block {
-    position: absolute;
-    width: 105% ;
-    height: 252px;
-    top: 99px;
-    background: #272B2E;
-    border-radius: 29px;
+#footer- #footer-container .--separator-- {
+  width: 10%;
 }
 
-#kit-title {
-    position: relative;
-    width: 100%;
-    margin-top: 8%;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 47px;
-    color: #519DA6;
+#footer- #footer-container #footer-right {
+  width: 30%;
+  padding-left: 100px;
+  padding-top: 39px;
+  font-weight: 700;
+  font-size: 23px;
 }
 
-.footer-contact-logo {
-    position: relative;
-    float: left;
-    width: 28px;
-    height: 28px;
-    left: 0;
-    
+#footer- #footer-container #footer-right #contact-us-box {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-bottom: 10px;
+  background: #272B2E;
+  border-radius: 29px 0px 0px 29px;
 }
 
-.footer-info {
-    position: relative;
-    margin-left: 15% ;
+#footer- #footer-container #footer-right #contact-us-box #footer-email {
+  padding-left: 30px;
+  padding-top: 3%;
+  width: 85%;
 }
 
-.footer-contact {
-    position: relative;
-    height: 49px;
-    margin-left: 5%;
-    top: 20%;
-    margin-bottom: 2%;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 23px;
-    color: #519DA6;
+#footer- #footer-container #footer-right #contact-us-box #footer-email #aeroday-mail-- {
+  padding-left: 60px;
+  margin-top: -28px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  width: 100%;
+  color: #519DA6;
 }
 
-#footer-fb {
-    position: relative;
-    float: right;
-    width: 28px;
-    height: 28px;
-    margin-right: 15px;
+#footer- #footer-container #footer-right #contact-us-box #footer-location {
+  padding-left: 35px;
+  padding-top: 5%;
+  width: 85%;
 }
 
-#footer-ig {
-    position: relative;
-    float: right;
-    width: 28px;
-    height: 28px;
-    margin-right: 15px;
-    margin-top: 50%;
+#footer- #footer-container #footer-right #contact-us-box #footer-location #insat-location-- {
+  padding-left: 54px;
+  margin-top: -34px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  width: 100%;
+  color: #519DA6;
 }
 
-#footer-li{
-    position: relative;
-    float: right;
-    width: 28px;
-    height: 28px;
-    margin-right: 15px;
-    margin-top: 55%;
+#footer- #footer-container #footer-right #contact-us-box #footer-phone {
+  padding-left: 35px;
+  padding-top: 3%;
+  width: 97%;
 }
 
-#footer-description-container {
-    position: relative;
-    float: left;
-    width: 70%;
+#footer- #footer-container #footer-right #contact-us-box #footer-phone #aeroday-phones {
+  padding-left: 53px;
+  margin-top: -34px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  width: 100%;
+  color: #519DA6;
 }
 
-#footer-social-onside {
-    position: relative;
-    float: right;  
-    top: 20%;
-    right: 5%;
+#footer- #footer-container #footer-right #contact-us-box #footer-phone #aeroday-phones div {
+  padding-left: 0px;
+  margin-top: 10px;
 }
 
-#footer-contact-description {
-    position: relative;
-    float: left;
-    width: 80%;
-    top: 14%;
-    left: 2%;
+#footer- #footer-social {
+  position: relative;
+  top: -200px;
+  float: right;
+  padding-right: 10px;
 }
 
-#footer-copyright {
-    position:fixed;
-    width: 100%;
-    height: 50px;
-    background-color: black;
-    bottom: 0;left: 0;
+#footer- #footer-social #fb--- {
+  padding-top: 10px;
 }
 
-
-#footer-copyright p{
-    color: white;
-    text-align: center;
+#footer- #footer-social #in--- {
+  padding-top: 10px;
 }
+
+#footer- #footer-social #li--- {
+  padding-top: 10px;
+}
+
+#footer- #footer-copyright {
+  position: relative;
+  width: 100%;
+  background-color: black;
+  padding: auto;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 1100px) {
+  #footer-right, #--separator--, #footer-left {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  #aeroday-mail-- {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+}
+/*# sourceMappingURL=footerStyles.css.map */
