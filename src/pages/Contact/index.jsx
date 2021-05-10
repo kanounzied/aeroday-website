@@ -3,15 +3,9 @@ import {Component} from "react/cjs/react.production.min";
 import $ from 'jquery'
 import './contact.scss'
 import './form.scss'
+import plane_img from '../../styles/images/black-plane-icon1.png';
 
 class Contact extends Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      plane_url: `${process.env.PUBLIC_URL}/assets/images/black-plane-icon1.png`,
-    };
-  }
 
   componentDidMount() {
     $('#contact').addClass('selected');
@@ -22,28 +16,35 @@ class Contact extends Component {
       <div className="main">
         <div class="container">
           <div className="right">
-            <input
-              type="text"
-              className="name"
-              placeholder="Nom & Prenom"
-            />
-            <input
-              type="text"
-              className="email"
-              placeholder="Email"
-            />
+            <span className="name input-outside">
+              <input
+                type="text"
+                className="input-inside"
+                placeholder="Nom & Prenom"
+              />
+              <span/>
+            </span>
+            <span className="email input-outside">
+              <input
+                type="text"
+                className="input-inside"
+                placeholder="Email"
+              />
+              <span/>
+            </span>
             <button className="send-btn" >
               ENVOYER
             </button>
           </div>
           <div className="left">
-            <textarea
-              className="msg"
-              placeholder="Votre message"
-            />
+              <textarea
+                className="msg"
+                placeholder="Votre message"
+              />
           </div>
-          <img src={this.state.plane_url} alt="plane" />
-
+        </div>
+        <div className="plane" >
+          <img src={plane_img} alt="plane"/>
         </div>
       </div>
     );

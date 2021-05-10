@@ -27,14 +27,13 @@
   flex-direction: column;
 }
 
-.name {
-  height: 2.5rem;
-  width: 15rem;
+
+.input {
+  margin-top: 2rem;
 }
 
+
 .email {
-  width: 15rem;
-  height: 2.5rem;
   margin-top: 3rem;
 }
 
@@ -47,7 +46,10 @@
 
 .msg {
   margin-left: 2rem;
-  height: 20rem;
-  width: 20rem;
+  height: 28rem;
+  width: 30rem;
 }
 
+.plane {
+  margin-left: 4rem;
+}
