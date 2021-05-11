@@ -1,0 +1,23 @@
+.member-card{
+    .member-image-container{
+       
+        img{
+            max-width: 100%;
+            width: 249px;
+        }
+    }
+    .member-description{
+        max-width: 100%;
+        width: 249px;
+        margin-top: 1%;
+        text-align: center;
+        .member-name{
+            color: var(--blue-aeroday);
+            
+        }
+        .member-occupation{
+            color: var(--red-aeroday);
+
+        }
+    }
+}

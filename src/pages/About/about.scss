@@ -1,0 +1,60 @@
+#about-us-body{
+    margin-top: 200px;
+    height: 1000px;
+    #about-us-title{
+        text-align: center;
+        margin-left: 4%;
+        margin-right: 4%;
+        h1{
+            border-radius: 30px;
+            color: black;
+            height: 118px;
+            background: white;
+            padding-top:37px;
+            font-style: normal;
+            font-weight: 1000;
+            color: #323A40;
+        }
+    }
+    #about-us-video-holder{
+        #about-us-video{
+                
+            position: relative;
+            text-align: center;
+            h2{
+                position: absolute;
+                
+                left: 5%;
+                font-weight: bolder;
+                color: var(--blue-aeroday);
+            }
+            #video{
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #about-us-video h2 {
+        font-size: 22px;
+        bottom: 8%;
+        left:2%;
+    }
+}
+@media screen and (max-width: 500px) {
+    #about-us-title h1{
+        font-size: 33px;
+        padding-top:44px;
+    }
+}
+@media screen and (min-width: 1001px) {
+    #about-us-video h2 {
+        font-size: 72px;
+        bottom: 20%;
+        left:8%;
+    }
+    #about-us-title h1{
+        
+    }
+}
