@@ -7,8 +7,6 @@ import { ReactComponent as Logo } from './Logo.svg';
 class Navbar extends Component {
 
     componentDidMount() {
-        var navItem = $(".nav-items")
-        console.log(navItem.width())
         $('.logo-svg g').attr('fill','#ffffff')
 
         $(window).scroll(function (){
@@ -32,7 +30,7 @@ class Navbar extends Component {
         return (
             <>
                 <div className="navbar">
-                    <a href="/" className={"logo"}><Logo className="logo-svg" height="auto" width="190px" color={"#ffffff"}/>
+                    <a href="/" className={"logo"}><Logo className="logo-svg" height="auto" width="190px" />
                         {/*<img src={process.env.PUBLIC_URL + "/assests/images/LogoWhite.png"}*/}
                         {/*                                alt="aeroday logo" style={brandStyle}/>*/}
                     </a>
