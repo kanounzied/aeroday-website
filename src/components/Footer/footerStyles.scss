@@ -1,6 +1,6 @@
 
 #footer- {
-  position: absolute;
+  //position: absolute;
   bottom: 0;
   background-color: #131618;
   width: 100%;
@@ -59,6 +59,7 @@
         }
 
         #footer-email {
+          padding-top: 2%;
           svg{
             margin-right: 5px;
           }

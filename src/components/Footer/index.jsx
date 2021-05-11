@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 import './footerStyles.scss';
-import { ReactComponent as Logo } from '../Navbar/Logo.svg';
+import { ReactComponent as Logo } from '../../styles/images/Logo.svg';
 import $ from "jquery";
 
 export default function Footer() {
