@@ -25,7 +25,7 @@ export default function Navbar() {
         return (
             <>
                 <div className="navbar">
-                    <a href="/" className={"logo"}><Logo className="logo-svg" height="auto" width="190px" color={"#ffffff"}/>
+                    <a href="/" className={"logo"}><Logo className="logo-svg" height="auto" width="190px" />
                         {/*<img src={process.env.PUBLIC_URL + "/assests/images/LogoWhite.png"}*/}
                         {/*                                alt="aeroday logo" style={brandStyle}/>*/}
                     </a>

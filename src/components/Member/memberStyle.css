@@ -1,0 +1,94 @@
+
+@font-face {
+    font-family: Assistant;
+    src: url(Assistant-VariableFont_wght.ttf);
+}
+body{
+	font-family: 	Assistant;
+}
+.memberCard {
+	position: absolute;
+	width: 242px;
+    height: 333px;
+}
+
+
+.memberDescription{
+
+	position: absolute;
+	width: 207px;
+	height: 83px;
+	left: 21px;
+	top: 250px;
+	text-align: 	center;
+}
+
+
+.memberOccupation {
+	position: absolute;
+	width: 145px;
+	height: 32px;
+	left: 31px;
+	top: 51px;
+	text-align: 	center;	
+	font-style: normal;
+	font-weight: normal;
+	font-size: 28px;
+	line-height: 32px;
+
+	color: #D95252;
+}
+
+
+.memberName{
+
+	position: absolute;
+	width: 207px;
+	height: 31px;
+	left: 0px;
+	top: 0px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 31px;
+
+	color: #519DA6;
+}
+
+.memberImageContainer{
+	position: absolute;
+	width: 242px;
+	height: 242px;
+
+	border-radius: 50%;
+
+	background: linear-gradient(120deg, rgba(217,82,82,1) 20%, rgba(81,157,166,1) 80%), 
+    linear-gradient(120deg, rgba(217,82,82,1) 20%, rgba(81,157,166,1) 80%);
+  	background-origin: padding-box, border-box;
+ 	background-repeat: no-repeat; /* this is important */
+ 	border: 3px solid transparent;
+
+
+
+}
+
+.memberImage {
+
+	position: absolute;
+	width: 242px;
+	height: 242px;
+	border-radius: 50%;
+
+
+}
+.foreground_m{
+
+	position: absolute;
+	width: 242px;
+	height: 242px;
+	border-radius: 50%;
+
+}
+img{
+	border-radius: 	100%;
+}
