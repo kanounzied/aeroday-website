@@ -7,11 +7,16 @@ export default function Intro() {
     const desc2 = useRef();
 
     useEffect(() => {
+        var heigh;
         if (desc1.current.clientHeight >= desc2.current.clientHeight){
-            desc2.current.style.height = desc1.current.clientHeight+"px"
+            heigh = desc1.current.clientHeight+"px"
+            desc1.current.style.height = heigh
+            desc2.current.style.height = heigh
         }
         else {
-            desc1.current.style.height = desc2.current.clientHeight+"px"
+            heigh = desc2.current.clientHeight+"px"
+            desc1.current.style.height = heigh
+            desc2.current.style.height = heigh
         }
         window.addEventListener('resize', function(event) {
             desc1.current.style.height = "unset";
