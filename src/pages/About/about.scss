@@ -1,18 +1,17 @@
 #about-us-body{
-    margin-top: 200px;
-    height: 1000px;
+    margin-top: 180px;
+    height: 100%;
     #about-us-title{
         text-align: center;
-        margin-left: 4%;
-        margin-right: 4%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 16%;
+        margin-top: 5%;
         h1{
-            border-radius: 30px;
             color: black;
-            height: 118px;
             background: white;
-            padding-top:37px;
             font-style: normal;
-            font-weight: 1000;
+            font-weight: 900;
             color: #323A40;
         }
     }
@@ -23,38 +22,90 @@
             text-align: center;
             h2{
                 position: absolute;
-                
-                left: 5%;
+                left: 2%;
                 font-weight: bolder;
-                color: var(--blue-aeroday);
+                color: var(--black-aeroday);
             }
             #video{
                 height: 100%;
             }
         }
     }
+    #about-us-description{
+        margin-bottom: 98px;
+        margin-top: 7%;
+        h2, h3{
+            font-weight: bold;
+            text-align: center;
+        }
+        h2{
+            color: var(--red-aeroday);
+            font-size: 35px;
+        } 
+        
+        #paragraph--p-{
+            font-weight: bold;
+            font-size: 16px;
+            margin-right: 17%;
+            margin-left: 17%;
+            margin-bottom: 8%;
+        }
+    }
+    #members-body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        #vp-container{
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center ; 
+        }
+        #members-container{
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center ; 
+            max-width: 1445px ;
+            height: auto;
+        }
+    }
 }
 
 @media screen and (max-width: 1000px) {
-    #about-us-video h2 {
+    #about-us-video h2{
         font-size: 22px;
         bottom: 8%;
         left:2%;
     }
 }
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 999px) {
     #about-us-title h1{
-        font-size: 33px;
-        padding-top:44px;
+        font-size: 28px;
+        padding-top:15px;
+        margin-left: -10%;
+        margin-right: -10%;
+        height: 60px;
+        border-radius: 20px;
     }
 }
+@media screen and (min-width: 1000px) {
+    #about-us-title h1{
+        padding-top:30px;
+        height: 140px;
+        border-radius: 36px;
+        font-size: 72px;
+    }
+}
+
+
 @media screen and (min-width: 1001px) {
     #about-us-video h2 {
         font-size: 72px;
-        bottom: 20%;
+        bottom: 8%;
         left:8%;
-    }
-    #about-us-title h1{
-        
+        //chlafen was here
     }
 }
