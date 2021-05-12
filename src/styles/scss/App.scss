@@ -65,6 +65,7 @@
     background-color: var(--white-aeroday);
     color: var(--dark-color);
     height: clamp(50px, 10vh, 100px);
+    border-bottom: 1px solid var(--dark-color);
 
     .logo .logo-svg{
       width: 150px!important;
