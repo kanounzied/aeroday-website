@@ -16,8 +16,6 @@ ReactDOM.render(
 
 
 if(document.getElementById('preloader')){
-  window.history.scrollRestoration = "manual"
-
   function whichAnimationEvent(){
     var t,
       el = document.createElement("fakeelement");
