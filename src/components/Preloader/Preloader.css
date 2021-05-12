@@ -5,116 +5,89 @@
 	color:black;
 }
 
-@keyframes enterScreen {
-  from {left: -10%;}
-  to {left: 50%;}
-}
-
-@keyframes leaveScreen {
-  from {left: 50%;}
-  to {
-      left: 120%;
-    }
-}
-
-@keyframes showPage {
-	to {left: 200%; margin-left: 150%; transform: skewX(53deg);}
-
-}
-
-@keyframes hideLoader {
-    to{
-        height: 0;
-        width: 0;
-    }
-}
-
-#loader{
+#preloader{
+	z-index: 10;
     overflow: hidden;
 	position: absolute;
-	top: 0;
+	top: -120px;
 	width: 100%;
 	height: 100%;
-	animation: showPage 1s 3s, hideLoader 0s 4s;
+	animation: showPage 1s 3s;
 	background: linear-gradient(to right, silver, teal);
 	animation-fill-mode: forwards;
 }
-#content{
-	top: 0;
-	background-color: yellow;
+
+.jetdiv {
+	position: absolute;
+	top: 50vh;
+	margin-left: -50px;
+	left: 50%;
+	animation: enterScreen 1s, speeder 0.4s linear infinite, leaveScreen 1s 3s;
+}
+.jetdiv > span {
+	height: 5px;
+	width: 35px;
+	background: #000;
+	position: absolute;
+	top: 15px;
+	border-radius: 2px 10px 1px 0;
 }
 
- .body {
-	 position: absolute;
-	 top: 50%;
-	 margin-left: -50px;
-	 left: 50%;
-	 animation: enterScreen 1s, speeder 0.4s linear infinite, leaveScreen 1s 3s;
+.jetdiv > span > span:nth-child(1), .jetdiv > span > span:nth-child(2), .jetdiv > span > span:nth-child(3), .jetdiv > span > span:nth-child(4) {
+	width: 30px;
+	height: 1px;
+	background: #000;
+	position: absolute;
+	animation: fazer1 0.2s linear infinite;
 }
- .body > span {
-	 height: 5px;
-	 width: 35px;
-	 background: #000;
-	 position: absolute;
-	 top: 15px;
-	 border-radius: 2px 10px 1px 0;
+.jetdiv > span > span:nth-child(2) {
+	top: 3px;
+	animation: fazer2 0.4s linear infinite;
 }
-
- .body > span > span:nth-child(1), .body > span > span:nth-child(2), .body > span > span:nth-child(3), .body > span > span:nth-child(4) {
-	 width: 30px;
-	 height: 1px;
-	 background: #000;
-	 position: absolute;
-	 animation: fazer1 0.2s linear infinite;
+.jetdiv > span > span:nth-child(3) {
+	top: 1px;
+	animation: fazer3 0.4s linear infinite;
+	animation-delay: -1s;
 }
- .body > span > span:nth-child(2) {
-	 top: 3px;
-	 animation: fazer2 0.4s linear infinite;
+.jetdiv > span > span:nth-child(4) {
+	top: 4px;
+	animation: fazer4 1s linear infinite;
+	animation-delay: -1s;
 }
- .body > span > span:nth-child(3) {
-	 top: 1px;
-	 animation: fazer3 0.4s linear infinite;
-	 animation-delay: -1s;
-}
- .body > span > span:nth-child(4) {
-	 top: 4px;
-	 animation: fazer4 1s linear infinite;
-	 animation-delay: -1s;
-}
- @keyframes fazer1 {
-	 0% {
-		 left: 0;
+@keyframes fazer1 {
+	0% {
+		left: 0;
 	}
-	 100% {
-		 left: -80px;
-		 opacity: 0;
+	100% {
+		left: -80px;
+		opacity: 0;
 	}
 }
- @keyframes fazer2 {
-	 0% {
-		 left: 0;
+@keyframes fazer2 {
+	0% {
+		left: 0;
 	}
-	 100% {
-		 left: -100px;
-		 opacity: 0;
-	}
-}
- @keyframes fazer3 {
-	 0% {
-		 left: 0;
-	}
-	 100% {
-		 left: -50px;
-		 opacity: 0;
+	100% {
+		left: -100px;
+		opacity: 0;
 	}
 }
- @keyframes fazer4 {
-	 0% {
-		 left: 0;
+@keyframes fazer3 {
+	0% {
+		left: 0;
 	}
-	 100% {
-		 left: -150px;
-		 opacity: 0;
+	100% {
+		left: -50px;
+		opacity: 0;
+	}
+}
+@keyframes fazer4 {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: -150px;
+		opacity: 0;
 	}
 }
  @keyframes speeder {
@@ -218,4 +191,30 @@
 		 opacity: 0;
 	}
 }
- 
+
+@keyframes enterScreen {
+	from {left: -10%;}
+	to {left: 50%;}
+}
+  
+@keyframes leaveScreen {
+	from {left: 50%;}
+	to {
+		left: 120%;
+	}
+}
+  
+@keyframes showPage {
+	to {
+		left: 200%; 
+		margin-left: 150%; 
+		transform: skewX(53deg);
+	}
+}
+  
+@keyframes hideLoader {
+	to{
+		height: 0;
+		width: 0;
+	}
+}

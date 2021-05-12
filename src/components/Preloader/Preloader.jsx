@@ -3,24 +3,22 @@ import './Preloader.css'
 
 function Preloader(){
     return (
-        
-        <div id='loader'>
-			<div class="body">
-			<span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-			  </span>
-			  <i class="fa fa-fighter-jet"></i>
+        <div id='preloader'>
+			<div class="jetdiv">
+				<span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+				<i class="fa fa-fighter-jet"></i>
 			</div>
 
-
 			<div class="longfazers">
-			  <span></span>
-			  <span></span>
-			  <span></span>
-			  <span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
 			</div>
 		</div>
     );
