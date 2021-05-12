@@ -5,6 +5,7 @@
 }
 
 .navbar{
+  z-index: 1 !important; 
   background-color: transparent;
   color: var(--white-aeroday);
   height: clamp(80px, 20vh, 120px);
