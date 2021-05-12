@@ -1,19 +1,18 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./home.css";
 import {Component} from "react/cjs/react.production.min";
 import $ from 'jquery'
+import Intro from "../../components/Intro"
 
-class Home extends Component {
+export default function Home() {
 
-    componentDidMount() {
+    useEffect(() => {
         $('#home').addClass('selected');
-    }
+    });
 
-    render() {
         return (
-            <div className="home">Aeroday Home page</div>
+            <div className="home">
+                <Intro />
+            </div>
         );
-    }
 }
-
-export default Home
