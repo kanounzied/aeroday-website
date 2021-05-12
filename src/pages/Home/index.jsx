@@ -1,8 +1,10 @@
 import React, {useEffect} from "react";
 import "./home.css";
-import {Component} from "react/cjs/react.production.min";
 import $ from 'jquery'
 import Intro from "../../components/Intro"
+import AeroButton from "../../components/AeroButton";
+import TitleBanner from "../../components/TitleBanner";
+import AeroForm from "../../components/Formulaire";
 
 export default function Home() {
 
@@ -13,6 +15,12 @@ export default function Home() {
         return (
             <div className="home">
                 <Intro />
+
+                {/*<div className="container-for-test">*/}
+                {/*    <TitleBanner text={"small components place"} />*/}
+                {/*    <AeroForm />*/}
+                {/*    <AeroButton path={"/"} text={"formulaire"}/>*/}
+                {/*</div>*/}
             </div>
         );
 }

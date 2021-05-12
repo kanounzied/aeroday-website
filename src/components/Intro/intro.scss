@@ -23,6 +23,7 @@
     display: inline-block;
 
     #desc2, #desc1{
+      overflow: hidden;
       width: 40%;
       padding: 20px 30px;
       margin: 17px 0;
@@ -54,9 +55,15 @@
 }
 
 @media screen and (max-width: 900px){
-  .acceuil .description{
-    #desc2, #desc1{
-      width: 80%;
+  .acceuil {
+    .title{
+      padding: 30px 0;
+      margin: 15vh 0;
+    }
+    .description {
+      #desc2, #desc1 {
+        width: 80%;
+      }
     }
   }
 }
