@@ -4,11 +4,32 @@ import $ from 'jquery'
 import './contact.scss'
 import './form.scss'
 import plane_img from '../../styles/images/black-plane-icon1.png';
+import {Animated} from "react-animated-css";
+
 
 class Contact extends Component {
 
   componentDidMount() {
     $('#contact').addClass('selected');
+  }
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      planeAnimation: true,
+    };
+    this.handleSend = this.handleSend.bind(this);
+  }
+
+  handleSend() {
+    this.setState(state => ({
+      planeAnimation: false,
+    }))
+    setTimeout(() => {
+      this.setState(state => ({
+        planeAnimation: true,
+      }))
+    }, 2000)
   }
 
   render() {
@@ -33,7 +54,10 @@ class Contact extends Component {
               <span/>
             </span>
             <div className="input-outside send-btn">
-              <button className="btn-inside" >
+              <button
+                onClick={this.handleSend}
+                className="btn-inside"
+              >
                 ENVOYER
               </button>
               <span/>
@@ -49,9 +73,20 @@ class Contact extends Component {
             </div>
           </div>
         </div>
-        <div className="plane" >
-          <img className="plane-inside" src={plane_img} alt="plane"/>
-        </div>
+
+        <Animated
+          animationIn="fadeInLeft"
+          animationOut="zoomOutRight"
+          animationInDuration={1000}
+          animationOutDuration={1000}
+          isVisible={this.state.planeAnimation}
+        >
+          <div className="plane" >
+            <img className="plane-inside" src={plane_img} alt="plane"/>
+          </div>
+        </Animated>
+
+
       </div>
     );
   }
