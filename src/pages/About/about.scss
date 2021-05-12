@@ -1,0 +1,100 @@
+#about-us-body{
+    margin-top: 180px;
+    height: 100%;
+    contain: content;
+    #about-us-video-holder{
+        #about-us-video{
+
+            position: relative;
+            text-align: center;
+            h2{
+                position: absolute;
+                left: 2%;
+                font-weight: bolder;
+                color: var(--black-aeroday);
+            }
+            #video{
+                box-shadow: 3px 19px 37px 0px rgba(0, 20, 22, 0.56);
+            }
+        }
+    }
+    #about-us-description{
+        margin-bottom: 98px;
+        margin-top: 7%;
+        h2, h3{
+            font-weight: bold;
+            text-align: center;
+        }
+        h2{
+            color: var(--red-aeroday);
+            font-size: 35px;
+        } 
+        
+        #paragraph--p-{
+            font-weight: bold;
+            font-size: 16px;
+            margin-right: 17%;
+            margin-left: 17%;
+            margin-bottom: 8%;
+        }
+    }
+    #members-body{
+        margin-bottom: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        #vp-container{
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-evenly ;
+            width: 100%;
+        }
+        #members-container{
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-evenly ;
+            max-width: 1445px ;
+            height: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #about-us-video h2{
+        font-size: 22px;
+        bottom: 8%;
+        left:2%;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    #about-us-title h1{
+        font-size: 28px;
+        padding-top:15px;
+        margin-left: -10%;
+        margin-right: -10%;
+        height: 60px;
+        border-radius: 20px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    #about-us-title h1{
+        padding-top:30px;
+        height: 140px;
+        border-radius: 36px;
+        font-size: 72px;
+    }
+}
+
+
+@media screen and (min-width: 1001px) {
+    #about-us-video h2 {
+        font-size: 72px;
+        bottom: 8%;
+        left:8%;
+        //chlafen was here
+    }
+}

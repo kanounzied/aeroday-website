@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import "../../App.css";
 import $ from 'jquery';
-import { ReactComponent as Logo } from './Logo.svg';
+import { ReactComponent as Logo } from '../../styles/images/Logo.svg';
 
 export default function Navbar() {
     useEffect(() => {
@@ -25,7 +25,7 @@ export default function Navbar() {
         return (
             <>
                 <div className="navbar">
-                    <a href="/" className={"logo"}><Logo className="logo-svg" height="auto" width="190px" color={"#ffffff"}/>
+                    <a href="/" className={"logo"}><Logo className="logo-svg" height="auto" width="190px" />
                         {/*<img src={process.env.PUBLIC_URL + "/assests/images/LogoWhite.png"}*/}
                         {/*                                alt="aeroday logo" style={brandStyle}/>*/}
                     </a>
