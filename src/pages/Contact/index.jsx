@@ -15,7 +15,7 @@ class Contact extends Component {
     return (
       <div className="main">
         <div class="container">
-          <div className="right">
+          <div className="left">
             <span className="name input-outside">
               <input
                 type="text"
@@ -32,19 +32,25 @@ class Contact extends Component {
               />
               <span/>
             </span>
-            <button className="send-btn" >
-              ENVOYER
-            </button>
+            <div className="input-outside send-btn">
+              <button className="btn-inside" >
+                ENVOYER
+              </button>
+              <span/>
+            </div>
           </div>
-          <div className="left">
+          <div className="right">
+            <div className="input-outside msg">
               <textarea
-                className="msg"
+                className="msg-inside input-inside"
                 placeholder="Votre message"
               />
+              <span/>
+            </div>
           </div>
         </div>
         <div className="plane" >
-          <img src={plane_img} alt="plane"/>
+          <img className="plane-inside" src={plane_img} alt="plane"/>
         </div>
       </div>
     );

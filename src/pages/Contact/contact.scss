@@ -1,6 +1,6 @@
 .main {
   margin-top: clamp(80px, 20vh, 120px);
-  height: 30rem;
+  height: 80vh;
   display: flex;
   align-items: center;
   //justify-content: center;
@@ -9,47 +9,78 @@
   margin-right: 0;
   margin-left: 2rem;
   padding: 0;
-  height: 20rem;
-  width: auto;
+  height: 25rem;
+  width: 60%;
   display: flex;
   //align-items: start;
   justify-content: flex-start;
 }
 
-.right {
-  display: flex;
-  flex-direction: column;
-}
-
 .left {
   display: flex;
+  width: 40%;
+  flex-direction: column;
+}
+
+.right {
+  display: flex;
   height: 100%;
+  width: 60%;
   flex-direction: column;
 }
 
 
-.input {
-  margin-top: 2rem;
+.input-inside {
+  height: 2.5rem;
+  //width: 20rem;
+  background-color: #32444a;
+  text-align: center;
+  width: 100%;
 }
 
+
+.name {
+  border-radius: 9999em;
+}
 
 .email {
   margin-top: 3rem;
+  border-radius: 9999em;
 }
 
 .send-btn {
-  width: 7.5rem;
-  height: 2.5rem;
+  border-radius: 6px;
   margin-top: 7rem;
+  width: 50%;
   align-self: center;
 }
 
+.btn-inside {
+  //height: 2.5rem;
+
+  width: 100%;
+  background-color: #32444a;
+  color: #519da6;
+  text-align: center;
+}
+
 .msg {
+  border-radius: 20px;
+  width: 100%;
+  height:100%;
   margin-left: 2rem;
-  height: 28rem;
-  width: 30rem;
+}
+
+.msg-inside {
+  width: 100%;
+  height: 100%;
+  //width: 30rem;
 }
 
 .plane {
   margin-left: 4rem;
+}
+
+.plane-inside {
+  width: 100%;
 }
