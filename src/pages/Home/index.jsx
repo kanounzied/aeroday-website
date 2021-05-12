@@ -12,12 +12,8 @@ export default function Home() {
     });
 
         return (
-            <div>
-                <Preloader />
-                
-                <div className="home">
-                    <Intro />
-                </div>
+            <div className="home">
+                <Intro />
             </div>
         );
             

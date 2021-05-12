@@ -8,12 +8,15 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Footer from "./components/Footer/index";
 import Navbar from "./components/Navbar/Navbar"
+import Preloader from "./components/Preloader/Preloader"
 
 
 function App() {
 
   return (
-    <Router>
+    <Router> 
+      <Preloader />
+      
       <Navbar />
       <Switch>
         <Route exact path="/">
