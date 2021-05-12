@@ -36,5 +36,5 @@ body {
     color: var(--white-aeroday);
     background-color: var(--dark-color);
     height: 2000px;
-    position: relative;
+    /*position: relative;*/
 }
