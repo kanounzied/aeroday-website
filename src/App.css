@@ -1,0 +1,48 @@
+:root{
+    --dark-color: #23292E;
+    --blue-aeroday: #519da6;
+    --red-aeroday: #d95252;
+    --white-aeroday: #f2f2f2;
+    --yellow-aeroday: #d9a84e;
+    --mobile-size: 900px;
+}
+
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('styles/fonts/nexa/nexa_bold-webfont.woff2') format('woff2'),
+    url('styles/fonts/nexa/nexa_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nexa_lightregular';
+    src: url('styles/fonts/nexa/nexa_light-webfont.woff2') format('woff2'),
+    url('styles/fonts/nexa/nexa_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'nexa_lightregular','Assistant', sans-serif;
+    letter-spacing: 1.3px;
+}
+
+body {
+    color: var(--white-aeroday);
+    background-color: var(--dark-color);
+    height: 2000px;
+    position: relative;
+    background-image: url('styles/scss/wave-backround.png');
+    background-blend-mode: difference;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: calc(max(120vw,170vh));
+}

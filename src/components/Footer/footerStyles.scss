@@ -1,0 +1,150 @@
+
+#footer- {
+ //position: absolute;
+ // bottom: 0;
+  background-color: #131618;
+  width: 100%;
+  height: auto;
+
+  #footer-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    #footer-left {
+      width: 50%;
+      padding-top: 40px;
+      margin-right: 50px;
+
+      div {
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        color: white;
+        margin-left: 40px;
+        text-align: justify;
+      }
+    }
+
+    #footer-right {
+      width: 40%;
+      margin-top: 40px;
+      margin-left: 40px;
+
+      h2 {
+        font-weight: bold;
+        margin-bottom: 1.7rem;
+      }
+
+      #contact-us-box {
+        width: 100%;
+        height: auto;
+        padding: 15px 0;
+        background: #272B2E;
+        border-radius: 29px 0px 0px 29px;
+        position: relative;
+        font-size: 14px;
+
+        #footer-email, #footer-location, #footer-phone {
+          padding-left: 30px;
+          padding-top: 5%;
+          display: flex;
+          width: 85%;
+        }
+
+        #footer-email {
+          svg{
+            margin-right: 5px;
+          }
+
+          #aeroday-mail-- {
+            padding-left: 30px;
+            font-style: normal;
+            font-weight: bold;
+            width: 100%;
+            color: #519DA6;
+          }
+        }
+
+        #footer-location {
+          #insat-location-- {
+            padding-left: 40px;
+            font-style: normal;
+            font-weight: bold;
+            width: 100%;
+            color: #519DA6;
+          }
+        }
+
+        #footer-phone {
+          svg{
+            margin-left: 5px;
+          }
+
+          #aeroday-phones {
+            padding-left: 30px;
+            font-style: normal;
+            font-weight: bold;
+            width: 100%;
+            color: #519DA6;
+            display: flex;
+            flex-wrap: wrap;
+
+            span {
+              margin-left: 5px;
+              i {
+                color: var(--red-aeroday);
+                font-style: normal;
+              }
+            }
+          }
+        }
+
+        #footer-social {
+          position: absolute;
+          right: 10px;
+          top: 25px;
+          padding-right: 10px;
+
+          #fb--- {
+            padding-top: 10px;
+          }
+
+          #in--- {
+            padding-top: 10px;
+          }
+
+          #li--- {
+            padding-top: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  #footer-copyright {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 900px) {
+  #footer-right, #--separator--, #footer-left {
+    flex: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  #aeroday-mail-- {
+    flex: 100%;
+  }
+}
