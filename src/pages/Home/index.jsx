@@ -16,11 +16,11 @@ export default function Home() {
             <div className="home">
                 <Intro />
 
-                {/*<div className="container-for-test">*/}
-                {/*    <TitleBanner text={"small components place"} />*/}
-                {/*    <AeroForm />*/}
-                {/*    <AeroButton path={"/"} text={"formulaire"}/>*/}
-                {/*</div>*/}
+                <div className="container-for-test">
+                    <TitleBanner text={"small components place"} />
+                    <AeroForm />
+                    <AeroButton path={"/"} text={"formulaire"}/>
+                </div>
             </div>
         );
 }
