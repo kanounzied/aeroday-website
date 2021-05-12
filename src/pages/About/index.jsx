@@ -46,49 +46,57 @@ class About extends Component {
                     </div>
                     <div id="members-container">
 
-                            <MemberCard memberName="Asma Hosni" memberOccupation="RESP. AUDIOVISUEL"/>
-                        
-                            <MemberCard memberName="Asma Jebari" memberOccupation="RESP. SPONSORING"/>
-                            
-                            <MemberCard memberName="Zied Kanoun" memberOccupation="WEBMASTER"/>
-                        
-                            <MemberCard memberName="Baha Msallem" memberOccupation="RESP. MULTIMEDIA"/>
-                        
-                            <MemberCard memberName="Eya Ben Aziza" memberOccupation="RESP. AEROCHALLENGE"/>
-                        
-                            <MemberCard memberName="Farah Gharbi" memberOccupation="TRESORIERE"/>
-                        
-                            <MemberCard memberName="Ghassen Abida" memberOccupation="RESP. VIDEOGRAPHIE PAR DRONE"/>
-                        
-                            <MemberCard memberName="Haizem Dahech" memberOccupation="RESP. AEROMODELISME"/>
-                        
-                            <MemberCard memberName="Hana Ben Asker" memberOccupation="RESP. MEDIA ON"/>
-                        
-                            <MemberCard memberName="Hazar Boughanmi" memberOccupation="RESSOURCES HUMAINES"/>
-                        
-                            <MemberCard memberName="Ikram Rejeb" memberOccupation="RESP. AEROENTREPRENEUR"/>
-                        
-                            <MemberCard memberName="Ines Rouached" memberOccupation="RESP. DECORATION"/>
-                        
-                            <MemberCard memberName="Malek Ben Hmida" memberOccupation="RESP. EXPOSITIONS"/>
-                        
-                            
-                            <MemberCard memberName="Mohamed Yassine Brahem" memberOccupation="RESP. CAO"/>
-                        
-                            <MemberCard memberName="Nour Cheour" memberOccupation="RESP. AIRSHOW"/>
-                        
-                            <MemberCard memberName="Nour Najjar" memberOccupation="RESP. MEDIA OFF"/>
-                        
-                            <MemberCard memberName="Bouhour Dhouib" memberOccupation="RESP. ATELIERS NOVICES"/>
-                        
-                            <MemberCard memberName="Nourchene Bargaoui" memberOccupation="AMBASSADRICE"/>
+                        {/*Challenges*/}
 
-                            <MemberCard memberName="Ranim Saidi" memberOccupation="SECRETAIRE"/>
+                        <MemberCard memberName="Haizem Dahech" memberOccupation="RESP. AEROMODELISME"/>
+
+                        <MemberCard memberName="Eya Ben Aziza" memberOccupation="RESP. AEROCHALLENGE"/>
+
+                        <MemberCard memberName="Mohamed Yassine Brahem" memberOccupation="RESP. CAO"/>
+
+                        <MemberCard memberName="Ikram Rejeb" memberOccupation="RESP. AEROENTREPRENEUR"/>
+
+                        <MemberCard memberName="Ghassen Abida" memberOccupation="RESP. VIDEOGRAPHIE PAR DRONE"/>
+
+                        {/*Axes*/}
+
+                        <MemberCard memberName="Nour Cheour" memberOccupation="RESP. AIRSHOW"/>
+
+                        <MemberCard memberName="Nourchene Bargaoui" memberOccupation="AMBASSADRICE"/>
+
+                        <MemberCard memberName="Aicha Mejlissi" memberOccupation="RESP. AEROSPACE"/>
+
+                        <MemberCard memberName="Malek Ben Hmida" memberOccupation="RESP. EXPOSITIONS"/>
+
+                        <MemberCard memberName="Bouhour Dhouib" memberOccupation="RESP. ATELIERS NOVICES"/>
+
+                        {/*Media*/}
+
+                        <MemberCard memberName="Hana Ben Asker" memberOccupation="RESP. MEDIA ON"/>
+
+                        <MemberCard memberName="Nour Najjar" memberOccupation="RESP. MEDIA OFF"/>
+
+                        <MemberCard memberName="Asma Hosni" memberOccupation="RESP. AUDIOVISUEL"/>
+
+                        <MemberCard memberName="Zied Kanoun" memberOccupation="WEBMASTER"/>
+
+                        <MemberCard memberName="Baha Msallem" memberOccupation="RESP. MULTIMEDIA"/>
+
+                        {/*Coullisses*/}
+
+                        <MemberCard memberName="Farah Gharbi" memberOccupation="TRESORIERE"/>
+
+                        <MemberCard memberName="Asma Jebari" memberOccupation="RESP. SPONSORING"/>
+
+                        <MemberCard memberName="Tasnim Dakhli" memberOccupation="RESP. ORGANISATION"/>
+
+                        <MemberCard memberName="Ranim Saidi" memberOccupation="SECRETAIRE"/>
+
+                        <MemberCard memberName="Ines Rouached" memberOccupation="RESP. DECORATION"/>
                         
-                            <MemberCard memberName="Tasnim Dakhli" memberOccupation="RESP. ORGANISATION"/>
-                        
-                            <MemberCard memberName="Aicha Mejlissi" memberOccupation="RESP. AEROSPACE"/>
-                        
+
+                        <MemberCard memberName="Hazar Boughanmi" memberOccupation="RESSOURCES HUMAINES"/>
+
 
 
                     </div>
