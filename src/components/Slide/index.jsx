@@ -44,7 +44,6 @@ export default class Slide extends Component {
     };
 
     const cardsContainerEl = $(".cards__wrapper");
-    const appBgContainerEl = $(".app__bg");
 
     const cardInfosContainerEl = $(".info__wrapper");
 
