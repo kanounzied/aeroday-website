@@ -1,23 +1,11 @@
 .input-outside {
-	// needs to be relative so the :focus span is positioned correctly
 	position:relative;
-	
-	// bigger font size for demo purposes
-	font-size: 1.5em;
-	
-	// the border gradient
-	//background: linear-gradient(21deg, #10abff, #1beabd);
+	font-size: 1.2em;
+	//border background
     background: #519da6;
-    //background: rgba(81, 157, 166);
-	
-	
 	// the width of the input border
-	padding: 1px;
-
-	// we want inline fields by default
+	padding: 2px;
 	display: inline-block;
-	
-	
 	// style of the actual input field
 	*:not(span) {
 		position: relative;
@@ -27,10 +15,11 @@
 		border: none;
 		outline: none;
 		padding: 0 .325em;
-		z-index: 1; // needs to be above the :focus span
 		
-		// summon fancy shadow styles when focussed
+		// shadow when focused
 		&:focus + span {
+			//needs to be below the field
+			z-index: -1;
 			opacity: 1;
 			transform: scale(1);
 		}
@@ -38,13 +27,12 @@
 	
 	// we don't animate box-shadow directly as that can't be done on the GPU, only animate opacity and transform for high performance animations.
 	span {
-		
 		transform: scale(.993, .94); // scale it down just a little bit
 		transition: transform .5s, opacity .25s;
 		opacity: 0; // is hidden by default
 		
 		position:absolute;
-		z-index: 0; // needs to be below the field (would block input otherwise)
+		z-index: -1; // needs to be below the field (would block input otherwise)
 		margin:4px; // a bit bigger than .input padding, this prevents background color pixels shining through
 		left:0;
 		top:0;
@@ -61,9 +49,3 @@
 	}
 	
 }
-/*input {
-    font-family: inherit;
-    line-height:inherit;
-    color:#2e3750;
-    min-width:12em;
-}*/

@@ -1,86 +1,102 @@
-.main {
+
+.main-contact {
   margin-top: clamp(80px, 20vh, 120px);
   height: 80vh;
   display: flex;
   align-items: center;
   //justify-content: center;
+  overflow: hidden;
 }
-.container {
-  margin-right: 0;
-  margin-left: 2rem;
-  padding: 0;
-  height: 25rem;
-  width: 60%;
+.name-email {
   display: flex;
-  //align-items: start;
-  justify-content: flex-start;
-}
-
-.left {
-  display: flex;
-  width: 40%;
+  width: 25%;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-.right {
-  display: flex;
-  height: 100%;
-  width: 60%;
-  flex-direction: column;
-}
-
 
 .input-inside {
-  height: 2.5rem;
-  //width: 20rem;
+  height: 3rem;
   background-color: #32444a;
   text-align: center;
   width: 100%;
 }
 
-
 .name {
   border-radius: 9999em;
+  width: 80%;
 }
 
 .email {
   margin-top: 3rem;
+  width: 80%;
   border-radius: 9999em;
 }
 
 .send-btn {
-  border-radius: 6px;
-  margin-top: 7rem;
-  width: 50%;
-  align-self: center;
-}
-
-.btn-inside {
-  //height: 2.5rem;
-
-  width: 100%;
-  background-color: #32444a;
-  color: #519da6;
-  text-align: center;
+  margin-top: 4rem;
 }
 
 .msg {
   border-radius: 20px;
-  width: 100%;
-  height:100%;
+  width: 50%;
+  height: 25rem;
   margin-left: 2rem;
 }
 
 .msg-inside {
+  //padding: 40px;
   width: 100%;
   height: 100%;
+  resize: none;
   //width: 30rem;
+}
+
+.plane-animated {
+  width: 80%;
+}
+.msg-plane {
+  display: flex;
+  //flex-direction: column;
 }
 
 .plane {
   margin-left: 4rem;
+  display: flex;
+  align-items: center;
 }
 
 .plane-inside {
   width: 100%;
+}
+
+@media (max-width: 900px) {
+  .main-contact {
+    height: 160vh;
+    flex-direction: column;
+  }
+
+  .msg-plane {
+    flex-direction: column;
+  }
+  .name-email {
+    width: 80%;
+    flex-direction: column;
+  }
+  .send-btn {
+    margin-top: 2rem;
+  }
+  .msg{
+    margin-top: 1rem;
+    margin-left: 0;
+    width: 80%;
+  }
+  .msg-plane {
+    align-items: center;
+    justify-content: center;
+  }
+  .plane {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
 }
