@@ -5,6 +5,7 @@ import Intro from "../../components/Intro"
 import AeroButton from "../../components/AeroButton";
 import TitleBanner from "../../components/TitleBanner";
 import AeroForm from "../../components/Formulaire";
+import Slide from "../../components/Slide";
 
 export default function Home() {
 
