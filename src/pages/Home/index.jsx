@@ -17,6 +17,8 @@ export default function Home() {
             <div className="home">
                 <Intro />
 
+                <Slide />
+              
                 {/*<div className="container-for-test">*/}
                 {/*    <TitleBanner text={"small components place"} />*/}
                 {/*    <AeroForm />*/}

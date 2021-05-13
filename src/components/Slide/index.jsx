@@ -296,7 +296,7 @@ export default class Slide extends Component {
 
   render() {
     return (
-      <>
+      <div className="slide_wrapper">
         <div className="app">
           <div className="cardList">
             <button id="1" className="cardList__btn btn btn--left">
@@ -339,9 +339,9 @@ export default class Slide extends Component {
           </div>
 
           <div className="app__bg">
-            {this.state.cards.forEach((e) => (
+            {this.state.cards.map((e, i) => (
               <div className={`app__bg__image ${e.state}--image`}>
-                <img src={e.state} alt="" />
+                <img src={e.state} alt={i} />
               </div>
             ))}
           </div>
@@ -386,7 +386,7 @@ export default class Slide extends Component {
             />
           </symbol>
         </svg>
-      </>
+      </div>
     );
   }
 }
