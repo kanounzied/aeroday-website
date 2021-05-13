@@ -102,7 +102,7 @@ button {
 	height: auto;
 
 	&__btn {
-		--btn-size: 35px;
+		--btn-size: 60px;
 		width: var(--btn-size);
 		height: var(--btn-size);
 		position: absolute;
@@ -136,7 +136,7 @@ button {
 }
 
 .card {
-	--card-translateY-offset: 100vh;
+	--card-translateY-offset: 10%;
 
 	position: absolute;
 	left: 50%;

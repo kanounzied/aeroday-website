@@ -3,8 +3,40 @@ import "./slide.scss";
 import $ from "jquery";
 import gsap from "gsap";
 import imagesLoaded from "imagesloaded";
+import slide_1 from "./images/slide_1.jpg";
+import slide_2 from "./images/slide_2.jpg";
+import slide_3 from "./images/slide_3.jpg";
 
 export default class Slide extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      cards: [
+        {
+          src: slide_1,
+          name: "Tunisian Aeroday",
+          location: "October 11, 2019",
+          description: "#Aeroday20 is recruiting ! ",
+          state: "current",
+        },
+        {
+          src: slide_2,
+          name: "DEVchallenge",
+          location: "April 27, 2019",
+          description: "Le DEVchallenge a commencé cet après midi !",
+          state: "next",
+        },
+        {
+          src: slide_3,
+          name: "Stand",
+          location: "October 11, 2019",
+          description: "Stand #Aeroday20 le 10 et 11 Septembre 2019",
+          state: "previous",
+        },
+      ],
+    };
+  }
+
   componentDidMount() {
     const buttons = {
       prev: $(".btn--left"),
@@ -265,7 +297,7 @@ export default class Slide extends Component {
 
   render() {
     return (
-      <>u
+      <>
         <div className="app">
           <div className="cardList">
             <button id="1" className="cardList__btn btn btn--left">
@@ -277,23 +309,13 @@ export default class Slide extends Component {
             </button>
 
             <div className="cards__wrapper">
-              <div className="card current--card ">
-                <div className="card__image">
-                  <img src={require("./1.jpg")} alt="" />
+              {this.state.cards.map((e, i) => (
+                <div className={`card ${e.state}--card`}>
+                  <div className="card__image">
+                    <img src={e.src} alt={i} />
+                  </div>
                 </div>
-              </div>
-
-              <div className="card next--card">
-                <div className="card__image">
-                  <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
-                </div>
-              </div>
-
-              <div className="card previous--card">
-                <div className="card__image">
-                  <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
-                </div>
-              </div>
+              ))}
             </div>
 
             <button className="cardList__btn btn btn--right">
@@ -307,36 +329,22 @@ export default class Slide extends Component {
 
           <div className="infoList">
             <div className="info__wrapper">
-              <div className="info current--info">
-                <h1 className="text name">Highlands</h1>
-                <h4 className="text location">Scotland</h4>
-                <p className="text description">The mountains are calling</p>
-              </div>
-
-              <div className="info next--info">
-                <h1 className="text name">Machu Pichu</h1>
-                <h4 className="text location">Peru</h4>
-                <p className="text description">Adventure is never far away</p>
-              </div>
-
-              <div className="info previous--info">
-                <h1 className="text name">Chamonix</h1>
-                <h4 className="text location">France</h4>
-                <p className="text description">Let your dreams come true</p>
-              </div>
-            </div> 
+              {this.state.cards.map((e, i) => (
+                <div key={i} className={`info ${e.state}--info`}>
+                  <h1 className="text name">{e.name}</h1>
+                  <h4 className="text location">{e.location}</h4>
+                  <p className="text description">{e.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="app__bg">
-            <div className="app__bg__image current--image">
-              <img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
-            </div>
-            <div className="app__bg__image next--image">
-              <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
-            </div>
-            <div className="app__bg__image previous--image">
-              <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
-            </div>
+            {this.state.cards.forEach((e) => (
+              <div className={`app__bg__image ${e.state}--image`}>
+                <img src={e.state} alt="" />
+              </div>
+            ))}
           </div>
         </div>
         <div className="loading__wrapper">

@@ -7,17 +7,15 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Footer from "./components/Footer";
-import Navbar from "./components/Navbar"
-import Slide from "./components/Slide";
-
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <Router>
-      {/*<Navbar />*/}
+      <Navbar />
       <Switch>
         <Route exact path="/">
-          <Slide />
+          <Home />
         </Route>
         <Route exact path="/contact">
           <Contact />
@@ -25,11 +23,8 @@ function App() {
         <Route exact path="/about">
           <About />
         </Route>
-        <Route exact path="/test">
-          <Slide />
-        </Route>
       </Switch>
-     {/* <Footer />*/}
+     <Footer />
     </Router>
   );
 }
