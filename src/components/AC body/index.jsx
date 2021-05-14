@@ -11,7 +11,7 @@ class ACbody extends Component{
         <div className="ACbody">
                 <ACheader name={this.props.titleAC} displayed={this.props.acType}/>
             <div className="ac-details-container" >
-                <img className="--bgr--"src={process.env.PUBLIC_URL + "/assests/images/background "+this.props.titleAC+".png"} alt="bgr" width="100%" height="480px"/>
+                <img className="--bgr--" src={process.env.PUBLIC_URL + "/assests/images/background"+this.props.titleAC+".png"} alt="bgr" width="100%" height="480px"/>
                 <div className="about-this-ac">
                     <h3>A Propos:</h3>
                     <p>{this.props.description}</p>

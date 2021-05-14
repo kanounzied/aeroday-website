@@ -1,0 +1,79 @@
+
+.ac-box {
+  position: relative;
+  width: 40vw;
+  height: 40vw;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 0 30px 0 black;
+  margin: 0 2.5vw;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  .ACimage {
+    position: absolute;
+    right: -25%;
+    height: 40vw;
+    width: auto;
+    filter: grayscale(0.8) blur(0);
+    transition: all 0.5s;
+  }
+
+  &:hover {
+    .ACimage {
+      filter: unset;
+      transform: scale(1.05);
+
+      & + .title {
+        display: flex;
+      }
+    }
+  }
+  .title {
+    width: 40vw;
+    height: 10vw;
+    text-align: center;
+    color: var(--white-aeroday);
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    display: none;
+    transition: all 0.5s;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-family: 'Assistant', 'nexa_boldregular', 'sans-serif';
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: 5px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .ac-box{
+    .ACimage {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      &.expanded {
+        right: 0;
+        height: auto;
+        width: 75vw;
+        transition: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px){
+  .ac-box .title h1{
+    font-size: initial;
+  }
+}
