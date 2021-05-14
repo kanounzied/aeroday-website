@@ -3,7 +3,7 @@ import "./home.css";
 import {Component} from "react/cjs/react.production.min";
 import $ from 'jquery'
 import Intro from "../../components/Intro"
-import Preloader from './../../components/Preloader/Preloader'
+import GoogleMaps from './../../components/GoogleMaps/GoogleMaps'
 
 export default function Home() {
 
@@ -14,6 +14,8 @@ export default function Home() {
         return (
             <div className="home">
                 <Intro />
+
+                <GoogleMaps />
             </div>
         );
             

@@ -13,7 +13,7 @@
 	width: 100%;
 	height: 100%;
 	animation: showPage 1s 3s;
-	background: linear-gradient(to right, silver, teal);
+	background: linear-gradient(to right, var(--dark-color), var(--blue-aeroday));
 	animation-fill-mode: forwards;
 }
 
