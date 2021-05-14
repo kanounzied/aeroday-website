@@ -19,8 +19,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: rgba(0, 0, 0, 0.787)!important;
+	background: rgba(0, 0, 0, 0.5)!important;
 	overflow: hidden;
+	box-shadow: 0px -15px 10px 1px #0f0f0f81;
+	
 }
 
 button {
@@ -50,6 +52,7 @@ button {
 		pointer-events: none;
 		user-select: none;
 		overflow: hidden;
+		
 
 		&::before {
 			content: "";
@@ -77,9 +80,10 @@ button {
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
+
 			}
 			&.current--image {
-				opacity: 1;
+				opacity: .4;
 				--image-translate-offset: 0;
 			}
 			&.previous--image,
