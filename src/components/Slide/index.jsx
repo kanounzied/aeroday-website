@@ -341,7 +341,7 @@ export default class Slide extends Component {
           <div className="app__bg">
             {this.state.cards.map((e, i) => (
               <div className={`app__bg__image ${e.state}--image`}>
-                <img src={e.state} alt={i} />
+                <img src={e.src} alt={i} />
               </div>
             ))}
           </div>
