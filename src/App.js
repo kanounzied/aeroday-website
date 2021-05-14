@@ -6,8 +6,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
-import Footer from "./components/Footer/index";
-import Navbar from "./components/Navbar/Navbar"
+import Footer from "./components/Footer/";
+import Navbar from "./components/Navbar/"
 import Preloader from "./components/Preloader/Preloader"
 
 
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <Router> 
-      <Preloader />
+      
       
       <Navbar />
       <Switch>
@@ -29,7 +29,7 @@ function App() {
           <About />
         </Route>
       </Switch>
-      <Footer />
+     <Footer />
     </Router>
   );
 }

@@ -1,23 +1,10 @@
 #about-us-body{
     margin-top: 180px;
     height: 100%;
-    #about-us-title{
-        text-align: center;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-bottom: 16%;
-        margin-top: 5%;
-        h1{
-            color: black;
-            background: white;
-            font-style: normal;
-            font-weight: 900;
-            color: #323A40;
-        }
-    }
+    contain: content;
     #about-us-video-holder{
         #about-us-video{
-                
+
             position: relative;
             text-align: center;
             h2{
@@ -27,7 +14,7 @@
                 color: var(--black-aeroday);
             }
             #video{
-                height: 100%;
+                box-shadow: 3px 19px 37px 0px rgba(0, 20, 22, 0.56);
             }
         }
     }
@@ -61,13 +48,14 @@
             align-items: center;
             display: flex;
             flex-wrap: wrap;
-            justify-content:center ; 
+            justify-content:space-evenly ;
+            width: 100%;
         }
         #members-container{
             align-items: center;
             display: flex;
             flex-wrap: wrap;
-            justify-content:center ; 
+            justify-content:space-evenly ;
             max-width: 1445px ;
             height: auto;
         }

@@ -1,0 +1,31 @@
+
+
+.title-banner{
+
+  width: 100%;
+  display: block;
+  padding: 0 10vw;
+  margin: 10vw 0 20vw 0;
+  .title-holder{
+    background-color: var(--white-aeroday);
+    border-radius: 30px;
+    padding: 20px 15px;
+    text-align: center;
+    h1{
+      color: var(--dark-color);
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+}
+
+
+@media screen and (max-width: 600px){
+  .title-banner{
+    .title-holder{
+      h1{
+          font-size: 25px;
+      }
+    }
+  }
+}
