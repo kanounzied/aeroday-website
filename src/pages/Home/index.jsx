@@ -16,7 +16,7 @@ export default function Home() {
         return (
             <div className="home">
                 <Intro />
-
+                <TitleBanner text="Aeroday Edition 2019" />
                 <Slide />
               
                 {/*<div className="container-for-test">*/}
