@@ -48,6 +48,9 @@ if(document.getElementById('preloader')){
       document.getElementsByTagName('body')[0].style.overflowX = "auto";
     }
   });
+} else {
+  document.getElementsByTagName('body')[0].style.overflowY = "auto";
+  document.getElementsByTagName('body')[0].style.overflowX = "auto";
 }
 
 // If you want to start measuring performance in your app, pass a function
