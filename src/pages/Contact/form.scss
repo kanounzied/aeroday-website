@@ -8,6 +8,7 @@
 	display: inline-block;
 	// style of the actual input field
 	*:not(span) {
+		color: white;
 		position: relative;
 		display: inherit;
 		border-radius: inherit;

@@ -72,7 +72,6 @@ class Contact extends Component {
   render() {
     return (
       <div className="main-contact">
-
         <div className="name-email">
           <span className="name input-outside">
             <input
