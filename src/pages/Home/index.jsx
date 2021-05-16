@@ -5,7 +5,7 @@ import AeroButton from "../../components/AeroButton";
 import TitleBanner from "../../components/TitleBanner";
 import AeroForm from "../../components/Formulaire";
 import Intro from "../../components/Intro";
-import ACbox from "../../components/AC box";
+import ACbox from "../../components/AC-box";
 import Intro from "../../components/Intro"
 import GoogleMaps from './../../components/GoogleMaps/GoogleMaps'
 import AeroButton from "../../components/AeroButton";
