@@ -1,10 +1,10 @@
+
+
+
 .map{
     width: 85vw;
     height: 70vh;
-    margin-top: 15vh;
-    margin-bottom: 15vh;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 15vh auto;
 }
 
 #mapframe{
@@ -12,5 +12,5 @@
     height: 100%;
     border-radius: 15px;
     border-style: none;
-    box-shadow: 7px 10px 3px #111010;
+    box-shadow: 0 0 50px 0 #111010;
 }

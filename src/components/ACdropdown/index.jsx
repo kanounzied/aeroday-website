@@ -1,7 +1,7 @@
 import React, {useEffect, useRef} from "react";
 import './dropdown.scss'
 import $ from 'jquery'
-import ACbody from "../AC body";
+import ACbody from "../AC-body";
 
 export default function ACdropdown(props){
 

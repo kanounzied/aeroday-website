@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./ACbody.scss";
-import ACheader from "../AC Header";
+import ACheader from "../AC-header";
 import MemberCard from "../Member";
 import Button from "../button";
 

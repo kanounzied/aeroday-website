@@ -6,11 +6,7 @@ import TitleBanner from "../../components/TitleBanner";
 import AeroForm from "../../components/Formulaire";
 import Intro from "../../components/Intro";
 import ACbox from "../../components/AC-box";
-import Intro from "../../components/Intro"
 import GoogleMaps from './../../components/GoogleMaps/GoogleMaps'
-import AeroButton from "../../components/AeroButton";
-import TitleBanner from "../../components/TitleBanner";
-import AeroForm from "../../components/Formulaire";
 import Slide from "../../components/Slide";
 import Preloader from "./../../components/Preloader/Preloader";
 
@@ -144,6 +140,7 @@ export default function Home() {
                 <Slide/>
             </div>
             <div className="section">
+                <TitleBanner text="Aeroday Location"/>
                 <GoogleMaps/>
             </div>
             <div className="section">
@@ -159,7 +156,6 @@ export default function Home() {
             {/*    <AeroButton path={"/"} text={"formulaire"}/>*/}
             {/*</div>*/}
 
-            <GoogleMaps/>
         </div>
     );
 
