@@ -10,7 +10,12 @@ export default function AeroButton(props) {
 
     return (
         <div className="aeroBtn">
-            <a href={props.path}>{props.text}</a>
+            <a
+                href={props.path}
+                onClick={props.onClick}
+            >
+                {props.text}
+            </a>
         </div>
     );
 }

@@ -4,16 +4,15 @@ import $ from 'jquery'
 import AeroButton from "../../components/AeroButton";
 import TitleBanner from "../../components/TitleBanner";
 import AeroForm from "../../components/Formulaire";
-import Intro from "../../components/Intro"
-import ACbody from "../../components/AC body"
-import ACheader from "../../components/AC Header";
+import Intro from "../../components/Intro";
 import ACbox from "../../components/AC box";
-// import Sidebar from "../../components/AC sidebar"
-
-const desc_aeroday=<p>Revient pour la cinquième année consécutive dans <span>Le Tunisian Aeroday</span>. Les participants devront <span>construire</span> leurs
-propres <span>modèles</span> de planeur de taille réduite,les <span>présenter</span> à un public de professionnels et d'amateurs et les faire <span>voler</span>.
-Cette compétition est ouverte pour toutes les personnes souhaitant partager leur passion avec les autres.</p>
-
+import Intro from "../../components/Intro"
+import GoogleMaps from './../../components/GoogleMaps/GoogleMaps'
+import AeroButton from "../../components/AeroButton";
+import TitleBanner from "../../components/TitleBanner";
+import AeroForm from "../../components/Formulaire";
+import Slide from "../../components/Slide";
+import Preloader from "./../../components/Preloader/Preloader";
 
 export default function Home() {
 
@@ -23,7 +22,7 @@ export default function Home() {
     useEffect(() => {
 
         window.addEventListener('resize', () => {
-            if(window.innerWidth >= 900) {
+            if (window.innerWidth >= 900) {
                 $('.ac-box .dropdown-container').css('display', 'none')
                 $('.ac-boxes .axes .title').css("display", 'flex')
                 $('.ac-boxes .challenges .title').css("display", 'flex')
@@ -31,8 +30,7 @@ export default function Home() {
                     'max-height': 'unset',
                     'height': '40vw'
                 })
-            }
-            else{
+            } else {
                 $('.ac-box').css({'max-height': '300px'})
             }
         })
@@ -46,12 +44,12 @@ export default function Home() {
             })
             $('.ac-boxes .challenges').css({
                 'opacity': 1,
-            'width': ( window.innerWidth > 900) ? "10vw" : "40vw"
+                'width': (window.innerWidth > 900) ? "10vw" : "40vw"
             })
             if (window.innerWidth < 900) {
                 var axeimg = $('.axes .ACimage')
                 var challengeimg = $('.challenges .ACimage')
-                if (axeimg.width() > window.outerWidth*40/100) {
+                if (axeimg.width() > window.outerWidth * 40 / 100) {
                     axeimg.addClass("expanded")
                     challengeimg.removeClass("expanded")
                 }
@@ -74,7 +72,7 @@ export default function Home() {
                 var challengeimg = $('.challenges .ACimage')
                 var axeimg = $('.axes .ACimage')
                 //console.log('outer', window.outerWidth*40/100)
-                if (challengeimg.width() > window.outerWidth*40/100) {
+                if (challengeimg.width() > window.outerWidth * 40 / 100) {
                     challengeimg.addClass("expanded")
                     axeimg.removeClass("expanded")
                 }
@@ -87,8 +85,8 @@ export default function Home() {
         $(document).click((evt) => {
 
             var targeted
-            var comparedHeight = (window.outerWidth*80/100 < 300) ? window.outerWidth*80/100 : 300
-            if(window.innerWidth < 900){
+            var comparedHeight = (window.outerWidth * 80 / 100 < 300) ? window.outerWidth * 80 / 100 : 300
+            if (window.innerWidth < 900) {
                 $('.ac-box .dropdown-container').css('display', 'flex')
                 if (['dropdown', 'arrow', 'droptitle'].includes(evt.target.className)) {//drop it
                     $('.dropdown-container .dropdown .arrow').removeClass('rotate')
@@ -130,37 +128,39 @@ export default function Home() {
 
     });
 
-        return (
-            <div className="home" >
-                <Intro />
-                <div className="section">
-                    <TitleBanner text={"Axes & Challenges"}/>
-                    <div className="ac-boxes">
-                        <ACbox ref={axes} AC={"AXES"}/>
-                        <ACbox ref={challenges} AC={"Challenges"}/>
-                    </div>
-                    {/*<ACbody titleAC="CHALLENGES" acType="Aeromodelisme" description={desc_aeroday}*/}
-                    {/*        memberName="Haizem Dahech" memberOccupation="RESP. AEROMODELISME"*/}
-                    {/*        cdc1="1"   cdc2="0"   cdes="1"*/}
-                    {/*        CDC1URL="https://www.facebook.com/" CDC2URL="https://www.facebook.com/" CDESURL="https://www.facebook.com/" />*/}
+    return (
+        <div className="home">
+            <Preloader/>
+            <Intro/>
+            <div className="section">
+                <TitleBanner text={"Axes & Challenges"}/>
+                <div className="ac-boxes">
+                    <ACbox ref={axes} AC={"AXES"}/>
+                    <ACbox ref={challenges} AC={"Challenges"}/>
                 </div>
-                <div className="section">
-
-                </div>
-                <div className="section">
-
-                </div>
-                <div className="section">
-
-                </div>
-                <div className="section">
-
-                </div>
-                {/*<div className="container-for-test">*/}
-                {/*    <TitleBanner text={"small components place"} />*/}
-                {/*    <AeroForm />*/}
-                {/*    <AeroButton path={"/"} text={"formulaire"}/>*/}
-                {/*</div>*/}
             </div>
-        );
+            <div className="section">
+                <TitleBanner text="Aeroday Edition 2019"/>
+                <Slide/>
+            </div>
+            <div className="section">
+                <GoogleMaps/>
+            </div>
+            <div className="section">
+
+            </div>
+            <div className="section">
+            </div>
+
+
+            {/*<div className="container-for-test">*/}
+            {/*    <TitleBanner text={"small components place"} />*/}
+            {/*    <AeroForm />*/}
+            {/*    <AeroButton path={"/"} text={"formulaire"}/>*/}
+            {/*</div>*/}
+
+            <GoogleMaps/>
+        </div>
+    );
+
 }
