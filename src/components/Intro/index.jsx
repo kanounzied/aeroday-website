@@ -8,6 +8,8 @@ export default function Intro() {
 
     useEffect(() => {
         var heigh;
+        desc1.current.style.height = "unset";
+        desc2.current.style.height = "unset";
         if (desc1.current.clientHeight >= desc2.current.clientHeight){
             heigh = desc1.current.clientHeight+"px"
             desc1.current.style.height = heigh
@@ -25,7 +27,7 @@ export default function Intro() {
                 desc2.current.style.height = desc1.current.clientHeight+"px"
             }
             else {
-                desc1.current.style.height = desc2.current.clientHeight+"px"
+                desc1.current.style.height = desc2.current.clientHeight + "px"
             }
         }, true);
         console.log('height', desc1.current.style)
