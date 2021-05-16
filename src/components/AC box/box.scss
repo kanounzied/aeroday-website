@@ -13,23 +13,27 @@
 
   .ACimage {
     position: absolute;
+    top: 50%;
+    left: 50%;
     right: -25%;
     height: 40vw;
     width: auto;
     filter: grayscale(0.8) blur(0);
     transition: all 0.5s;
+    transform: translate(-50%, -50%);
   }
 
   &:hover {
     .ACimage {
       filter: unset;
-      transform: scale(1.05);
+      transform: scale(1.05) translate(-50%, -50%);
 
       & + .title {
         display: flex;
       }
     }
   }
+
   .title {
     width: 40vw;
     height: 10vw;
@@ -53,21 +57,50 @@
     }
   }
 
+  .dropdown-container{
+
+    opacity: 0;
+    width: 100%;
+    /* margin: 10px 20px; */
+    position: absolute;
+    padding: 15px;
+    right: 0;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    z-index: -1;
+  }
 }
 
 @media screen and (max-width: 900px) {
   .ac-box{
+    height: 80vw;
+    max-height: 300px;
+    .title{
+      width: 100%;
+      display: flex;
+      h1{
+        letter-spacing: normal;
+      }
+    }
+
     .ACimage {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      height: 50vw;
+      filter: unset;
+      transform: scale(1.05) translate(-50%, -50%);
       &.expanded {
         right: 0;
         height: auto;
-        width: 75vw;
+        width: 80vw;
         transition: none;
       }
+    }
+
+    &.open{
+      //max-height: unset;
+      height: 150vw!important;
     }
   }
 }

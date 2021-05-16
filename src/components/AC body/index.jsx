@@ -9,7 +9,7 @@ class ACbody extends Component{
     render(){
         return(
         <div className="ACbody">
-                <ACheader name={this.props.titleAC} displayed={this.props.acType}/>
+                {/*<ACheader name={this.props.titleAC} displayed={this.props.acType}/>*/}
             <div className="ac-details-container" >
                 <img className="--bgr--" src={process.env.PUBLIC_URL + "/assests/images/background"+this.props.titleAC+".png"} alt="bgr" width="100%" height="480px"/>
                 <div className="about-this-ac">
