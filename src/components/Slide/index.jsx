@@ -114,9 +114,9 @@ export default class Slide extends Component {
       gsap
         .timeline()
         .to([buttons.prev, buttons.next], {
-          duration: 0.2,
+        /*  duration: 0.2,
           opacity: 0.5,
-          pointerEvents: "none",
+          pointerEvents: "none",*/
         })
         .to(
           $(".text"),
@@ -148,9 +148,9 @@ export default class Slide extends Component {
           }
         )
         .to([buttons.prev, buttons.next], {
-          duration: 0.2,
+        /*  duration: 0.2,
           opacity: 1,
-          pointerEvents: "all",
+          pointerEvents: "all",*/
         });
 
       function swapInfosClass() {
@@ -235,9 +235,9 @@ export default class Slide extends Component {
         .to(
           [buttons.prev, buttons.next],
           {
-            duration: 0.4,
+           /* duration: 0.4,
             opacity: 1,
-            pointerEvents: "all",
+            pointerEvents: "all",*/
           },
           "-=0.4"
         );
@@ -260,8 +260,8 @@ export default class Slide extends Component {
         }
       );
       gsap.set([buttons.prev, buttons.next], {
-        pointerEvents: "none",
-        opacity: "0",
+       /* pointerEvents: "none",
+        opacity: "0",*/
       });
 
       images.forEach((image) => {
