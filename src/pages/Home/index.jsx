@@ -9,6 +9,7 @@ import ACbox from "../../components/AC-box";
 import GoogleMaps from './../../components/GoogleMaps/GoogleMaps'
 import Slide from "../../components/Slide";
 import Preloader from "./../../components/Preloader/Preloader";
+import Sponsors from "./../../components/Sponsors";
 
 export default function Home() {
 
@@ -143,17 +144,10 @@ export default function Home() {
                 <TitleBanner text="Aeroday Location"/>
                 <GoogleMaps/>
             </div>
-            <div className="section">
-
-            </div>
-            <div className="section">
-            </div>
-
-
-            {/*<div className="container-for-test">*/}
-            {/*    <TitleBanner text={"small components place"} />*/}
-            {/*    <AeroForm />*/}
-            {/*    <AeroButton path={"/"} text={"formulaire"}/>*/}
+            <section className="aaa">
+                <Sponsors />
+            </section>
+            {/*<div className="section">*/}
             {/*</div>*/}
 
         </div>
