@@ -10,11 +10,166 @@ import GoogleMaps from './../../components/GoogleMaps/GoogleMaps'
 import Slide from "../../components/Slide";
 import Preloader from "./../../components/Preloader/Preloader";
 import Sponsors from "./../../components/Sponsors";
+import ACbody from "../../components/AC-body";
 
 export default function Home() {
 
     const axes = useRef();
     const challenges = useRef();
+
+    const axesArray = [
+        {
+            titre: 'AISHOW',
+            description: <p>Revient pour la cinquième année consécutive dans <span>Le Tunisian Aeroday</span>. Les
+                participants devront <span>construire</span> leurs
+                propres <span>modèles</span></p>,
+            memberName: "Nour Cheour",
+            memberOccupation: "RESP. AEROMODELISME",
+            cdc1: "1",
+            cdc2: "0",
+            cdes: "1",
+            CDC1URL: "https://www.facebook.com/",
+            CDC2URL: "https://www.facebook.com/",
+            CDESURL: "https://www.facebook.com/"
+        },
+        {
+            titre: 'EXPOSITIONS',
+            description: <p>Des <span>Stands</span> éblouissent les visiteurs par un mélange de <span>créativité</span>
+                et d'<span>enthousiasme</span> des jeunes étudiants intéressés par l'<span>aéronautique</span>,
+                enrichi par le savoir-faire des expérimentés.
+                Parmi les différents projets exposés, on cite Le <span>simulateur de vol monoplace à 360°</span> crée par
+                l'équipe Technique du Club <span>Aerobotix INSAT</span> et exposé lors de l'édition de 2014 celui-ci ressemble
+                au célèbre simulateur de vol de Microsoft pour le monde 3D.
+                Une fois terminé, il sera capable de simuler l'ensemble des mouvements d'avions.</p>,
+            memberName: "Haizem Dahech",
+            memberOccupation: "RESP. AEROMODELISME",
+            cdc1: "1",
+            cdc2: "0",
+            cdes: "1",
+            CDC1URL: "https://www.facebook.com/",
+            CDC2URL: "https://www.facebook.com/",
+            CDESURL: "https://www.facebook.com/"
+        },
+        {
+            titre: 'AISHOW',
+            description: <p>Revient pour la cinquième année consécutive dans <span>Le Tunisian Aeroday</span>. Les
+                participants devront <span>construire</span> leurs
+                propres <span>modèles</span></p>,
+            memberName: "Haizem Dahech",
+            memberOccupation: "RESP. AEROMODELISME",
+            cdc1: "1",
+            cdc2: "0",
+            cdes: "1",
+            CDC1URL: "https://www.facebook.com/",
+            CDC2URL: "https://www.facebook.com/",
+            CDESURL: "https://www.facebook.com/"
+        },
+        {
+            titre: 'AISHOW',
+            description: <p>Revient pour la cinquième année consécutive dans <span>Le Tunisian Aeroday</span>. Les
+                participants devront <span>construire</span> leurs
+                propres <span>modèles</span></p>,
+            memberName: "Haizem Dahech",
+            memberOccupation: "RESP. AEROMODELISME",
+            cdc1: "1",
+            cdc2: "0",
+            cdes: "1",
+            CDC1URL: "https://www.facebook.com/",
+            CDC2URL: "https://www.facebook.com/",
+            CDESURL: "https://www.facebook.com/"
+        },
+        {
+            titre: 'AISHOW',
+            description: <p>Revient pour la cinquième année consécutive dans <span>Le Tunisian Aeroday</span>. Les
+                participants devront <span>construire</span> leurs
+                propres <span>modèles</span></p>,
+            memberName: "Haizem Dahech",
+            memberOccupation: "RESP. AEROMODELISME",
+            cdc1: "1",
+            cdc2: "0",
+            cdes: "1",
+            CDC1URL: "https://www.facebook.com/",
+            CDC2URL: "https://www.facebook.com/",
+            CDESURL: "https://www.facebook.com/"
+        },
+    ]
+
+    const challengesArray = [
+        {
+            titre: 'AEROCHALLENGE',
+            description: <p>Revient pour la cinquième année consécutive dans <span>Le Tunisian Aeroday</span>. Les
+                participants devront <span>construire</span> leurs
+                propres <span>modèles</span></p>,
+            memberName: "Nour Cheour",
+            memberOccupation: "RESP. AEROMODELISME",
+            cdc1: "1",
+            cdc2: "0",
+            cdes: "1",
+            CDC1URL: "https://www.facebook.com/",
+            CDC2URL: "https://www.facebook.com/",
+            CDESURL: "https://www.facebook.com/"
+        },
+        {
+            titre: 'EXPOSITIONS',
+            description: <p>Des <span>Stands</span> éblouissent les visiteurs par un mélange de <span>créativité</span>
+                et d'<span>enthousiasme</span> des jeunes étudiants intéressés par l'<span>aéronautique</span>,
+                enrichi par le savoir-faire des expérimentés.
+                Parmi les différents projets exposés, on cite Le <span>simulateur de vol monoplace à 360°</span> crée par
+                l'équipe Technique du Club <span>Aerobotix INSAT</span> et exposé lors de l'édition de 2014 celui-ci ressemble
+                au célèbre simulateur de vol de Microsoft pour le monde 3D.
+                Une fois terminé, il sera capable de simuler l'ensemble des mouvements d'avions.</p>,
+            memberName: "Haizem Dahech",
+            memberOccupation: "RESP. AEROMODELISME",
+            cdc1: "1",
+            cdc2: "0",
+            cdes: "1",
+            CDC1URL: "https://www.facebook.com/",
+            CDC2URL: "https://www.facebook.com/",
+            CDESURL: "https://www.facebook.com/"
+        },
+        {
+            titre: 'AISHOW',
+            description: <p>Revient pour la cinquième année consécutive dans <span>Le Tunisian Aeroday</span>. Les
+                participants devront <span>construire</span> leurs
+                propres <span>modèles</span></p>,
+            memberName: "Haizem Dahech",
+            memberOccupation: "RESP. AEROMODELISME",
+            cdc1: "1",
+            cdc2: "0",
+            cdes: "1",
+            CDC1URL: "https://www.facebook.com/",
+            CDC2URL: "https://www.facebook.com/",
+            CDESURL: "https://www.facebook.com/"
+        },
+        {
+            titre: 'AISHOW',
+            description: <p>Revient pour la cinquième année consécutive dans <span>Le Tunisian Aeroday</span>. Les
+                participants devront <span>construire</span> leurs
+                propres <span>modèles</span></p>,
+            memberName: "Haizem Dahech",
+            memberOccupation: "RESP. AEROMODELISME",
+            cdc1: "1",
+            cdc2: "0",
+            cdes: "1",
+            CDC1URL: "https://www.facebook.com/",
+            CDC2URL: "https://www.facebook.com/",
+            CDESURL: "https://www.facebook.com/"
+        },
+        {
+            titre: 'AISHOW',
+            description: <p>Revient pour la cinquième année consécutive dans <span>Le Tunisian Aeroday</span>. Les
+                participants devront <span>construire</span> leurs
+                propres <span>modèles</span></p>,
+            memberName: "Haizem Dahech",
+            memberOccupation: "RESP. AEROMODELISME",
+            cdc1: "1",
+            cdc2: "0",
+            cdes: "1",
+            CDC1URL: "https://www.facebook.com/",
+            CDC2URL: "https://www.facebook.com/",
+            CDESURL: "https://www.facebook.com/"
+        },
+    ]
 
     useEffect(() => {
 
@@ -129,11 +284,11 @@ export default function Home() {
         <div className="home">
             <Preloader/>
             <Intro/>
-            <div className="section">
+            <div id={"axes&challenges"} className="section">
                 <TitleBanner text={"Axes & Challenges"}/>
                 <div className="ac-boxes">
-                    <ACbox ref={axes} AC={"AXES"}/>
-                    <ACbox ref={challenges} AC={"Challenges"}/>
+                    <ACbox acArray={axesArray} ref={axes} AC={"AXES"}/>
+                    <ACbox acArray={challengesArray} ref={challenges} AC={"Challenges"}/>
                 </div>
             </div>
             <div className="section">
@@ -145,7 +300,7 @@ export default function Home() {
                 <GoogleMaps/>
             </div>
             <section className="aaa">
-                <Sponsors />
+                <Sponsors/>
             </section>
             {/*<div className="section">*/}
             {/*</div>*/}
