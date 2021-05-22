@@ -13,17 +13,14 @@ export default function ACdropdown(props){
     return(
         <>
             <div ref={dropdown} className="dropdown">
-                <div className="droptitle">{props.titre}</div>
+                <div className="droptitle">{props.ac.titre}</div>
                 <img src={process.env.PUBLIC_URL + "/assests/images/arrow.png"} className="arrow"/>
                 <div className="dropdown-content">
                     {/*<h1>testing 1 2 !!</h1>*/}
-                    <ACbody titleAC="CHALLENGES" acType="Aeromodelisme" description={
-                        <p>Revient pour la cinquième année consécutive dans <span>Le Tunisian Aeroday</span>. Les participants devront <span>construire</span> leurs
-                            propres <span>modèles</span></p>
-                    }
-                            memberName="Haizem Dahech" memberOccupation="RESP. AEROMODELISME"
-                            cdc1="1"   cdc2="0"   cdes="1"
-                            CDC1URL="https://www.facebook.com/" CDC2URL="https://www.facebook.com/" CDESURL="https://www.facebook.com/" />
+                    <ACbody titleAC={props.ac.titre} acType={props.ac.titre} description={props.ac.description}
+                            memberName={props.ac.memberName} memberOccupation={props.ac.memberOccupation}
+                            cdc1={props.ac.cdc1}   cdc2={props.ac.cdc2}   cdes={props.ac.cdes}
+                            CDC1URL={props.ac.CDC1URL} CDC2URL={props.ac.CDC2URL} CDESURL={props.ac.CDESURL} />
 
                 </div>
             </div>
