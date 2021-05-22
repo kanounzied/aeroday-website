@@ -12,9 +12,28 @@
 	top: 0px;
 	width: 100%;
 	height: 100%;
-	animation: showPage 1s 3s;
-	background: linear-gradient(to right, var(--dark-color), var(--blue-aeroday));
+	
+	background: linear-gradient(to left,#2c2c2c, #000000);animation: showPage 0.5s 1.5s;
+	/*
+	background: linear-gradient(225deg, rgba(27,26,27,1) 0%, rgba(27,26,27,1) 60%, rgba(121,9,9,1) 120%, rgba(2,0,36,1) 120%);
+	*/
 	animation-fill-mode: forwards;
+}
+
+@keyframes jetMove {
+	0% {
+		left: -50%;
+	}
+	45% {
+		left: 50%;
+	}
+	65% {
+		left: 51%;
+
+	}
+	100% {
+		left: 150%;
+	}
 }
 
 .jetdiv {
@@ -22,38 +41,47 @@
 	top: 50vh;
 	margin-left: -50px;
 	left: 50%;
-	animation: enterScreen 1s, speeder 0.4s linear infinite, leaveScreen 1s 3s;
+	animation: jetMove 2s, speeder 0.4s linear infinite;
 }
+
+.jetdiv > i{
+	color: var(--white-aeroday);
+}
+
 .jetdiv > span {
 	height: 5px;
 	width: 35px;
-	background: #000;
+	background: rgb(0, 0, 0);
 	position: absolute;
-	top: 15px;
+	top: 13px;
 	border-radius: 2px 10px 1px 0;
 }
 
 .jetdiv > span > span:nth-child(1), .jetdiv > span > span:nth-child(2), .jetdiv > span > span:nth-child(3), .jetdiv > span > span:nth-child(4) {
 	width: 30px;
 	height: 1px;
-	background: #000;
+	background: rgb(90, 89, 89);
 	position: absolute;
 	animation: fazer1 0.2s linear infinite;
 }
+
 .jetdiv > span > span:nth-child(2) {
 	top: 3px;
 	animation: fazer2 0.4s linear infinite;
 }
+
 .jetdiv > span > span:nth-child(3) {
 	top: 1px;
 	animation: fazer3 0.4s linear infinite;
 	animation-delay: -1s;
 }
+
 .jetdiv > span > span:nth-child(4) {
 	top: 4px;
 	animation: fazer4 1s linear infinite;
 	animation-delay: -1s;
 }
+
 @keyframes fazer1 {
 	0% {
 		left: 0;
@@ -63,6 +91,7 @@
 		opacity: 0;
 	}
 }
+
 @keyframes fazer2 {
 	0% {
 		left: 0;
@@ -72,6 +101,7 @@
 		opacity: 0;
 	}
 }
+
 @keyframes fazer3 {
 	0% {
 		left: 0;
@@ -81,6 +111,7 @@
 		opacity: 0;
 	}
 }
+
 @keyframes fazer4 {
 	0% {
 		left: 0;
@@ -90,7 +121,8 @@
 		opacity: 0;
 	}
 }
- @keyframes speeder {
+
+@keyframes speeder {
 	 0% {
 		 transform: translate(2px, 1px) rotate(0deg);
 	}
@@ -125,37 +157,44 @@
 		 transform: translate(1px, -2px) rotate(-1deg);
 	}
 }
- .longfazers {
+
+.longfazers {
 	 position: absolute;
 	 width: 100%;
 	 height: 100%;
 }
- .longfazers span {
+
+.longfazers span {
 	 position: absolute;
 	 height: 2px;
 	 width: 20%;
-	 background: #000;
+	 background: rgb(255, 255, 255);
 }
- .longfazers span:nth-child(1) {
+
+.longfazers span:nth-child(1) {
 	 top: 20%;
 	 animation: lf 0.6s linear infinite;
 	 animation-delay: -5s;
 }
- .longfazers span:nth-child(2) {
+
+.longfazers span:nth-child(2) {
 	 top: 40%;
 	 animation: lf2 0.8s linear infinite;
 	 animation-delay: -1s;
 }
- .longfazers span:nth-child(3) {
+
+.longfazers span:nth-child(3) {
 	 top: 60%;
 	 animation: lf3 0.6s linear infinite;
 }
- .longfazers span:nth-child(4) {
+
+.longfazers span:nth-child(4) {
 	 top: 80%;
 	 animation: lf4 0.5s linear infinite;
 	 animation-delay: -3s;
 }
- @keyframes lf {
+
+@keyframes lf {
 	 0% {
 		 left: 200%;
 	}
@@ -164,7 +203,8 @@
 		 opacity: 0;
 	}
 }
- @keyframes lf2 {
+
+@keyframes lf2 {
 	 0% {
 		 left: 200%;
 	}
@@ -173,16 +213,8 @@
 		 opacity: 0;
 	}
 }
- @keyframes lf3 {
-	 0% {
-		 left: 200%;
-	}
-	 100% {
-		 left: -100%;
-		 opacity: 0;
-	}
-}
- @keyframes lf4 {
+
+@keyframes lf3 {
 	 0% {
 		 left: 200%;
 	}
@@ -192,29 +224,18 @@
 	}
 }
 
-@keyframes enterScreen {
-	from {left: -10%;}
-	to {left: 50%;}
-}
-  
-@keyframes leaveScreen {
-	from {left: 50%;}
-	to {
-		left: 120%;
+@keyframes lf4 {
+	 0% {
+		 left: 200%;
+	}
+	 100% {
+		 left: -100%;
+		 opacity: 0;
 	}
 }
   
 @keyframes showPage {
 	to {
-		left: 200%; 
-		margin-left: 150%; 
-		transform: skewX(53deg);
-	}
-}
-  
-@keyframes hideLoader {
-	to{
-		height: 0;
-		width: 0;
+		transform: skewX(53deg);left: 200%;margin-left: 150%;
 	}
 }

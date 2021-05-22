@@ -7,6 +7,8 @@ import slide_1 from "./images/slide_1.jpg";
 import slide_2 from "./images/slide_2.jpg";
 import slide_3 from "./images/slide_3.jpg";
 
+import Preloader from './../Preloader/Preloader'
+
 export default class Slide extends Component {
     constructor(props) {
         super(props);
@@ -117,9 +119,9 @@ export default class Slide extends Component {
             gsap
                 .timeline()
                 .to([buttons.prev, buttons.next], {
-                    /*  duration: 0.2,
+                      duration: 0.2,
                       opacity: 0.5,
-                      pointerEvents: "none",*/
+                      pointerEvents: "none",
                 })
                 .to(
                     $(".text"),
@@ -151,9 +153,9 @@ export default class Slide extends Component {
                     }
                 )
                 .to([buttons.prev, buttons.next], {
-                    /*  duration: 0.2,
+                      duration: 0.2,
                       opacity: 1,
-                      pointerEvents: "all",*/
+                      pointerEvents: "all",
                 });
 
             function swapInfosClass() {
@@ -238,9 +240,9 @@ export default class Slide extends Component {
                 .to(
                     [buttons.prev, buttons.next],
                     {
-                        /* duration: 0.4,
+                         duration: 0.4,
                          opacity: 1,
-                         pointerEvents: "all",*/
+                         pointerEvents: "all",
                     },
                     "-=0.4"
                 );
@@ -263,34 +265,35 @@ export default class Slide extends Component {
                 }
             );
             gsap.set([buttons.prev, buttons.next], {
-                /* pointerEvents: "none",
-                 opacity: "0",*/
+                 pointerEvents: "none",
+                 opacity: "0",
             });
 
             images.forEach((image) => {
-                imagesLoaded(image, (instance) => {
-                    if (instance.isComplete) {
-                        loadedImages++;
-                        let loadProgress = loadedImages / totalImages;
-
-                        gsap.to(loaderEl, {
-                            duration: 1,
-                            scaleX: loadProgress,
-                            backgroundColor: `hsl(${loadProgress * 120}, 100%, 50%`,
-                        });
-
-                        if (totalImages === loadedImages) {
-                            gsap
-                                .timeline()
-                                .to(".loading__wrapper", {
-                                    duration: 0.8,
-                                    opacity: 0,
-                                    pointerEvents: "none",
-                                })
-                                .call(() => init());
-                        }
-                    }
-                });
+              imagesLoaded(image, (instance) => {
+                if (instance.isComplete) {
+                  loadedImages++;
+                  // let loadProgress = loadedImages / totalImages;
+      
+                  //gsap.to(loaderEl, {
+                    //duration: 1,
+                    //scaleX: loadProgress,
+                    //backgroundColor: `hsl(${loadProgress * 120}, 100%, 50%`,
+                  //});
+      
+                  if (totalImages === loadedImages) {
+                    gsap
+                      .timeline()
+                      .to(".loader", {
+                       /* x: '200%',
+                        skewType: "simple",
+                        skewX: 53,*/
+                        
+                      })
+                      .call(() => init());
+                  }
+                }
+              });
             });
         };
 
@@ -354,10 +357,7 @@ export default class Slide extends Component {
                     </div>
                 </div>
                 <div className="loading__wrapper">
-                    <div className="loader--text">Loading...</div>
-                    <div className="loader">
-                        <span></span>
-                    </div>
+                  <Preloader />
                 </div>
                 <svg className="icons" style={{display: "none"}}>
                     <symbol

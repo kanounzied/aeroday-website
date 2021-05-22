@@ -3,7 +3,7 @@ import './Preloader.css'
 
 function Preloader(){
     return (
-        <div id='preloader'>
+        <div id='preloader' className='loader'>
 			<div class="jetdiv">
 				<span>
 					<span></span>
