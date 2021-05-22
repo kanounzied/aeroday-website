@@ -1,0 +1,22 @@
+.aeroBtn{
+  padding: 12px 5px;
+  background-color: #519da64a;
+  border-radius: 13px;
+  width: fit-content;
+  margin: 20px auto;
+  user-select: none;
+
+  a{
+    border: 2px solid var(--blue-aeroday);
+    padding: 8px 10px;
+    border-radius: 10px;
+    color: var(--blue-aeroday);
+    &:hover{
+      border-color: var(--red-aeroday);
+      font-weight: bold;
+    }
+  }
+  &:hover{
+    /*background-color: #d9525242;*/
+  }
+}

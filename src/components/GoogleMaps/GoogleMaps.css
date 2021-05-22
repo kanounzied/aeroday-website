@@ -1,0 +1,16 @@
+
+
+
+.map{
+    width: 85vw;
+    height: 70vh;
+    margin: 0 auto 15vh auto;
+}
+
+#mapframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border-style: none;
+    box-shadow: 0 0 50px 0 #111010;
+}

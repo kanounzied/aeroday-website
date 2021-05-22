@@ -1,0 +1,185 @@
+
+#cdc1, #cdc2 {
+  //width: 100px;
+  //height: 45px;
+  margin: 10px auto;
+  //margin-bottom: 50px;
+  // display: none;
+  text-align: center;
+  //margin-top: 40px;
+}
+
+#cdes {
+  //width: 194px;
+  //height: 45px;
+  margin: 10px auto;
+  //margin-bottom: 50px;
+  // display: none;
+  text-align: center;
+  //margin-top: 40px;
+}
+
+.ACbody {
+  width: 70vw;//var(--ac-body-width);
+  height: 35vw;
+  //background-color: rgb(40, 40, 46);
+  margin: auto;
+  position: relative;
+  border-radius: 8px;
+
+  .ac-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    height: 100%; //40vw;
+    width: 100%;
+    flex-direction: row;
+    text-align: left;
+    overflow: hidden;
+    align-items: center;
+    .--bgr-- {
+      position: absolute;
+      top: -1.5%;
+      z-index: -1;
+      height: 100%;
+      border-radius: 0 0 8px 8px;
+    }
+
+    .member-and-button {
+      //margin-top: 50px;
+      width: 40%;
+      height: 100%;
+      padding: 10px;
+      position: absolute;
+      right: -5%;
+      align-items: center;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .button {
+        width: fit-content; // 180px;
+        //height: 50px;
+        margin: 10px auto; //auto;
+        margin-bottom: 5%;
+        text-align: center;
+        //margin-top: 40px;
+      }
+
+      .member-card{
+        height: fit-content;
+        width: 70%;
+        margin: auto;
+      }
+    }
+
+    .about-this-ac {
+      //margin-top: 7%;
+      //padding-left: 7%;
+      //padding-right: 7%;
+      width: 40%;
+      //display: flex;
+      //flex-direction: column;
+      //flex-wrap: nowrap;
+      height: 100%;
+      //justify-content: flex-start;
+      position: absolute;
+      left: 0;
+      //height: 100%;
+      h3 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        padding: 25px;
+        color: var(--blue-aeroday);
+      }
+
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.7em; //min(1.5vw, 18px); //18px;
+        color: white;
+        padding: 0 2%;
+        padding-top: 2%;
+        letter-spacing: 0.2em;
+        line-height: 150%;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 150%;
+
+        span {
+          color: var(--blue-aeroday);
+          font-weight: bold;
+        }
+      }
+
+
+
+    }
+    .buttons-ac-- {
+      display: flex;
+      position: absolute;
+      bottom: 5%;
+      left: 0;
+      width: 70%;
+      flex-direction: row;
+      align-content: center;
+      flex-wrap: wrap;
+    }
+    &.reverse {
+      //flex-direction: row-reverse;
+      text-align: right;
+      .member-and-button{
+        right: unset;
+        left: -5%;
+      }
+      .about-this-ac{
+        left: unset;
+        right: 0;
+      }
+      .buttons-ac--{
+        left: 30%;
+      }
+    }
+  }
+
+}
+
+
+@media screen and (min-width: 1301px) {
+  .about-this-ac {
+    width: 65%;
+  }
+  .ACbody {
+    width: 60vw;
+    height: 30vw;
+  }
+}
+
+@media screen and (max-width: 900px) { //kenet 1000px
+  .about-this-ac {
+    width: 100%;
+  }
+  .ACbody {
+    width: 90%;
+    height: 100%;
+
+    .ac-details-container {
+      justify-content: center;
+      .--bgr--{
+        display: none;
+      }
+      .member-and-button {
+        width: unset;
+        position: unset;
+        height: fit-content;
+      }
+
+      .about-this-ac {
+        width: 100%;
+        position: unset;
+      }
+    }
+  }
+}
