@@ -1,52 +1,56 @@
-.input-outside {
-	position:relative;
-	font-size: 1.2em;
-	//border background
-    background: #519da6;
-	// the width of the input border
-	padding: 2px;
-	display: inline-block;
-	// style of the actual input field
-	*:not(span) {
-		color: white;
-		position: relative;
-		display: inherit;
-		border-radius: inherit;
-		margin: 0;
-		border: none;
-		outline: none;
-		padding: 0 .325em;
-		
-		// shadow when focused
-		&:focus + span {
-			//needs to be below the field
-			z-index: -1;
-			opacity: 1;
-			transform: scale(1);
+
+.main-contact{
+	.input-outside {
+		position:relative;
+		font-size: 1.2em;
+		//border background
+		background: #519da6;
+		// the width of the input border
+		padding: 2px;
+		display: inline-block;
+		// style of the actual input field
+		*:not(span) {
+			color: white;
+			position: relative;
+			display: inherit;
+			border-radius: inherit;
+			margin: 0;
+			border: none;
+			outline: none;
+			padding: 0 .325em;
+
+			// shadow when focused
+			&:focus + span {
+				//needs to be below the field
+				z-index: -1;
+				opacity: 1;
+				transform: scale(1);
+			}
 		}
-	}
-	
-	// we don't animate box-shadow directly as that can't be done on the GPU, only animate opacity and transform for high performance animations.
-	span {
-		transform: scale(.993, .94); // scale it down just a little bit
-		transition: transform .5s, opacity .25s;
-		opacity: 0; // is hidden by default
-		
-		position:absolute;
-		z-index: -1; // needs to be below the field (would block input otherwise)
-		margin:4px; // a bit bigger than .input padding, this prevents background color pixels shining through
-		left:0;
-		top:0;
-		right:0;
-		bottom:0;
-		border-radius: inherit;
-		pointer-events: none; // this allows the user to click through this element, as the shadow is rather wide it might overlap with other fields and we don't want to block those.
-		
-		// fancy shadow styles
-		box-shadow: inset 0 0 0 3px #519da6,
+
+		// we don't animate box-shadow directly as that can't be done on the GPU, only animate opacity and transform for high performance animations.
+		span {
+			transform: scale(.993, .94); // scale it down just a little bit
+			transition: transform .5s, opacity .25s;
+			opacity: 0; // is hidden by default
+
+			position:absolute;
+			z-index: -1; // needs to be below the field (would block input otherwise)
+			margin:4px; // a bit bigger than .input padding, this prevents background color pixels shining through
+			left:0;
+			top:0;
+			right:0;
+			bottom:0;
+			border-radius: inherit;
+			pointer-events: none; // this allows the user to click through this element, as the shadow is rather wide it might overlap with other fields and we don't want to block those.
+
+			// fancy shadow styles
+			box-shadow: inset 0 0 0 3px #519da6,
 			0 0 0 4px #519da6,
-			3px -3px 15px #519da6, 
+			3px -3px 15px #519da6,
 			-3px 3px 15px #519da6;
+		}
+
 	}
-	
 }
+

@@ -38,7 +38,7 @@ export default function ACbox(props) {
             title.addClass('rotate')
             title.css('width', acBox.css('height'))
             acBox.addClass('clicked')
-            acBox.css('background', process.env.PUBLIC_URL  + "/assets/images/IMG_" + props.AC.toLowerCase() + ".jpg")
+            acBox.css('background', process.env.PUBLIC_URL  + "/assets/images/IMG_" + props.AC.toLowerCase() + ".webp")
         })
     }, [])
 
@@ -85,9 +85,9 @@ export default function ACbox(props) {
     return (
         <>
             <div className="ac-container">
-                <div className={classname} style={{background: "url(" + process.env.PUBLIC_URL  + "/assets/images/IMG_" + props.AC.toLowerCase() + ".jpg)"}}>
+                <div className={classname} style={{background: "url(" + process.env.PUBLIC_URL  + "/assets/images/IMG_" + props.AC.toLowerCase() + ".webp)"}}>
                     <img className={"ACimage"}
-                         src={process.env.PUBLIC_URL + "/assets/images/IMG_" + props.AC.toLowerCase() + ".jpg"}
+                         src={process.env.PUBLIC_URL + "/assets/images/IMG_" + props.AC.toLowerCase() + ".webp"}
                          alt={props.AC.toUpperCase()}/>
                     <div className="title">
                         <h1>{props.AC.toUpperCase()}</h1>

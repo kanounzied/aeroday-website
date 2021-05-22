@@ -28,9 +28,9 @@ export default function Home() {
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/TunAeroday",
-            CDC2URL: "https://www.facebook.com/TunAeroday",
-            CDESURL: "https://www.facebook.com/TunAeroday"
+            CDC1URL: "#",
+            CDC2URL: "#",
+            CDESURL: "#"
         },
         {
             titre: 'EXPOSITIONS AÉRONAUTIQUES',
@@ -46,9 +46,9 @@ export default function Home() {
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/TunAeroday",
-            CDC2URL: "https://www.facebook.com/TunAeroday",
-            CDESURL: "https://www.facebook.com/TunAeroday"
+            CDC1URL: "#",
+            CDC2URL: "#",
+            CDESURL: "#"
         },
         {
             titre: 'ATELIERS NOVICES',
@@ -64,9 +64,9 @@ export default function Home() {
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/TunAeroday",
-            CDC2URL: "https://www.facebook.com/TunAeroday",
-            CDESURL: "https://www.facebook.com/TunAeroday"
+            CDC1URL: "#",
+            CDC2URL: "#",
+            CDESURL: "#"
         },
         {
             titre: 'AEROSPACE',
@@ -83,9 +83,9 @@ export default function Home() {
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/TunAeroday",
-            CDC2URL: "https://www.facebook.com/TunAeroday",
-            CDESURL: "https://www.facebook.com/TunAeroday"
+            CDC1URL: "#",
+            CDC2URL: "#",
+            CDESURL: "#"
         },
         {
             titre: 'AMBASSADE',
@@ -97,9 +97,9 @@ export default function Home() {
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/TunAeroday",
-            CDC2URL: "https://www.facebook.com/TunAeroday",
-            CDESURL: "https://www.facebook.com/TunAeroday"
+            CDC1URL: "#",
+            CDC2URL: "#",
+            CDESURL: "#"
         },
     ]
 
@@ -115,9 +115,9 @@ export default function Home() {
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/TunAeroday",
-            CDC2URL: "https://www.facebook.com/TunAeroday",
-            CDESURL: "https://www.facebook.com/TunAeroday"
+            CDC1URL: "#",
+            CDC2URL: "#",
+            CDESURL: "#"
         },
         {
             titre: 'AÉROMODÉLISME',
@@ -131,9 +131,9 @@ export default function Home() {
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/TunAeroday",
-            CDC2URL: "https://www.facebook.com/TunAeroday",
-            CDESURL: "https://www.facebook.com/TunAeroday"
+            CDC1URL: "#",
+            CDC2URL: "#",
+            CDESURL: "#"
         },
         {
             titre: 'VIDÉOGRAPHIE PAR DRONE',
@@ -146,9 +146,9 @@ export default function Home() {
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/TunAeroday",
-            CDC2URL: "https://www.facebook.com/TunAeroday",
-            CDESURL: "https://www.facebook.com/TunAeroday"
+            CDC1URL: "#",
+            CDC2URL: "#",
+            CDESURL: "#"
         },
         {
             titre: 'AEROENTREPRENEUR',
@@ -162,9 +162,9 @@ export default function Home() {
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/TunAeroday",
-            CDC2URL: "https://www.facebook.com/TunAeroday",
-            CDESURL: "https://www.facebook.com/TunAeroday"
+            CDC1URL: "#",
+            CDC2URL: "#",
+            CDESURL: "#"
         },
         {
             titre: 'CAO',
@@ -178,9 +178,9 @@ export default function Home() {
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/TunAeroday",
-            CDC2URL: "https://www.facebook.com/TunAeroday",
-            CDESURL: "https://www.facebook.com/TunAeroday"
+            CDC1URL: "#",
+            CDC2URL: "#",
+            CDESURL: "#"
         },
     ]
 
@@ -277,7 +277,7 @@ export default function Home() {
                     targeted.children[2].className = 'dropdown-content open'
                     targeted.parentElement.parentElement.className += ' open'
                     targeted.parentElement.parentElement.style.maxHeight = 'unset'
-                    console.log('targeted', targeted)
+                    //console.log('targeted', targeted)
                 } else { // close all
                     console.log(window.innerHeight)
                     $('.dropdown-container .dropdown .arrow').removeClass('rotate')
@@ -288,7 +288,7 @@ export default function Home() {
                     setTimeout(() => {
                         $('.ac-box').css({
                             'max-height': '300px',
-                            'height': '80vw'
+                            'height': (window.innerWidth <= 310) ? '300px' : '80vw'
                         })
                     }, 500)
 

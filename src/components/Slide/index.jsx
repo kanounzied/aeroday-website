@@ -3,9 +3,9 @@ import "./slide.scss";
 import $ from "jquery";
 import gsap from "gsap";
 import imagesLoaded from "imagesloaded";
-import slide_1 from "./images/slide_1.jpg";
-import slide_2 from "./images/slide_2.jpg";
-import slide_3 from "./images/slide_3.jpg";
+import slide_1 from "./images/slide_1.webp";
+import slide_2 from "./images/slide_2.webp";
+import slide_3 from "./images/slide_3.webp";
 
 import Preloader from './../Preloader/Preloader'
 

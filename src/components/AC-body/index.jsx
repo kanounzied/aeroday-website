@@ -13,7 +13,7 @@ class ACbody extends Component{
         return(
         <div className="ACbody">
             <div className="ac-details-container" >
-                <img className="--bgr--" src={process.env.PUBLIC_URL + "/assets/images/background"+this.props.titleAC.toUpperCase()+".png"} alt="bgr" width="100%" height="480px"/>
+                <img className="--bgr--" src={process.env.PUBLIC_URL + "/assets/images/background"+this.props.titleAC.toUpperCase()+".webp"} alt="bgr" width="100%" height="480px"/>
                 <div className="member-and-button" >
                     <MemberCard memberName={this.props.memberName} memberOccupation={this.props.memberOccupation}/>
                     {/* <div id="formulaire">FORMULAIRE</div> */}

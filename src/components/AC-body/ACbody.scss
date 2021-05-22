@@ -27,6 +27,12 @@
   position: relative;
   border-radius: 8px;
 
+  .button{
+    span{
+      opacity: 1!important;
+    }
+  }
+
   .ac-details-container {
     display: flex;
     flex-wrap: wrap;
@@ -126,6 +132,9 @@
       flex-direction: row;
       align-content: center;
       flex-wrap: wrap;
+      .button{
+        display: inline-block;
+      }
     }
     &.reverse {
       //flex-direction: row-reverse;
@@ -160,6 +169,9 @@
 @media screen and (max-width: 900px) { //kenet 1000px
   .about-this-ac {
     width: 100%;
+    p{
+      width: 100%;
+    }
   }
   .ACbody {
     width: 90%;
