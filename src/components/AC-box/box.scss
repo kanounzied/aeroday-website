@@ -169,8 +169,9 @@
     max-height: 300px;
 
     .title {
-      width: 100%;
+      width: 50vw;
       display: flex;
+      left: -10%;
 
       h1 {
         letter-spacing: normal;

@@ -87,9 +87,9 @@ export default function ACbox(props) {
         <>
             <div className="ac-container">
                 <div className={classname}
-                     style={{backgroundImage: "url(http://localhost:3000/assests/images/IMG_" + props.AC.toLowerCase() + ".jpg)"}}>
+                     style={{backgroundImage: process.env.PUBLIC_URL  + "/assets/images/IMG_" + props.AC.toLowerCase() + ".jpg)"}}>
                     <img className={"ACimage"}
-                         src={process.env.PUBLIC_URL + "/assests/images/IMG_" + props.AC.toLowerCase() + ".jpg"}
+                         src={process.env.PUBLIC_URL + "/assets/images/IMG_" + props.AC.toLowerCase() + ".jpg"}
                          alt={props.AC.toUpperCase()}/>
                     <div className="title">
                         <h1>{props.AC.toUpperCase()}</h1>

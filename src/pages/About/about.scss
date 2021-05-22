@@ -98,3 +98,16 @@
         //chlafen was here
     }
 }
+
+@media screen and (max-width: 500px) {
+    #about-us-description{
+        #paragraph--p-{
+            p{
+                font-size: 0.7em;
+            }
+        }
+        h2 , h3{
+            font-size: 120%!important;
+        }
+    }
+}

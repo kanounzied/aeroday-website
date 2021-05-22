@@ -163,7 +163,7 @@
   }
   .ACbody {
     width: 90%;
-    height: 100%;
+    height: fit-content;
 
     .ac-details-container {
       justify-content: center;
@@ -178,6 +178,9 @@
 
       .about-this-ac {
         width: 100%;
+        position: unset;
+      }
+      .buttons-ac--{
         position: unset;
       }
     }
