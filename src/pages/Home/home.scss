@@ -5,9 +5,19 @@
     .section{
         margin: 100px 0;
         display: grid;
+        overflow: hidden;
     }
 }
 
 .ac-boxes{
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 900px) {
+.ac-boxes{
+    display: unset;
+}
 }

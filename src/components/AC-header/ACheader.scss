@@ -1,23 +1,41 @@
-.ac-header{
-    background-color: var(--white-aeroday);
-    height: 140px;
-    border-radius:  8px 8px 0px 0px;
-    h2{
-        color: var(--blue-aeroday);
-        
-        margin: 0%;
-        font-weight: 300;
-        font-size: 40px;
-        margin-left:2% ;
-        padding-top: 2%;
+.ac-header {
+  position: relative;
+  height: 10vw;
+  width: 70vw;
+  margin: auto;
+  background-color: var(--white-aeroday);
+  max-height: 140px;
+  border-radius: 8px 8px 0px 0px;
 
-    }
-    h3{
-        text-align: center;
-        color: var(--dark-color);
-        font-style: normal;
-        font-weight: bold;
-        font-size: 49px;
-        align-self: center;
-    }
+  span {
+    position: absolute;
+    left: 20px;
+    top: 1%;
+    color: var(--blue-aeroday);
+    margin: 0;
+    font-weight: 300;
+    font-size: 25px;
+    margin-left: 2%;
+    padding-top: 2%;
+    width: fit-content;
+  }
+
+  h3 {
+    text-align: center;
+    color: var(--dark-color);
+    font-style: normal;
+    font-weight: bold;
+    //font-size: 49px;
+    align-self: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 1301px) {
+  .ac-header {
+    width: 60vw;
+  }
 }

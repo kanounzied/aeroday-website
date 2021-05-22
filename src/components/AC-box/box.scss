@@ -1,3 +1,15 @@
+//@media screen and (min-width: 900px) and (max-width: 1250px) {
+//  .ac-box {
+//    min-height: 500px;
+//    .ACimage {
+//      min-height: 500px;
+//    }
+//    .title.rotate {
+//      width: 500px;
+//      transform: translate(-38%, calc(50% - 250px)) rotate(90deg);
+//    }
+//  }
+//}
 
 .ac-box {
   position: relative;
@@ -49,6 +61,10 @@
     justify-content: center;
     align-items: center;
 
+    &.rotate {
+      transform: translate(-39%, calc(50% - 20vw)) rotate(90deg);
+    }
+
     h1 {
       font-family: 'Assistant', 'nexa_boldregular', 'sans-serif';
       margin: 0;
@@ -57,7 +73,7 @@
     }
   }
 
-  .dropdown-container{
+  .dropdown-container {
 
     opacity: 0;
     width: 100%;
@@ -74,14 +90,89 @@
   }
 }
 
+.ac-container {
+  position: relative;
+}
+
+.ac-box + .ac-show {
+  position: absolute;
+  top: 6px;
+  display: flex;
+  flex-direction: row-reverse;
+  transition: all 0.5s;
+  &.challenges {
+    flex-direction: row;
+    right: -100vw;
+    &.translated{
+      transform: translateX(-97.5vw);
+    }
+  }
+
+  &.axes {
+    left: -100vw;
+    &.translated{
+      transform: translateX(100vw);
+    }
+  }
+
+  .ac-navigation {
+    transform: translateY(-5vw);
+
+    svg {
+      height: 50vw;
+    }
+  }
+
+  .AC {
+    width: fit-content;
+  }
+}
+
+@media screen and (min-width: 1301px) {
+  .ac-box + .ac-show {
+    .ac-navigation {
+      svg {
+        height: 45vw;
+      }
+    }
+
+    &.axes.translated {
+      transform: translateX(106vw);
+    }
+    &.challenges.translated {
+      transform: translateX(-106vw);
+    }
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1250px) {
+  .ac-box {
+    height: 45vw !important;
+
+    .ACimage {
+      height: 45vw;
+    }
+
+    .title {
+      width: 45vw;
+
+      &.rotate {
+        transform: translate(-40%, calc(50% - 22.5vw)) rotate(90deg);
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 900px) {
-  .ac-box{
+  .ac-box {
     height: 80vw;
     max-height: 300px;
-    .title{
+
+    .title {
       width: 100%;
       display: flex;
-      h1{
+
+      h1 {
         letter-spacing: normal;
       }
     }
@@ -90,6 +181,7 @@
       height: 50vw;
       filter: unset;
       transform: scale(1.05) translate(-50%, -50%);
+
       &.expanded {
         right: 0;
         height: auto;
@@ -98,15 +190,22 @@
       }
     }
 
-    &.open{
+    &.open {
       //max-height: unset;
-      height: 150vw!important;
+      height: 150vw !important;
     }
   }
+  .ac-box + .ac-show {
+    display: none;
+    .ac-navigation{
+      display: none;
+    }
+  }
+
 }
 
-@media screen and (max-width: 700px){
-  .ac-box .title h1{
+@media screen and (max-width: 700px) {
+  .ac-box .title h1 {
     font-size: initial;
   }
 }
