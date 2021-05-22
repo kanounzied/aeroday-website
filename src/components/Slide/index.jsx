@@ -119,9 +119,9 @@ export default class Slide extends Component {
             gsap
                 .timeline()
                 .to([buttons.prev, buttons.next], {
-                      duration: 0.2,
+                      /*duration: 0.2,
                       opacity: 0.5,
-                      pointerEvents: "none",
+                      pointerEvents: "none",*/
                 })
                 .to(
                     $(".text"),
