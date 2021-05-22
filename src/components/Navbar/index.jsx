@@ -10,7 +10,7 @@ export default function Navbar() {
         $('.logo-svg g').attr('fill','#ffffff')
 
         $(window).scroll(function (){
-            if ($(window).scrollTop() >= 100) {
+            if ($(window).scrollTop() >= 60) {
                 $('.navbar').addClass('smaller')
                 $('.logo-svg g').attr('fill','#000000')
                 //logo.attr('src', logo.attr('src').replace('White', 'Black'))
@@ -26,7 +26,7 @@ export default function Navbar() {
             <>
                 <div className="navbar">
                     <a href="/" className={"logo"}><Logo className="logo-svg" height="auto" width="190px" />
-                        {/*<img src={process.env.PUBLIC_URL + "/assests/images/LogoWhite.png"}*/}
+                        {/*<img src={process.env.PUBLIC_URL + "/assets/images/LogoWhite.png"}*/}
                         {/*                                alt="aeroday logo" style={brandStyle}/>*/}
                     </a>
                     <div className="nav-items">

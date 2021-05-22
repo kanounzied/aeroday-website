@@ -20,7 +20,7 @@ class About extends Component {
                     <div id="about-us-video">
                         <h2>C'EST QUOI L'AERODAY?</h2>
                         <video id="video" autoplay="" loop muted="" width="100%" height="100%" preload="auto" autobuffer="true" muted>
-                            <source type="video/mp4" src={ process.env.PUBLIC_URL + "/assests/videos/aboutusvideo.mp4" }/>
+                            <source type="video/mp4" src={ process.env.PUBLIC_URL + "/assets/videos/aboutusvideo.mp4" }/>
                         </video>
                     </div>
                 </div>

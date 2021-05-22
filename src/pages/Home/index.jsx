@@ -34,17 +34,15 @@ export default function Home() {
         },
         {
             titre: 'EXPOSITIONS AÉRONAUTIQUES',
-            description: <p>Des <span>Stands</span> éblouissent les visiteurs par un mélange de <span>créativité</span>
-                et d'<span>enthousiasme</span> des jeunes étudiants intéressés par l'<span>aéronautique</span>,
-                enrichi par le savoir-faire des expérimentés.
+            description: <p>Des <span>Stands</span> éblouissent les visiteurs par la <span>créativité</span>
+                et l'<span>enthousiasme</span> des jeunes étudiants intéressés par l'<span>aéronautique</span>.
                 Parmi les différents projets exposés, on cite Le <span>simulateur de vol monoplace à 360°</span> crée
-                par
-                l'équipe Technique du Club <span>Aerobotix INSAT</span> et exposé lors de l'édition de 2014 celui-ci
+                par l'équipe Technique du Club <span>Aerobotix INSAT</span> et exposé lors de l'édition de 2014 celui-ci
                 ressemble
                 au célèbre simulateur de vol de Microsoft pour le monde 3D.
                 Une fois terminé, il sera capable de simuler l'ensemble des mouvements d'avions.</p>,
             memberName: "Malek Ben Hmida",
-            memberOccupation: "RESP. EXPOSITIONS AÉRONAUTIQUES",
+            memberOccupation: "RESP. EXPOS AÉRONAUTIQUES",
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
@@ -79,7 +77,7 @@ export default function Home() {
                 dans la détermination des origines de la vie, mais aussi dans la recherche et le développement.
                 En <span>Tunisie</span>, désormais l’espace fait rêver de nombreux jeunes, qui cherchent à approfondir
                 leurs connaissances
-                dans ce domaine, toujours absent dans nos systèmes éducatifs.</p>,
+                dans ce domaine.</p>,
             memberName: "Aicha Mejlissi",
             memberOccupation: "RESP. AEROSPACE",
             cdc1: "1",
@@ -172,8 +170,7 @@ export default function Home() {
             titre: 'CAO',
             description: <p>Le challenge de CAO <span>(Conception Assistée par Ordinateur)</span> est une compétition
                 destinée aux amateurs du <span>design</span> et du domaine <span>aéronautique</span> en même temps.
-                Le challenge dure 24 heures au cours desquelles les participants vont exploiter leurs créativités et leurs imaginations
-                pour donner naissance à un modèle <span>3D</span> valide et innovant d'un <span>engin volant</span> moyennant
+                Le challenge dure 24 heures au cours desquelles les participants vont donner naissance à un modèle <span>3D</span> valide et innovant d'un <span>engin volant</span> moyennant
                 les logiciels récents de modélisation (SolidWorks et Catia).
                 Les participants vont présenter leur travail devant des juges experts dans le domaine de CAD afin de l'évaluer selon des critères bien déterminés.</p>,
             memberName: "Mohamed Yassine Brahem",

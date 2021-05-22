@@ -4,8 +4,8 @@ import "./button.scss";
 class Button extends Component{
     render(){
         return(
-                <a class="button" href={this.props.buttonURL} target="_blank">
-                    <span class="text">{this.props.buttonText}</span>
+                <a className={"button"} style={this.props.style} href={this.props.buttonURL} target="_blank">
+                    <span className={"text"}>{this.props.buttonText}</span>
                 </a>
         )
     }
