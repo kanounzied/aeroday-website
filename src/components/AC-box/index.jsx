@@ -5,6 +5,7 @@ import ACdropdown from "../ACdropdown";
 import ACbody from "../AC-body";
 import ACnav from "../AC-nav";
 import ACheader from "../AC-header";
+import * as url from "url";
 
 // import { ReactComponent as LeftACNav } from '../../styles/images/left-nav.svg'
 
@@ -35,11 +36,9 @@ export default function ACbox(props) {
         acBox.click(() => {
             var title = $('.ac-box .title')
             title.addClass('rotate')
+            title.css('width', acBox.css('height'))
             acBox.addClass('clicked')
-            // if (window.innerWidth > 900) {
-            //     title.css('transform', "translate(-37.5%, calc(50% - 20vw)) rotate(90deg)")
-            // }
-            //$('.dropdown').css('z-index', 0)
+            acBox.css('background', process.env.PUBLIC_URL  + "/assets/images/IMG_" + props.AC.toLowerCase() + ".jpg")
         })
     }, [])
 
@@ -86,8 +85,7 @@ export default function ACbox(props) {
     return (
         <>
             <div className="ac-container">
-                <div className={classname}
-                     style={{backgroundImage: process.env.PUBLIC_URL  + "/assets/images/IMG_" + props.AC.toLowerCase() + ".jpg)"}}>
+                <div className={classname} style={{background: "url(" + process.env.PUBLIC_URL  + "/assets/images/IMG_" + props.AC.toLowerCase() + ".jpg)"}}>
                     <img className={"ACimage"}
                          src={process.env.PUBLIC_URL + "/assets/images/IMG_" + props.AC.toLowerCase() + ".jpg"}
                          alt={props.AC.toUpperCase()}/>
