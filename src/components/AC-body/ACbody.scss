@@ -38,36 +38,40 @@
     text-align: left;
     overflow: hidden;
     align-items: center;
-    &.reverse {
-      flex-direction: row-reverse;
-      text-align: right;
-    }
-
     .--bgr-- {
       position: absolute;
       top: -1.5%;
       z-index: -1;
       height: 100%;
-      border-radius: 0px 0px 8px 8px;
+      border-radius: 0 0 8px 8px;
     }
 
     .member-and-button {
       //margin-top: 50px;
       width: 40%;
       height: 100%;
-      padding: 30px;
+      padding: 10px;
       position: absolute;
       right: -5%;
       align-items: center;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
       .button {
         width: fit-content; // 180px;
         //height: 50px;
         margin: 10px auto; //auto;
-        //margin-bottom: 50px;
-
+        margin-bottom: 5%;
         text-align: center;
         //margin-top: 40px;
+      }
+
+      .member-card{
+        height: fit-content;
+        width: 70%;
+        margin: auto;
       }
     }
 
@@ -95,13 +99,14 @@
       p {
         font-style: normal;
         font-weight: normal;
-        font-size: 80%; //18px;
+        font-size: 0.7em; //min(1.5vw, 18px); //18px;
         color: white;
         padding: 0 2%;
         padding-top: 2%;
         letter-spacing: 0.2em;
         line-height: 150%;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 150%;
 
         span {
           color: var(--blue-aeroday);
@@ -122,6 +127,21 @@
       align-content: center;
       flex-wrap: wrap;
     }
+    &.reverse {
+      //flex-direction: row-reverse;
+      text-align: right;
+      .member-and-button{
+        right: unset;
+        left: -5%;
+      }
+      .about-this-ac{
+        left: unset;
+        right: 0;
+      }
+      .buttons-ac--{
+        left: 30%;
+      }
+    }
   }
 
 }
@@ -132,7 +152,8 @@
     width: 65%;
   }
   .ACbody {
-    //width: var(--ac-body-width);
+    width: 60vw;
+    height: 30vw;
   }
 }
 
@@ -142,14 +163,22 @@
   }
   .ACbody {
     width: 90%;
+    height: 100%;
 
     .ac-details-container {
+      justify-content: center;
+      .--bgr--{
+        display: none;
+      }
       .member-and-button {
         width: unset;
+        position: unset;
+        height: fit-content;
       }
 
       .about-this-ac {
         width: 100%;
+        position: unset;
       }
     }
   }

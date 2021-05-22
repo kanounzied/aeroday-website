@@ -1,16 +1,13 @@
 import React, {useEffect, useRef} from "react";
 import "./home.scss";
 import $ from 'jquery'
-import AeroButton from "../../components/AeroButton";
 import TitleBanner from "../../components/TitleBanner";
-import AeroForm from "../../components/Formulaire";
 import Intro from "../../components/Intro";
 import ACbox from "../../components/AC-box";
 import GoogleMaps from './../../components/GoogleMaps/GoogleMaps'
 import Slide from "../../components/Slide";
 import Preloader from "./../../components/Preloader/Preloader";
 import Sponsors from "./../../components/Sponsors";
-import ACbody from "../../components/AC-body";
 
 export default function Home() {
 
@@ -19,155 +16,174 @@ export default function Home() {
 
     const axesArray = [
         {
-            titre: 'AISHOW',
-            description: <p>Revient pour la cinquième année consécutive dans <span>Le Tunisian Aeroday</span>. Les
-                participants devront <span>construire</span> leurs
-                propres <span>modèles</span></p>,
+            titre: 'AIRSHOW',
+            description: <p>L'Airshow est un challenge indoor
+                consacré aux avions <span>radio-commandées</span>.
+                Lors de ce show aérien compétitif les participants sont amenés à présenter un show spectaculaire,
+                utile et innovant qui met en valeur leurs compétences de <span>pilotage </span>.
+                Un jury professionnel et un public enthousiaste seront présents pour évaluer les différentes
+                performances.</p>,
             memberName: "Nour Cheour",
-            memberOccupation: "RESP. AEROMODELISME",
+            memberOccupation: "RESP. AIRSHOW",
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/",
-            CDC2URL: "https://www.facebook.com/",
-            CDESURL: "https://www.facebook.com/"
+            CDC1URL: "https://www.facebook.com/TunAeroday",
+            CDC2URL: "https://www.facebook.com/TunAeroday",
+            CDESURL: "https://www.facebook.com/TunAeroday"
         },
         {
-            titre: 'EXPOSITIONS',
+            titre: 'EXPOSITIONS AÉRONAUTIQUES',
             description: <p>Des <span>Stands</span> éblouissent les visiteurs par un mélange de <span>créativité</span>
                 et d'<span>enthousiasme</span> des jeunes étudiants intéressés par l'<span>aéronautique</span>,
                 enrichi par le savoir-faire des expérimentés.
-                Parmi les différents projets exposés, on cite Le <span>simulateur de vol monoplace à 360°</span> crée par
-                l'équipe Technique du Club <span>Aerobotix INSAT</span> et exposé lors de l'édition de 2014 celui-ci ressemble
+                Parmi les différents projets exposés, on cite Le <span>simulateur de vol monoplace à 360°</span> crée
+                par
+                l'équipe Technique du Club <span>Aerobotix INSAT</span> et exposé lors de l'édition de 2014 celui-ci
+                ressemble
                 au célèbre simulateur de vol de Microsoft pour le monde 3D.
                 Une fois terminé, il sera capable de simuler l'ensemble des mouvements d'avions.</p>,
-            memberName: "Haizem Dahech",
-            memberOccupation: "RESP. AEROMODELISME",
+            memberName: "Malek Ben Hmida",
+            memberOccupation: "RESP. EXPOSITIONS AÉRONAUTIQUES",
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/",
-            CDC2URL: "https://www.facebook.com/",
-            CDESURL: "https://www.facebook.com/"
+            CDC1URL: "https://www.facebook.com/TunAeroday",
+            CDC2URL: "https://www.facebook.com/TunAeroday",
+            CDESURL: "https://www.facebook.com/TunAeroday"
         },
         {
-            titre: 'AISHOW',
-            description: <p>Revient pour la cinquième année consécutive dans <span>Le Tunisian Aeroday</span>. Les
-                participants devront <span>construire</span> leurs
-                propres <span>modèles</span></p>,
-            memberName: "Haizem Dahech",
-            memberOccupation: "RESP. AEROMODELISME",
+            titre: 'ATELIERS NOVICES',
+            description: <p>Et parce que nous croyons en la capacité des générations à venir,
+                on a conçu des <span>ateliers novices</span> qui ont pour objectif de créer un <span>mini Aeroday</span>
+                pour les enfants âgés de 4 à 17 ans et leur faire surtout découvrir le monde
+                de <span>l'aéronautique</span>.
+                Et donc, des ateliers par âge, des <span>Stands</span> et des
+                challenges <span>CAO</span>, <span>Aéromodélisme</span>,
+                <span>Gaming</span> adaptés à leurs potentiels seront au rendez-vous...</p>,
+            memberName: "Bouhour Dhouib",
+            memberOccupation: "RESP. ATELIERS NOVICES",
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/",
-            CDC2URL: "https://www.facebook.com/",
-            CDESURL: "https://www.facebook.com/"
+            CDC1URL: "https://www.facebook.com/TunAeroday",
+            CDC2URL: "https://www.facebook.com/TunAeroday",
+            CDESURL: "https://www.facebook.com/TunAeroday"
         },
         {
-            titre: 'AISHOW',
-            description: <p>Revient pour la cinquième année consécutive dans <span>Le Tunisian Aeroday</span>. Les
-                participants devront <span>construire</span> leurs
-                propres <span>modèles</span></p>,
-            memberName: "Haizem Dahech",
-            memberOccupation: "RESP. AEROMODELISME",
+            titre: 'AEROSPACE',
+            description: <p>Dans un monde où les ressources diminuent <span>inexorablement</span>,
+                beaucoup pensent que l’avenir de l’homme est dans <span>l’exploitation de l’espace</span>.
+                Depuis son apparition, le secteur aérospatial a joué un role de <span>pionnier</span> et
+                de <span>moteur</span>
+                dans la détermination des origines de la vie, mais aussi dans la recherche et le développement.
+                En <span>Tunisie</span>, désormais l’espace fait rêver de nombreux jeunes, qui cherchent à approfondir
+                leurs connaissances
+                dans ce domaine, toujours absent dans nos systèmes éducatifs.</p>,
+            memberName: "Aicha Mejlissi",
+            memberOccupation: "RESP. AEROSPACE",
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/",
-            CDC2URL: "https://www.facebook.com/",
-            CDESURL: "https://www.facebook.com/"
+            CDC1URL: "https://www.facebook.com/TunAeroday",
+            CDC2URL: "https://www.facebook.com/TunAeroday",
+            CDESURL: "https://www.facebook.com/TunAeroday"
         },
         {
-            titre: 'AISHOW',
-            description: <p>Revient pour la cinquième année consécutive dans <span>Le Tunisian Aeroday</span>. Les
-                participants devront <span>construire</span> leurs
-                propres <span>modèles</span></p>,
-            memberName: "Haizem Dahech",
-            memberOccupation: "RESP. AEROMODELISME",
+            titre: 'AMBASSADE',
+            description: <p>L'ambassade est l'axe de <span>l'Aeroday</span> qui vise
+                à <span>l'internationalisation</span>
+                de l'événement soit par l'invitation des conférenciers, participants ou média internationaux.</p>,
+            memberName: "Nourchene Bargaoui",
+            memberOccupation: "AMBASSADRICE",
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/",
-            CDC2URL: "https://www.facebook.com/",
-            CDESURL: "https://www.facebook.com/"
+            CDC1URL: "https://www.facebook.com/TunAeroday",
+            CDC2URL: "https://www.facebook.com/TunAeroday",
+            CDESURL: "https://www.facebook.com/TunAeroday"
         },
     ]
 
     const challengesArray = [
         {
             titre: 'AEROCHALLENGE',
-            description: <p>Revient pour la cinquième année consécutive dans <span>Le Tunisian Aeroday</span>. Les
-                participants devront <span>construire</span> leurs
-                propres <span>modèles</span></p>,
-            memberName: "Nour Cheour",
-            memberOccupation: "RESP. AEROMODELISME",
+            description: <p>C'est une <span>compétition</span> ouverte aux étudiants et amateurs au cours de laquelle
+                ils feront voler leurs <span>DRONES</span> dans un circuit bien déterminé tout en respectant <span>le cahier de charges</span>.
+                Ce challenge aura pour but de réunir les passionnés de ce domaine lors d'une confrontation où le talent,
+                les compétences et l'enthousiasme seront au rendez-vous pour couronner un vainqueur d'un <span>grand prix</span>.</p>,
+            memberName: "Eya Ben Aziza",
+            memberOccupation: "RESP. AEROCHALLENGE",
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/",
-            CDC2URL: "https://www.facebook.com/",
-            CDESURL: "https://www.facebook.com/"
+            CDC1URL: "https://www.facebook.com/TunAeroday",
+            CDC2URL: "https://www.facebook.com/TunAeroday",
+            CDESURL: "https://www.facebook.com/TunAeroday"
         },
         {
-            titre: 'EXPOSITIONS',
-            description: <p>Des <span>Stands</span> éblouissent les visiteurs par un mélange de <span>créativité</span>
-                et d'<span>enthousiasme</span> des jeunes étudiants intéressés par l'<span>aéronautique</span>,
-                enrichi par le savoir-faire des expérimentés.
-                Parmi les différents projets exposés, on cite Le <span>simulateur de vol monoplace à 360°</span> crée par
-                l'équipe Technique du Club <span>Aerobotix INSAT</span> et exposé lors de l'édition de 2014 celui-ci ressemble
-                au célèbre simulateur de vol de Microsoft pour le monde 3D.
-                Une fois terminé, il sera capable de simuler l'ensemble des mouvements d'avions.</p>,
+            titre: 'AÉROMODÉLISME',
+            description: <p>Revient pour la cinquième année consécutive dans Le <span>Tunisian Aeroday</span>.
+                Les participants devront construire leurs propres modèles de <span>planeur</span> de taille réduite,
+                les présenter à un public de professionnels et d'amateurs et les faire voler.
+                Cette compétition est ouverte pour <span>toutes</span> les personnes souhaitant partager leur <span>passion</span>
+                avec les autres.</p>,
             memberName: "Haizem Dahech",
             memberOccupation: "RESP. AEROMODELISME",
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/",
-            CDC2URL: "https://www.facebook.com/",
-            CDESURL: "https://www.facebook.com/"
+            CDC1URL: "https://www.facebook.com/TunAeroday",
+            CDC2URL: "https://www.facebook.com/TunAeroday",
+            CDESURL: "https://www.facebook.com/TunAeroday"
         },
         {
-            titre: 'AISHOW',
-            description: <p>Revient pour la cinquième année consécutive dans <span>Le Tunisian Aeroday</span>. Les
-                participants devront <span>construire</span> leurs
-                propres <span>modèles</span></p>,
-            memberName: "Haizem Dahech",
-            memberOccupation: "RESP. AEROMODELISME",
+            titre: 'VIDÉOGRAPHIE PAR DRONE',
+            description: <p>Le nouveau challenge de vidéographie par drone est <span>né</span>.
+                Ce challenge, comme son nom l'indique donne l'opportunité aux passionnés par la production visuelle
+                par drone de présenter leurs oeuvres au <span>monde</span> et faire la course pour le premier prix,
+                suivant un cahier des charges bien déterminé.</p>,
+            memberName: "Ghassen Abida",
+            memberOccupation: "RESP. VIDEOGRAPHIE PAR DRONE",
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/",
-            CDC2URL: "https://www.facebook.com/",
-            CDESURL: "https://www.facebook.com/"
+            CDC1URL: "https://www.facebook.com/TunAeroday",
+            CDC2URL: "https://www.facebook.com/TunAeroday",
+            CDESURL: "https://www.facebook.com/TunAeroday"
         },
         {
-            titre: 'AISHOW',
-            description: <p>Revient pour la cinquième année consécutive dans <span>Le Tunisian Aeroday</span>. Les
-                participants devront <span>construire</span> leurs
-                propres <span>modèles</span></p>,
-            memberName: "Haizem Dahech",
-            memberOccupation: "RESP. AEROMODELISME",
+            titre: 'AEROENTREPRENEUR',
+            description: <p>Le challenge <span>AeroEntrepreneur</span> est une compétition <span>24h</span> destinée
+                aux jeunes ambitieux de l'entrepreneuriat et ceux qui ont des idées de projets dans le domaine <span>aéronautique </span>
+                 et ses dérivés.
+                Un cahier des charges sera distribué au équipes participantes contenant le(s) sujet(s) à traiter ainsi que les <span>critères de sélection</span>
+                et les documents demandés et bien sûr Les participants vont présenter leur travail devant des juges experts dans le domaine de l'entrepreneuriat.</p>,
+            memberName: "Ikram Rejeb",
+            memberOccupation: "RESP. AEROENTREPRENEUR",
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/",
-            CDC2URL: "https://www.facebook.com/",
-            CDESURL: "https://www.facebook.com/"
+            CDC1URL: "https://www.facebook.com/TunAeroday",
+            CDC2URL: "https://www.facebook.com/TunAeroday",
+            CDESURL: "https://www.facebook.com/TunAeroday"
         },
         {
-            titre: 'AISHOW',
-            description: <p>Revient pour la cinquième année consécutive dans <span>Le Tunisian Aeroday</span>. Les
-                participants devront <span>construire</span> leurs
-                propres <span>modèles</span></p>,
-            memberName: "Haizem Dahech",
-            memberOccupation: "RESP. AEROMODELISME",
+            titre: 'CAO',
+            description: <p>Le challenge de CAO <span>(Conception Assistée par Ordinateur)</span> est une compétition
+                destinée aux amateurs du <span>design</span> et du domaine <span>aéronautique</span> en même temps.
+                Le challenge dure 24 heures au cours desquelles les participants vont exploiter leurs créativités et leurs imaginations
+                pour donner naissance à un modèle <span>3D</span> valide et innovant d'un <span>engin volant</span> moyennant
+                les logiciels récents de modélisation (SolidWorks et Catia).
+                Les participants vont présenter leur travail devant des juges experts dans le domaine de CAD afin de l'évaluer selon des critères bien déterminés.</p>,
+            memberName: "Mohamed Yassine Brahem",
+            memberOccupation: "RESP. CAO",
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/",
-            CDC2URL: "https://www.facebook.com/",
-            CDESURL: "https://www.facebook.com/"
+            CDC1URL: "https://www.facebook.com/TunAeroday",
+            CDC2URL: "https://www.facebook.com/TunAeroday",
+            CDESURL: "https://www.facebook.com/TunAeroday"
         },
     ]
 
@@ -190,14 +206,17 @@ export default function Home() {
         // console.log('size', transformSize)
         $('#home').addClass('selected');
         $('.ac-boxes .axes').click(() => {
-            $('.ac-boxes .axes').css({
+            $('.ac-boxes .ac-box.axes').css({
                 'width': (window.innerWidth < 900) ? "80vw" : "75vw",
                 'opacity': (window.innerWidth < 900) ? 1 : 0
             })
-            $('.ac-boxes .challenges').css({
+            $('.ac-boxes .ac-box.challenges').css({
                 'opacity': 1,
-                'width': (window.innerWidth > 900) ? "10vw" : "40vw"
+                'width': (window.innerWidth > 900) ? "8vw" : "40vw"
             })
+            $('.ac-boxes .ac-show.axes').addClass('translated')
+            $('.ac-boxes .ac-show.challenges').removeClass('translated')
+
             if (window.innerWidth < 900) {
                 var axeimg = $('.axes .ACimage')
                 var challengeimg = $('.challenges .ACimage')
@@ -212,14 +231,16 @@ export default function Home() {
             }
         })
         $('.ac-boxes .challenges').click(() => {
-            $('.ac-boxes .axes').css({
-                'width': (window.innerWidth > 900) ? "10vw" : "40vw",
+            $('.ac-boxes .ac-box.axes').css({
+                'width': (window.innerWidth > 900) ? "8vw" : "40vw",
                 'opacity': 1
             })
-            $('.ac-boxes .challenges').css({
+            $('.ac-boxes .ac-box.challenges').css({
                 'width': (window.innerWidth < 900) ? "80vw" : "75vw",
                 'opacity': (window.innerWidth < 900) ? 1 : 0
             })
+            $('.ac-boxes .ac-show.challenges').addClass('translated')
+            $('.ac-boxes .ac-show.axes').removeClass('translated')
             if (window.innerWidth < 900) {
                 var challengeimg = $('.challenges .ACimage')
                 var axeimg = $('.axes .ACimage')
@@ -287,7 +308,7 @@ export default function Home() {
             <div id={"axes&challenges"} className="section">
                 <TitleBanner text={"Axes & Challenges"}/>
                 <div className="ac-boxes">
-                    <ACbox acArray={axesArray} ref={axes} AC={"AXES"}/>
+                    <ACbox acArray={axesArray} ref={axes} AC={"Axes"}/>
                     <ACbox acArray={challengesArray} ref={challenges} AC={"Challenges"}/>
                 </div>
             </div>
