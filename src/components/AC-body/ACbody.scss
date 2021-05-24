@@ -20,16 +20,16 @@
 }
 
 .ACbody {
-  width: 70vw;//var(--ac-body-width);
+  width: 70vw; //var(--ac-body-width);
   height: 35vw;
   //background-color: rgb(40, 40, 46);
   margin: auto;
   position: relative;
   border-radius: 8px;
 
-  .button{
-    span{
-      opacity: 1!important;
+  .button {
+    span {
+      opacity: 1 !important;
     }
   }
 
@@ -44,6 +44,7 @@
     text-align: left;
     overflow: hidden;
     align-items: center;
+
     .--bgr-- {
       position: absolute;
       top: -1.5%;
@@ -74,7 +75,7 @@
         //margin-top: 40px;
       }
 
-      .member-card{
+      .member-card {
         height: fit-content;
         width: 70%;
         margin: auto;
@@ -99,30 +100,73 @@
         font-weight: bold;
         font-size: 28px;
         padding: 25px;
+        padding-bottom: 0;
         color: var(--blue-aeroday);
       }
 
-      p {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 0.7em; //min(1.5vw, 18px); //18px;
-        color: white;
-        padding: 0 2%;
-        padding-top: 2%;
-        letter-spacing: 0.2em;
-        line-height: 150%;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      .description-wrapper {
         width: 150%;
+        height: 20vw;
+        overflow-x: hidden;
+        -ms-overflow-x: hidden ;
+        &::before {
+          content: "";
+          float: left;
+          height: calc(30vw);
+          width: calc(50%);
+          shape-outside: polygon(-0.22% -8.1%,
+                  0.4% 101.28%,
+                  0px 100.52%,
+                  0.05% -0.72%
+          );
+          shape-margin: 7%;
+        }
 
-        span {
-          color: var(--blue-aeroday);
-          font-weight: bold;
+        p {
+          text-align: justify;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 0.7em; //min(1.5vw, 18px); //18px;
+          color: white;
+          padding: 0 2%;
+          padding-top: 2%;
+          letter-spacing: 0.2em;
+          line-height: 150%;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          width: 110%;
+
+          &::before {
+            content: "";
+            float: right;
+            height: calc(25vw);
+            width: calc(50%);
+            shape-outside: polygon(33.22% -2.49%,
+                    22.83% -8.86%,
+                    31.89% -3.18%,
+                    47.16% 28.4%,
+                    65.75% 26.36%,
+                    89.25% 57.21%,
+                    101.65% 103.4%,
+                    102.09% 103.74%,
+                    87.43% 58.77%,
+                    65.52% 28.21%,
+                    46.72% 28.32%
+            );
+
+            shape-margin: 7%;
+          }
+
+
+          span {
+            color: var(--blue-aeroday);
+            font-weight: bold;
+          }
         }
       }
 
 
-
     }
+
     .buttons-ac-- {
       display: flex;
       position: absolute;
@@ -132,22 +176,27 @@
       flex-direction: row;
       align-content: center;
       flex-wrap: wrap;
-      .button{
+
+      .button {
         display: inline-block;
       }
     }
+
     &.reverse {
       //flex-direction: row-reverse;
       text-align: right;
-      .member-and-button{
+
+      .member-and-button {
         right: unset;
         left: -5%;
       }
-      .about-this-ac{
+
+      .about-this-ac {
         left: unset;
         right: 0;
       }
-      .buttons-ac--{
+
+      .buttons-ac-- {
         left: 30%;
       }
     }
@@ -157,19 +206,34 @@
 
 
 @media screen and (min-width: 1301px) {
-  .about-this-ac {
-    width: 65%;
-  }
   .ACbody {
     width: 60vw;
     height: 30vw;
+    .ac-details-container .about-this-ac {
+      width: 65%;
+
+      .description-wrapper {
+        width: 100%;
+        &::before {
+          height: 20vw;
+        }
+        p {
+          font-size: 1vw;
+          letter-spacing: 0.1em;
+          &::before {
+            height: 19vw;
+          }
+        }
+      }
+    }
   }
 }
 
 @media screen and (max-width: 900px) { //kenet 1000px
   .about-this-ac {
     width: 100%;
-    p{
+
+    p {
       width: 100%;
     }
   }
@@ -179,9 +243,11 @@
 
     .ac-details-container {
       justify-content: center;
-      .--bgr--{
+
+      .--bgr-- {
         display: none;
       }
+
       .member-and-button {
         width: unset;
         position: unset;
@@ -191,8 +257,23 @@
       .about-this-ac {
         width: 100%;
         position: unset;
+        .description-wrapper{
+          width: 100%;
+          height: unset;
+          overflow: unset;
+          &::before{
+            content: unset;
+          }
+          p {
+            width: 100%;
+            &::before {
+              content: unset;
+            }
+          }
+        }
       }
-      .buttons-ac--{
+
+      .buttons-ac-- {
         position: unset;
       }
     }

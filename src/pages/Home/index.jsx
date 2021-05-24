@@ -58,7 +58,7 @@ export default function Home() {
                 de <span>l'aéronautique</span>.
                 Et donc, des ateliers par âge, des <span>Stands</span> et des
                 challenges <span>CAO</span>, <span>Aéromodélisme</span>,
-                <span>Gaming</span> adaptés à leurs potentiels seront au rendez-vous...</p>,
+                <span>Gaming</span> adaptés à leurs potentiels seront au rendez-vous!</p>,
             memberName: "Bouhour Dhouib",
             memberOccupation: "RESP. ATELIERS NOVICES",
             cdc1: "1",

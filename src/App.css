@@ -47,12 +47,12 @@ body {
     background-position: center;
     background-size: calc(max(120vw,170vh));
 }
-body::-webkit-scrollbar {
+body::-webkit-scrollbar, .about-this-ac .description-wrapper::-webkit-scrollbar {
     display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
-body {
+body, .about-this-ac .description-wrapper {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
