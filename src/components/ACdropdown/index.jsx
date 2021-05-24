@@ -14,7 +14,7 @@ export default function ACdropdown(props){
         <>
             <div ref={dropdown} className="dropdown">
                 <div className="droptitle">{props.ac.titre}</div>
-                <img src={process.env.PUBLIC_URL + "/assests/images/arrow.png"} className="arrow"/>
+                <img src={process.env.PUBLIC_URL + "/assets/images/arrow.webp"} className="arrow"/>
                 <div className="dropdown-content">
                     {/*<h1>testing 1 2 !!</h1>*/}
                     <ACbody titleAC={props.ac.titre} acType={props.ac.titre} description={props.ac.description}

@@ -3,7 +3,7 @@ import {Component} from "react/cjs/react.production.min";
 import $ from 'jquery'
 import './contact.scss'
 import './form.scss'
-import plane_img from '../../styles/images/black-plane-icon1.png';
+import plane_img from '../../styles/images/black-plane-icon1.webp';
 import {Animated} from "react-animated-css";
 import AeroButton from '../../components/AeroButton'
 import Formulaire from '../../components/Formulaire'

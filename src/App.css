@@ -40,10 +40,19 @@ body {
     background-color: var(--dark-color);
     overflow-y:hidden;
     overflow-x: hidden;
-    background-image: url('styles/scss/wave-backround.png');
+    background-image: url('styles/scss/wave-backround.webp');
     background-blend-mode: difference;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: calc(max(120vw,170vh));
+}
+body::-webkit-scrollbar, .about-this-ac .description-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body, .about-this-ac .description-wrapper {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }

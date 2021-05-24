@@ -1,12 +1,12 @@
 import React, {useEffect, useRef} from "react";
 import './spons.scss'
-import ontt from './img/ONTT.png'
-import planB from './img/PlanB.png'
-import hutch from './img/Hutchinson.png'
-import sogip from './img/Sogip.png'
-import stb from './img/STB.png'
-import zen from './img/ZENHOST.png'
-import bg from './img/carousel-bg.jpg'
+import ontt from './img/ONTT.webp'
+import planB from './img/PlanB.webp'
+import hutch from './img/Hutchinson.webp'
+import sogip from './img/Sogip.webp'
+import stb from './img/STB.webp'
+import zen from './img/ZENHOST.webp'
+import bg from './img/carousel-bg.webp'
 
 export default function Sponsors(props) {
     return (

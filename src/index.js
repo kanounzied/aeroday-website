@@ -45,12 +45,12 @@ if(document.getElementById('preloader')){
     if(c==2){
       preloader.parentNode.removeChild(preloader);
       document.getElementsByTagName('body')[0].style.overflowY = "auto";
-      document.getElementsByTagName('body')[0].style.overflowX = "auto";
+      //document.getElementsByTagName('body')[0].style.overflowX = "auto";
     }
   });
 } else {
   document.getElementsByTagName('body')[0].style.overflowY = "auto";
-  document.getElementsByTagName('body')[0].style.overflowX = "auto";
+  //document.getElementsByTagName('body')[0].style.overflowX = "auto";
 }
 
 // If you want to start measuring performance in your app, pass a function

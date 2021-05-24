@@ -169,9 +169,13 @@
     max-height: 300px;
 
     .title {
-      width: 100%;
+      width: 50vw;
       display: flex;
+      left: -10%;
 
+      &.rotate{
+        transform: translate(-25%, calc(50% - 150px)) rotate(90deg);
+      }
       h1 {
         letter-spacing: normal;
       }

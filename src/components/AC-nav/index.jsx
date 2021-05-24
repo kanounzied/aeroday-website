@@ -1,16 +1,16 @@
 import React,{useEffect} from "react";
 import $ from 'jquery';
 import './Acnav.scss';
-import img1 from '../../styles/images/nav-pics/coupe1-axes/1.png';
-import img2 from '../../styles/images/nav-pics/coupe1-axes/2.png';
-import img3 from '../../styles/images/nav-pics/coupe1-axes/3.png';
-import img4 from '../../styles/images/nav-pics/coupe1-axes/4.png';
-import img5 from '../../styles/images/nav-pics/coupe1-axes/5.png';
-import img1r from '../../styles/images/nav-pics/coupe2-challenges/1.png';
-import img2r from '../../styles/images/nav-pics/coupe2-challenges/2.png';
-import img3r from '../../styles/images/nav-pics/coupe2-challenges/3.png';
-import img4r from '../../styles/images/nav-pics/coupe2-challenges/4.png';
-import img5r from '../../styles/images/nav-pics/coupe2-challenges/5.png';
+import img1 from '../../styles/images/nav-pics/coupe1-axes/1.webp';
+import img2 from '../../styles/images/nav-pics/coupe1-axes/2.webp';
+import img3 from '../../styles/images/nav-pics/coupe1-axes/3.webp';
+import img4 from '../../styles/images/nav-pics/coupe1-axes/4.webp';
+import img5 from '../../styles/images/nav-pics/coupe1-axes/5.webp';
+import img1r from '../../styles/images/nav-pics/coupe2-challenges/1.webp';
+import img2r from '../../styles/images/nav-pics/coupe2-challenges/2.webp';
+import img3r from '../../styles/images/nav-pics/coupe2-challenges/3.webp';
+import img4r from '../../styles/images/nav-pics/coupe2-challenges/4.webp';
+import img5r from '../../styles/images/nav-pics/coupe2-challenges/5.webp';
 
 
 export default function ACnav(props) {

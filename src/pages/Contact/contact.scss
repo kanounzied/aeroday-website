@@ -54,6 +54,7 @@
 
 .plane-animated {
   width: 80%;
+  margin-bottom: 20px;
 }
 .msg-plane {
   display: flex;
@@ -72,8 +73,9 @@
 
 @media (max-width: 900px) {
   .main-contact {
-    height: 160vh;
+    //height: 160vh;
     flex-direction: column;
+    height: fit-content;
   }
 
   .msg-plane {

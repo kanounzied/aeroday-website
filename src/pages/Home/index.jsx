@@ -28,29 +28,27 @@ export default function Home() {
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/TunAeroday",
-            CDC2URL: "https://www.facebook.com/TunAeroday",
-            CDESURL: "https://www.facebook.com/TunAeroday"
+            CDC1URL: "#",
+            CDC2URL: "#",
+            CDESURL: "#"
         },
         {
             titre: 'EXPOSITIONS AÉRONAUTIQUES',
-            description: <p>Des <span>Stands</span> éblouissent les visiteurs par un mélange de <span>créativité</span>
-                et d'<span>enthousiasme</span> des jeunes étudiants intéressés par l'<span>aéronautique</span>,
-                enrichi par le savoir-faire des expérimentés.
+            description: <p>Des <span>Stands</span> éblouissent les visiteurs par la <span>créativité</span>
+                et l'<span>enthousiasme</span> des jeunes étudiants intéressés par l'<span>aéronautique</span>.
                 Parmi les différents projets exposés, on cite Le <span>simulateur de vol monoplace à 360°</span> crée
-                par
-                l'équipe Technique du Club <span>Aerobotix INSAT</span> et exposé lors de l'édition de 2014 celui-ci
+                par l'équipe Technique du Club <span>Aerobotix INSAT</span> et exposé lors de l'édition de 2014 celui-ci
                 ressemble
                 au célèbre simulateur de vol de Microsoft pour le monde 3D.
                 Une fois terminé, il sera capable de simuler l'ensemble des mouvements d'avions.</p>,
             memberName: "Malek Ben Hmida",
-            memberOccupation: "RESP. EXPOSITIONS AÉRONAUTIQUES",
+            memberOccupation: "RESP. EXPOS AÉRONAUTIQUES",
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/TunAeroday",
-            CDC2URL: "https://www.facebook.com/TunAeroday",
-            CDESURL: "https://www.facebook.com/TunAeroday"
+            CDC1URL: "#",
+            CDC2URL: "#",
+            CDESURL: "#"
         },
         {
             titre: 'ATELIERS NOVICES',
@@ -60,15 +58,15 @@ export default function Home() {
                 de <span>l'aéronautique</span>.
                 Et donc, des ateliers par âge, des <span>Stands</span> et des
                 challenges <span>CAO</span>, <span>Aéromodélisme</span>,
-                <span>Gaming</span> adaptés à leurs potentiels seront au rendez-vous...</p>,
+                <span>Gaming</span> adaptés à leurs potentiels seront au rendez-vous!</p>,
             memberName: "Bouhour Dhouib",
             memberOccupation: "RESP. ATELIERS NOVICES",
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/TunAeroday",
-            CDC2URL: "https://www.facebook.com/TunAeroday",
-            CDESURL: "https://www.facebook.com/TunAeroday"
+            CDC1URL: "#",
+            CDC2URL: "#",
+            CDESURL: "#"
         },
         {
             titre: 'AEROSPACE',
@@ -79,15 +77,15 @@ export default function Home() {
                 dans la détermination des origines de la vie, mais aussi dans la recherche et le développement.
                 En <span>Tunisie</span>, désormais l’espace fait rêver de nombreux jeunes, qui cherchent à approfondir
                 leurs connaissances
-                dans ce domaine, toujours absent dans nos systèmes éducatifs.</p>,
+                dans ce domaine.</p>,
             memberName: "Aicha Mejlissi",
             memberOccupation: "RESP. AEROSPACE",
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/TunAeroday",
-            CDC2URL: "https://www.facebook.com/TunAeroday",
-            CDESURL: "https://www.facebook.com/TunAeroday"
+            CDC1URL: "#",
+            CDC2URL: "#",
+            CDESURL: "#"
         },
         {
             titre: 'AMBASSADE',
@@ -99,9 +97,9 @@ export default function Home() {
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/TunAeroday",
-            CDC2URL: "https://www.facebook.com/TunAeroday",
-            CDESURL: "https://www.facebook.com/TunAeroday"
+            CDC1URL: "#",
+            CDC2URL: "#",
+            CDESURL: "#"
         },
     ]
 
@@ -117,9 +115,9 @@ export default function Home() {
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/TunAeroday",
-            CDC2URL: "https://www.facebook.com/TunAeroday",
-            CDESURL: "https://www.facebook.com/TunAeroday"
+            CDC1URL: "#",
+            CDC2URL: "#",
+            CDESURL: "#"
         },
         {
             titre: 'AÉROMODÉLISME',
@@ -133,9 +131,9 @@ export default function Home() {
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/TunAeroday",
-            CDC2URL: "https://www.facebook.com/TunAeroday",
-            CDESURL: "https://www.facebook.com/TunAeroday"
+            CDC1URL: "#",
+            CDC2URL: "#",
+            CDESURL: "#"
         },
         {
             titre: 'VIDÉOGRAPHIE PAR DRONE',
@@ -148,9 +146,9 @@ export default function Home() {
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/TunAeroday",
-            CDC2URL: "https://www.facebook.com/TunAeroday",
-            CDESURL: "https://www.facebook.com/TunAeroday"
+            CDC1URL: "#",
+            CDC2URL: "#",
+            CDESURL: "#"
         },
         {
             titre: 'AEROENTREPRENEUR',
@@ -164,16 +162,15 @@ export default function Home() {
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/TunAeroday",
-            CDC2URL: "https://www.facebook.com/TunAeroday",
-            CDESURL: "https://www.facebook.com/TunAeroday"
+            CDC1URL: "#",
+            CDC2URL: "#",
+            CDESURL: "#"
         },
         {
             titre: 'CAO',
             description: <p>Le challenge de CAO <span>(Conception Assistée par Ordinateur)</span> est une compétition
                 destinée aux amateurs du <span>design</span> et du domaine <span>aéronautique</span> en même temps.
-                Le challenge dure 24 heures au cours desquelles les participants vont exploiter leurs créativités et leurs imaginations
-                pour donner naissance à un modèle <span>3D</span> valide et innovant d'un <span>engin volant</span> moyennant
+                Le challenge dure 24 heures au cours desquelles les participants vont donner naissance à un modèle <span>3D</span> valide et innovant d'un <span>engin volant</span> moyennant
                 les logiciels récents de modélisation (SolidWorks et Catia).
                 Les participants vont présenter leur travail devant des juges experts dans le domaine de CAD afin de l'évaluer selon des critères bien déterminés.</p>,
             memberName: "Mohamed Yassine Brahem",
@@ -181,9 +178,9 @@ export default function Home() {
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "https://www.facebook.com/TunAeroday",
-            CDC2URL: "https://www.facebook.com/TunAeroday",
-            CDESURL: "https://www.facebook.com/TunAeroday"
+            CDC1URL: "#",
+            CDC2URL: "#",
+            CDESURL: "#"
         },
     ]
 
@@ -280,7 +277,7 @@ export default function Home() {
                     targeted.children[2].className = 'dropdown-content open'
                     targeted.parentElement.parentElement.className += ' open'
                     targeted.parentElement.parentElement.style.maxHeight = 'unset'
-                    console.log('targeted', targeted)
+                    //console.log('targeted', targeted)
                 } else { // close all
                     console.log(window.innerHeight)
                     $('.dropdown-container .dropdown .arrow').removeClass('rotate')
@@ -291,7 +288,7 @@ export default function Home() {
                     setTimeout(() => {
                         $('.ac-box').css({
                             'max-height': '300px',
-                            'height': '80vw'
+                            'height': (window.innerWidth <= 310) ? '300px' : '80vw'
                         })
                     }, 500)
 
