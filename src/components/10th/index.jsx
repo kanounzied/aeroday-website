@@ -6,10 +6,10 @@ class Tenth extends Component{
         return(
                 <div className="tenth">
                     <div className="tenth-small">
-                        <img src= { process.env.PUBLIC_URL + "/assests/images/tenth.png"} alt="ten" />
+                        <img src= { process.env.PUBLIC_URL + "/assets/images/10th.png"} alt="ten" />
                     </div>
                     <div className="tenth-hover">
-                        <img src= { process.env.PUBLIC_URL + "/assests/images/anniv.png"} alt="tenaniv" />
+                        <img src= { process.env.PUBLIC_URL + "/assets/images/10th_anniv.png"} alt="tenaniv" />
                     </div>
                 </div>
         )

@@ -1,13 +1,15 @@
-import React, {useEffect, useRef} from "react";
+import React, {useEffect, useRef, Suspense} from "react";
 import "./home.scss";
+import "../../components/10th/tenth.scss"
 import $ from 'jquery'
 import TitleBanner from "../../components/TitleBanner";
 import Intro from "../../components/Intro";
 import ACbox from "../../components/AC-box";
-import GoogleMaps from './../../components/GoogleMaps/GoogleMaps'
 import Slide from "../../components/Slide";
 import Preloader from "./../../components/Preloader/Preloader";
-import Sponsors from "./../../components/Sponsors";
+
+const Sponsors = React.lazy(() => import("./../../components/Sponsors"))
+const GoogleMaps = React.lazy(() => import('./../../components/GoogleMaps/GoogleMaps'))
 
 export default function Home() {
 
@@ -302,6 +304,12 @@ export default function Home() {
         <div className="home">
             <Preloader/>
             <Intro/>
+            <div className="tenth-small">
+                <img src= { process.env.PUBLIC_URL + "/assets/images/10th.png"} alt="ten" />
+            </div>
+            <div className="tenth-hover">
+                <img src= { process.env.PUBLIC_URL + "/assets/images/10th_anniv.png"} alt="tenaniv" />
+            </div>
             <div id={"axes&challenges"} className="section">
                 <TitleBanner text={"Axes & Challenges"}/>
                 <div className="ac-boxes">
@@ -315,10 +323,14 @@ export default function Home() {
             </div>
             <div className="section">
                 <TitleBanner text="Aeroday Location"/>
-                <GoogleMaps/>
+                    <Suspense fallback={<p>loading gogle maps...</p>}>
+                        <GoogleMaps/>
+                    </Suspense>
             </div>
             <section className="aaa">
-                <Sponsors/>
+                <Suspense fallback={<p>loading Sponsors section...</p>}>
+                    <Sponsors/>
+                </Suspense>
             </section>
             {/*<div className="section">*/}
             {/*</div>*/}

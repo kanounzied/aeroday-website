@@ -1,29 +1,22 @@
-.tenth{
-    z-index: 1000;
+.tenth-small{
     position: fixed;
-    height: 100%;
+    right: 0;
+    top: 19%;
+    img{
+        width: 75%;
+    }
+}
+.tenth-hover{
+    position: fixed;
+    transition: 0.2s ease-in;
+    opacity: 0;
+    bottom: 5%;
     width: 100%;
-    margin: 0px;
     display: flex;
     justify-content: center;
-    .tenth-small{
-        justify-self: unset;
-        position: absolute  ;
-        right: 0px;
-        img{
-            width: 75%;
-        }
-    }
-    .tenth-hover{
-        position: absolute;
-        transition: 0.2s ease-in;
-        opacity: 0;
-        bottom: 150px;
-        display: flex;
-        justify-content: center;
-        img{
-            width: 90%;
-        }
+    img{
+        width: 90%;
+        max-width: 700px;
     }
 }
 
@@ -32,15 +25,7 @@
 }
 
 @media screen and (max-width: 900px){
-    .tenth{ 
-        position: relative;
-        top: 200px;
-        .tenth-hover{
-            display:none;
-            
-        }
-        .tenth-small{
-            width: 20%;
-        }
+    .tenth-small, .tenth-hover{
+        display: none;
     }
 }

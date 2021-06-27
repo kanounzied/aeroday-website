@@ -42,8 +42,8 @@ export default function ACnav(props) {
     )
     else
         return (
-            <svg width="136" height="715" viewBox="0 0 136 715" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <image className={"svgImage"} xlinkHref={img1r} onClick={() => props.clickImage(0)} height={170} x={0} y={0} />
+            <svg className={"navsvg"} width="136" height="715" viewBox="0 0 136 715" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <image className={"svgImage"} xlinkHref={img1r} onClick={() => props.clickImage(0)} height={170} x={-30} y={0} />
                 <image className={"svgImage"} xlinkHref={img2r} onClick={() => props.clickImage(1)} height={170} x={-30} y={130} />
                 <image className={"svgImage"} xlinkHref={img3r} onClick={() => props.clickImage(2)} height={170} x={-30} y={267} />
                 <image className={"svgImage"} xlinkHref={img4r} onClick={() => props.clickImage(3)} height={170} x={-30} y={404} />
