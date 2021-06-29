@@ -68,7 +68,9 @@ export default function ACbox(props) {
                         cdc1={props.acArray[axeId].cdc1} cdc2={props.acArray[axeId].cdc2}
                         cdes={props.acArray[axeId].cdes}
                         CDC1URL={props.acArray[axeId].CDC1URL} CDC2URL={props.acArray[axeId].CDC2URL}
-                        CDESURL={props.acArray[axeId].CDESURL}/>
+                        CDESURL={props.acArray[axeId].CDESURL}
+                        form={props.acArray[axeId].form} formLink={props.acArray[axeId].formLink}/>
+
                 </div>
                 <div className={navigation}>
                     <ACnav direction={true} clickImage={handleAxesIdChange}/>
@@ -86,12 +88,15 @@ export default function ACbox(props) {
                             cdc1={props.acArray[challengeId].cdc1} cdc2={props.acArray[challengeId].cdc2}
                             cdes={props.acArray[challengeId].cdes}
                             CDC1URL={props.acArray[challengeId].CDC1URL} CDC2URL={props.acArray[challengeId].CDC2URL}
-                            CDESURL={props.acArray[challengeId].CDESURL}/>
+                            CDESURL={props.acArray[challengeId].CDESURL}
+                            form={props.acArray[challengeId].form} formLink={props.acArray[challengeId].formLink}/>
                 </div>
                 <div className={navigation}>
                     <ACnav direction={false} clickImage={handleChallengesIdChange}/>
                 </div>
             </div>)
+
+        // console.log("axe:", props.acArray[axeId]);
     }, [axeId, challengeId])
 
 

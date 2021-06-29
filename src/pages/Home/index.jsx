@@ -43,7 +43,9 @@ export default function Home(props) {
             cdes: "0",
             CDC1URL: airshow,
             CDC2URL: "#",
-            CDESURL: "#"
+            CDESURL: "#",
+            form: false,
+            formLink: ""
         },
         {
             titre: 'EXPOSITIONS AÉRONAUTIQUES',
@@ -61,7 +63,9 @@ export default function Home(props) {
             cdes: "1",
             CDC1URL: expo_space,
             CDC2URL: "#",
-            CDESURL: expo
+            CDESURL: expo,
+            form: false,
+            formLink: ""
         },
         {
             titre: 'ATELIERS NOVICES',
@@ -79,7 +83,9 @@ export default function Home(props) {
             cdes: "1",
             CDC1URL: "#",
             CDC2URL: "#",
-            CDESURL: novices
+            CDESURL: novices,
+            form: false,
+            formLink: ""
         },
         {
             titre: 'AEROSPACE',
@@ -98,7 +104,9 @@ export default function Home(props) {
             cdes: "1",
             CDC1URL: expo_space,
             CDC2URL: "#",
-            CDESURL: space
+            CDESURL: space,
+            form: false,
+            formLink: ""
         },
         {
             titre: 'AMBASSADE',
@@ -107,12 +115,14 @@ export default function Home(props) {
                 de l'événement soit par l'invitation des conférenciers, participants ou média internationaux.</p>,
             memberName: "Nourchene Bargaoui",
             memberOccupation: "AMBASSADRICE",
-            cdc1: "1",
+            cdc1: "0",
             cdc2: "0",
-            cdes: "1",
+            cdes: "0",
             CDC1URL: "#",
             CDC2URL: "#",
-            CDESURL: "#"
+            CDESURL: "#",
+            form: false,
+            formLink: ""
         },
     ]
 
@@ -130,7 +140,9 @@ export default function Home(props) {
             cdes: "0",
             CDC1URL: aerochallenge,
             CDC2URL: "#",
-            CDESURL: "#"
+            CDESURL: "#",
+            form: false,
+            formLink: ""
         },
         {
             titre: 'AÉROMODÉLISME',
@@ -146,7 +158,9 @@ export default function Home(props) {
             cdes: "0",
             CDC1URL: aeromodelisme,
             CDC2URL: "#",
-            CDESURL: "#"
+            CDESURL: "#",
+            form: false,
+            formLink: ""
         },
         {
             titre: 'VIDÉOGRAPHIE PAR DRONE',
@@ -161,7 +175,9 @@ export default function Home(props) {
             cdes: "0",
             CDC1URL: videographie,
             CDC2URL: "#",
-            CDESURL: "#"
+            CDESURL: "#",
+            form: false,
+            formLink: ""
         },
         {
             titre: 'AEROENTREPRENEUR',
@@ -172,12 +188,14 @@ export default function Home(props) {
                 et les documents demandés et bien sûr Les participants vont présenter leur travail devant des juges experts dans le domaine de l'entrepreneuriat.</p>,
             memberName: "Ikram Rejeb",
             memberOccupation: "RESP. AEROENTREPRENEUR",
-            cdc1: "1",
+            cdc1: "0",
             cdc2: "0",
-            cdes: "1",
+            cdes: "0",
             CDC1URL: "#",
             CDC2URL: "#",
-            CDESURL: "#"
+            CDESURL: "#",
+            form: false,
+            formLink: ""
         },
         {
             titre: 'CAO',
@@ -188,12 +206,14 @@ export default function Home(props) {
                 Les participants vont présenter leur travail devant des juges experts dans le domaine de CAD afin de l'évaluer selon des critères bien déterminés.</p>,
             memberName: "Mohamed Yassine Brahem",
             memberOccupation: "RESP. CAO",
-            cdc1: "1",
+            cdc1: "0",
             cdc2: "0",
-            cdes: "1",
+            cdes: "0",
             CDC1URL: "#",
             CDC2URL: "#",
-            CDESURL: "#"
+            CDESURL: "#",
+            form: false,
+            formLink: ""
         },
     ]
 
