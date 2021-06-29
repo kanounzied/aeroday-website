@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, Suspense} from "react";
+import React, {useEffect, useState, useRef, Suspense} from "react";
 import "./home.scss";
 import "../../components/10th/tenth.scss"
 import $ from 'jquery'
@@ -8,13 +8,24 @@ import ACbox from "../../components/AC-box";
 import Slide from "../../components/Slide";
 import Preloader from "./../../components/Preloader/Preloader";
 
+import airshow from '../../pdfs/charge/airshow2021.pdf'
+import expo from '../../pdfs/desc/expo2021.pdf'
+import space from '../../pdfs/desc/space2021.pdf'
+import expo_space from '../../pdfs/desc/expo-space21.pdf'
+import novices from '../../pdfs/desc/Novices2021.pdf'
+import aerochallenge from '../../pdfs/charge/Aerochallenge 2021.pdf'
+import videographie from '../../pdfs/charge/Videographie par drone 2021.pdf'
+import aeromodelisme from '../../pdfs/charge/aeromodelisme2021.pdf'
+
+
 const Sponsors = React.lazy(() => import("./../../components/Sponsors"))
 const GoogleMaps = React.lazy(() => import('./../../components/GoogleMaps/GoogleMaps'))
 
-export default function Home() {
+export default function Home(props) {
 
     const axes = useRef();
     const challenges = useRef();
+    const [acId, setAcId] = useState(0);
 
     const axesArray = [
         {
@@ -29,8 +40,8 @@ export default function Home() {
             memberOccupation: "RESP. AIRSHOW",
             cdc1: "1",
             cdc2: "0",
-            cdes: "1",
-            CDC1URL: "#",
+            cdes: "0",
+            CDC1URL: airshow,
             CDC2URL: "#",
             CDESURL: "#"
         },
@@ -48,9 +59,9 @@ export default function Home() {
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "#",
+            CDC1URL: expo_space,
             CDC2URL: "#",
-            CDESURL: "#"
+            CDESURL: expo
         },
         {
             titre: 'ATELIERS NOVICES',
@@ -63,12 +74,12 @@ export default function Home() {
                 <span>Gaming</span> adaptés à leurs potentiels seront au rendez-vous!</p>,
             memberName: "Bouhour Dhouib",
             memberOccupation: "RESP. ATELIERS NOVICES",
-            cdc1: "1",
+            cdc1: "0",
             cdc2: "0",
             cdes: "1",
             CDC1URL: "#",
             CDC2URL: "#",
-            CDESURL: "#"
+            CDESURL: novices
         },
         {
             titre: 'AEROSPACE',
@@ -85,9 +96,9 @@ export default function Home() {
             cdc1: "1",
             cdc2: "0",
             cdes: "1",
-            CDC1URL: "#",
+            CDC1URL: expo_space,
             CDC2URL: "#",
-            CDESURL: "#"
+            CDESURL: space
         },
         {
             titre: 'AMBASSADE',
@@ -116,8 +127,8 @@ export default function Home() {
             memberOccupation: "RESP. AEROCHALLENGE",
             cdc1: "1",
             cdc2: "0",
-            cdes: "1",
-            CDC1URL: "#",
+            cdes: "0",
+            CDC1URL: aerochallenge,
             CDC2URL: "#",
             CDESURL: "#"
         },
@@ -132,8 +143,8 @@ export default function Home() {
             memberOccupation: "RESP. AEROMODELISME",
             cdc1: "1",
             cdc2: "0",
-            cdes: "1",
-            CDC1URL: "#",
+            cdes: "0",
+            CDC1URL: aeromodelisme,
             CDC2URL: "#",
             CDESURL: "#"
         },
@@ -147,8 +158,8 @@ export default function Home() {
             memberOccupation: "RESP. VIDEOGRAPHIE PAR DRONE",
             cdc1: "1",
             cdc2: "0",
-            cdes: "1",
-            CDC1URL: "#",
+            cdes: "0",
+            CDC1URL: videographie,
             CDC2URL: "#",
             CDESURL: "#"
         },
@@ -185,6 +196,12 @@ export default function Home() {
             CDESURL: "#"
         },
     ]
+
+    useEffect(() => {
+        var id = (typeof props.match.params.acId === "undefined") ? 0 : props.match.params.acId
+        setAcId(id)
+        console.log("///////////////",id)
+    },[])
 
     useEffect(() => {
 
@@ -304,17 +321,21 @@ export default function Home() {
         <div className="home">
             <Preloader/>
             <Intro/>
-            <div className="tenth-small">
-                <img src= { process.env.PUBLIC_URL + "/assets/images/10th.png"} alt="ten" />
-            </div>
-            <div className="tenth-hover">
+
+            {/* tenth anniversairy stamp */}
+                <div className="tenth-small">
+                    <img src= { process.env.PUBLIC_URL + "/assets/images/10th.png"} alt="ten" />
+                </div>
+                <div className="tenth-hover">
                 <img src= { process.env.PUBLIC_URL + "/assets/images/10th_anniv.png"} alt="tenaniv" />
             </div>
+            {/* end of tenth stamp */}
+
             <div id={"axes&challenges"} className="section">
                 <TitleBanner text={"Axes & Challenges"}/>
                 <div className="ac-boxes">
-                    <ACbox acArray={axesArray} ref={axes} AC={"Axes"}/>
-                    <ACbox acArray={challengesArray} ref={challenges} AC={"Challenges"}/>
+                    <ACbox acArray={axesArray} ref={axes} AC={"Axes"} init={acId}/>
+                    <ACbox acArray={challengesArray} ref={challenges} AC={"Challenges"} init={acId}/>
                 </div>
             </div>
             <div className="section">
