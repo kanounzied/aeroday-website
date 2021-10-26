@@ -33,8 +33,10 @@ export default function ACbody(props) {
                     </div>
                 </div>
                 <div className="buttons-ac--">
-                    {props.cdc1 === "1" && <div id="cdc1"><Button
-                        buttonText="CDC1" buttonURL={props.CDC1URL}/></div>}
+                    {props.cdc1 === "1" && <div id="cdc1">
+                        <Button
+                            buttonText="CDC1" buttonURL={props.CDC1URL}/>
+                    </div>}
                     {props.cdc2 === "1" && <div id="cdc2"><Button
                         buttonText="CDC2" buttonURL={props.CDC2URL}/></div>}
                     {props.cdes === "1" && <div id="cdes"><Button

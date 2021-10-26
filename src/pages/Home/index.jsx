@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useRef, Suspense} from "react";
+import React, {useEffect, useState, useRef, lazy, Suspense} from "react";
 import "./home.scss";
 import "../../components/10th/tenth.scss"
 import $ from 'jquery'
@@ -44,8 +44,8 @@ export default function Home(props) {
             CDC1URL: airshow,
             CDC2URL: "#",
             CDESURL: "#",
-            form: false,
-            formLink: ""
+            form: true,
+            formLink: "https://forms.gle/8Cv6FhPWBtWKkv7w5"
         },
         {
             titre: 'EXPOSITIONS AÉRONAUTIQUES',
@@ -84,8 +84,8 @@ export default function Home(props) {
             CDC1URL: "#",
             CDC2URL: "#",
             CDESURL: novices,
-            form: false,
-            formLink: ""
+            form: true,
+            formLink: "https://bit.ly/2Wu6FcB"
         },
         {
             titre: 'AEROSPACE',
@@ -132,7 +132,8 @@ export default function Home(props) {
             description: <p>C'est une <span>compétition</span> ouverte aux étudiants et amateurs au cours de laquelle
                 ils feront voler leurs <span>DRONES</span> dans un circuit bien déterminé tout en respectant <span>le cahier de charges</span>.
                 Ce challenge aura pour but de réunir les passionnés de ce domaine lors d'une confrontation où le talent,
-                les compétences et l'enthousiasme seront au rendez-vous pour couronner un vainqueur d'un <span>grand prix</span>.</p>,
+                les compétences et l'enthousiasme seront au rendez-vous pour couronner un vainqueur d'un <span>grand prix</span>.
+            </p>,
             memberName: "Eya Ben Aziza",
             memberOccupation: "RESP. AEROCHALLENGE",
             cdc1: "1",
@@ -141,15 +142,16 @@ export default function Home(props) {
             CDC1URL: aerochallenge,
             CDC2URL: "#",
             CDESURL: "#",
-            form: false,
-            formLink: ""
+            form: true,
+            formLink: "https://forms.gle/mQoR5F1Rf81rxmMQ9"
         },
         {
             titre: 'AÉROMODÉLISME',
             description: <p>Revient pour la cinquième année consécutive dans Le <span>Tunisian Aeroday</span>.
                 Les participants devront construire leurs propres modèles de <span>planeur</span> de taille réduite,
                 les présenter à un public de professionnels et d'amateurs et les faire voler.
-                Cette compétition est ouverte pour <span>toutes</span> les personnes souhaitant partager leur <span>passion</span>
+                Cette compétition est ouverte pour <span>toutes</span> les personnes souhaitant partager
+                leur <span>passion</span>
                 avec les autres.</p>,
             memberName: "Haizem Dahech",
             memberOccupation: "RESP. AEROMODELISME",
@@ -159,8 +161,8 @@ export default function Home(props) {
             CDC1URL: aeromodelisme,
             CDC2URL: "#",
             CDESURL: "#",
-            form: false,
-            formLink: ""
+            form: true,
+            formLink: "https://forms.gle/zaqdkonA4ABDtPou6"
         },
         {
             titre: 'VIDÉOGRAPHIE PAR DRONE',
@@ -176,16 +178,19 @@ export default function Home(props) {
             CDC1URL: videographie,
             CDC2URL: "#",
             CDESURL: "#",
-            form: false,
-            formLink: ""
+            form: true,
+            formLink: "https://forms.gle/p3TtQcLMq2idwVey8"
         },
         {
             titre: 'AEROENTREPRENEUR',
             description: <p>Le challenge <span>AeroEntrepreneur</span> est une compétition <span>24h</span> destinée
-                aux jeunes ambitieux de l'entrepreneuriat et ceux qui ont des idées de projets dans le domaine <span>aéronautique </span>
-                 et ses dérivés.
-                Un cahier des charges sera distribué au équipes participantes contenant le(s) sujet(s) à traiter ainsi que les <span>critères de sélection</span>
-                et les documents demandés et bien sûr Les participants vont présenter leur travail devant des juges experts dans le domaine de l'entrepreneuriat.</p>,
+                aux jeunes ambitieux de l'entrepreneuriat et ceux qui ont des idées de projets dans le
+                domaine <span>aéronautique </span>
+                et ses dérivés.
+                Un cahier des charges sera distribué au équipes participantes contenant le(s) sujet(s) à traiter ainsi
+                que les <span>critères de sélection</span>
+                et les documents demandés et bien sûr Les participants vont présenter leur travail devant des juges
+                experts dans le domaine de l'entrepreneuriat.</p>,
             memberName: "Ikram Rejeb",
             memberOccupation: "RESP. AEROENTREPRENEUR",
             cdc1: "0",
@@ -194,16 +199,18 @@ export default function Home(props) {
             CDC1URL: "#",
             CDC2URL: "#",
             CDESURL: "#",
-            form: false,
-            formLink: ""
+            form: true,
+            formLink: "https://forms.gle/1fn6jqR4MdTjuGHG8"
         },
         {
             titre: 'CAO',
             description: <p>Le challenge de CAO <span>(Conception Assistée par Ordinateur)</span> est une compétition
                 destinée aux amateurs du <span>design</span> et du domaine <span>aéronautique</span> en même temps.
-                Le challenge dure 24 heures au cours desquelles les participants vont donner naissance à un modèle <span>3D</span> valide et innovant d'un <span>engin volant</span> moyennant
+                Le challenge dure 24 heures au cours desquelles les participants vont donner naissance à un
+                modèle <span>3D</span> valide et innovant d'un <span>engin volant</span> moyennant
                 les logiciels récents de modélisation (SolidWorks et Catia).
-                Les participants vont présenter leur travail devant des juges experts dans le domaine de CAD afin de l'évaluer selon des critères bien déterminés.</p>,
+                Les participants vont présenter leur travail devant des juges experts dans le domaine de CAD afin de
+                l'évaluer selon des critères bien déterminés.</p>,
             memberName: "Mohamed Yassine Brahem",
             memberOccupation: "RESP. CAO",
             cdc1: "0",
@@ -212,16 +219,21 @@ export default function Home(props) {
             CDC1URL: "#",
             CDC2URL: "#",
             CDESURL: "#",
-            form: false,
-            formLink: ""
+            form: true,
+            formLink: "https://forms.gle/H71vjMo7K5XcGEer7"
         },
     ]
 
     useEffect(() => {
+        var str = window.location + ""
+        if (window.innerWidth <= 900 && str.includes('#')) {
+            console.log('location',str.includes("/"))
+            window.location = "https://aeroday.tn/"
+        }
         var id = (typeof props.match.params.acId === "undefined") ? 0 : props.match.params.acId
         setAcId(id)
-        console.log("///////////////",id)
-    },[])
+        console.log("///////////////", id)
+    }, [])
 
     useEffect(() => {
 
@@ -343,11 +355,11 @@ export default function Home(props) {
             <Intro/>
 
             {/* tenth anniversairy stamp */}
-                <div className="tenth-small">
-                    <img src= { process.env.PUBLIC_URL + "/assets/images/10th.png"} alt="ten" />
-                </div>
-                <div className="tenth-hover">
-                <img src= { process.env.PUBLIC_URL + "/assets/images/10th_anniv.png"} alt="tenaniv" />
+            <div className="tenth-small">
+                <img src={process.env.PUBLIC_URL + "/assets/images/10th.png"} alt="ten"/>
+            </div>
+            <div className="tenth-hover">
+                <img src={process.env.PUBLIC_URL + "/assets/images/10th_anniv.png"} alt="tenaniv"/>
             </div>
             {/* end of tenth stamp */}
 
@@ -364,9 +376,9 @@ export default function Home(props) {
             </div>
             <div className="section">
                 <TitleBanner text="Aeroday Location"/>
-                    <Suspense fallback={<p>loading gogle maps...</p>}>
-                        <GoogleMaps/>
-                    </Suspense>
+                <Suspense fallback={<p>loading gogle maps...</p>}>
+                    <GoogleMaps/>
+                </Suspense>
             </div>
             <section className="aaa">
                 <Suspense fallback={<p>loading Sponsors section...</p>}>

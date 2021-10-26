@@ -20,7 +20,8 @@ export default function ACdropdown(props){
                     <ACbody titleAC={props.ac.titre} acType={props.ac.titre} description={props.ac.description}
                             memberName={props.ac.memberName} memberOccupation={props.ac.memberOccupation}
                             cdc1={props.ac.cdc1}   cdc2={props.ac.cdc2}   cdes={props.ac.cdes}
-                            CDC1URL={props.ac.CDC1URL} CDC2URL={props.ac.CDC2URL} CDESURL={props.ac.CDESURL} />
+                            CDC1URL={props.ac.CDC1URL} CDC2URL={props.ac.CDC2URL} CDESURL={props.ac.CDESURL}
+                            form={props.ac.form} formLink={props.ac.formLink}/>
 
                 </div>
             </div>
